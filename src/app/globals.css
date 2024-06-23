@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: "Calibri", sans-serif;
+}
+.backgound{
+    background: url(../../public/img/Landing\ Image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgound2{
+    background: url(../../public/img/mandate.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgound3{
+    background: url(../../public/img/bg-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backgound4{
+    background: url(../../public/img/tribe.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.board{
+    background: url(../../public/img/board.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.trustee{
+    background: url(../../public/img/trustee.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.governing{
+    background: url(../../public/img/governing.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.volunteer{
+    background: url(../../public/img/volunteer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.partner{
+    background: url(../../public/img/partner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sponsor{
+    background: url(../../public/img/sponsor.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mentor{
+    background: url(../../public/img/mentor.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.news{
+    background: url(../../public/img/news.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
