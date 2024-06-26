@@ -1,8 +1,13 @@
+import InvolveBody from '@/components/Involved/InvolveBody'
+import InvolveHero from '@/components/Involved/InvolveHero'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <InvolveHero/>
+      <InvolveBody/>
+    </div>
   )
 }
 

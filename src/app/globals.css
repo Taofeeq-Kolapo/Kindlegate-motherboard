@@ -71,3 +71,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.involved{
+    background: url(../../public/img/involve.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

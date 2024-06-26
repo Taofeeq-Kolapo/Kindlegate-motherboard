@@ -1,8 +1,8 @@
 import React from 'react'
 
 const ContactHero = () => {
-  return (
-    <div className="backgound3 bg-no-repeat bg-cover h-screen justify-center flex items-center w-full ">
+    return (
+        <div className="backgound3 bg-no-repeat bg-cover h-screen justify-center flex items-center w-full ">
             <div className="pt-[5%] px-[7%] flex w-full ">
                 <div className="w-[50%] flex flex-col items-center gap-4">
                     <p className="font-bold text-[64px] text-white leading-none">REACH US</p>
@@ -12,7 +12,7 @@ const ContactHero = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default ContactHero
