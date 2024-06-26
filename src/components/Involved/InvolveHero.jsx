@@ -15,5 +15,4 @@ const InvolveHero = () => {
         </div>
     )
 }
-
 export default InvolveHero

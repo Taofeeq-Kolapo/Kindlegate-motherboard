@@ -18,7 +18,7 @@ export const Btn2 = ({ text }) => {
 export const MissionProps = ({ title, content }) => {
     return (
         <div >
-            <div className='flex w-full justify-end'>
+            <div className='flex w-full lg:justify-end justify-center'>
                 <span className='flex flex-col gap-1 items-center'>
                     <p className='text-[32px] font-bold'>{title}</p>
                     <p className='bg-[#E3B522] h-1 w-[90%] rounded-3xl'></p>
