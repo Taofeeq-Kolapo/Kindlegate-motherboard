@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const About = () => {
     return (
-        <div className='flex flex-row pl-[10%] lg:gap-[13%] items-center py-[3%]'>
-            <div>
+        <div className='flex flex-row lg:pl-[10%] px-[10%] lg:gap-[13%] items-center py-[3%]'>
+            <div className='flex flex-col lg:items-start items-center'>
                 <p className='text-[#1E1E1E] text-[36px] font-bold'>About Us</p>
                 <div>
                     <p>
@@ -25,7 +25,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <Image src={"/img/right.svg"} alt='' width={300} height={300}/>
+            <Image src={"/img/right.svg"} className='lg:block hidden' alt='' width={300} height={300}/>
         </div>
     )
 }

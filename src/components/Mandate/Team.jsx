@@ -46,14 +46,14 @@ const Team = () => {
             <div className='w-full flex justify-center'>
                 <p className='text-[36px] text-[#1E1E1E] font-bold'>Our Team</p>
             </div>
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 mb-6'>
                 <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
                 <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
                 <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
                 <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
             </div>
 
-            <div className='w-full grid grid-cols-3 gap-[10%]'>
+            <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-[10%]'>
                 {
                     trustee.map((d, i) => {
                         return (
@@ -73,7 +73,7 @@ const Team = () => {
                     })
                 }
             </div>
-            <div className='w-full flex justify-center mt-8 flex-col items-center gap-5' >
+            <div className='w-full flex justify-center my-8 flex-col items-center gap-5' >
                 <div className='flex flex-col items-center'>
                     <p className='text-[36px] text-[#1E1E1E] font-bold '>Our Partners</p>
                     <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>

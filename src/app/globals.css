@@ -76,3 +76,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/* @media screen and (max-width: 768) {
+    .backgound{
+        background: url(../../public/img/Landing\ Image.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} */
