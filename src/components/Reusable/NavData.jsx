@@ -5,11 +5,11 @@ export const involved = [
     },
     {
         title:"As a Mentor",
-        link:"/involved"
+        link:"/mentor"
     },
     {
         title:"As Volunteer",
-        link:"/involved"
+        link:"/volunteer"
     },
 ]
 export const tribes = [
