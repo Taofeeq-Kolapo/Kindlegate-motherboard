@@ -49,19 +49,18 @@ const Others = () => {
                     <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                 </div>
             </div>
-            <div className='grid grid-cols-2 gap-[6%] w-full px-[10%]'>
+            <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[6%] gap-7 w-full px-[10%]'>
                 {
                     Data.map((d, i) => {
                         return (
-                            <div key={i} className='flex flex-col items-center '>
+                            <div key={i} className='flex flex-col items-center gap-3'>
                                 <Image src={d.img} width={300} height={300} alt='' />
                                 <div className='flex flex-col items-center'>
                                     <p className='text-[20px] text-[#1E1E1E] font-bold '>{d.title}</p>
                                     <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                                 </div>
-                                <p className='w-[70%]'>{d.content}</p>
+                                <p className='lg:w-[70%] lg:text-start text-center'>{d.content}</p>
                             </div>
-
                         )
                     })
                 }
@@ -73,7 +72,7 @@ const Others = () => {
                         <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 gap-[6%] w-full px-[10%]'>
+                <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[6%] gap-8 w-full px-[10%]'>
                     {
                         Data2.map((d, i) => {
                             return (
@@ -83,7 +82,7 @@ const Others = () => {
                                         <p className='text-[20px] text-[#1E1E1E] font-bold '>{d.title}</p>
                                         <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                                     </div>
-                                    <p className='w-[70%]'>{d.content}</p>
+                                    <p className='lg:w-[70%] lg:text-start text-center'>{d.content}</p>
                                 </div>
 
                             )

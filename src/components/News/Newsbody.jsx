@@ -62,11 +62,11 @@ const Newsbody = () => {
       <div className="w-full justify-center flex">
         <p className="text-[36px] text-[#14242C] font-bold">News</p>
       </div>
-      <div className="lg:px-[10%] flex flex-col gap-14">
+      <div className="px-[10%] flex flex-col gap-14">
         <div className="grid lg:grid-cols-2 lg:gap-6 gap-4 grid-cols-1 ">
           <div className="flex flex-col leading-none">
             <p className="text-[#14242C]">What is happening now</p>
-            <p className="font-bold text-[40px] text-white">
+            <p className="font-bold lg:text-[40px] text-[30px] text-white">
               KINDLEGATE FOUNDATION IS IN COLLABORATION WITH...
             </p>
           </div>

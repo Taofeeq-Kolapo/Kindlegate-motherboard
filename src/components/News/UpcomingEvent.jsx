@@ -35,12 +35,12 @@ const UpcomingEvent = () => {
                     event.map((e, i) => {
                         return (
                             <div key={i} className='flex lg:flex-row flex-col items-center gap-[5%] w-full rouded-[20px] shadow-md p-8'>
-                                <div className=' w-1/2'>
+                                <div className='lg:w-1/2'>
                                     <Image src={e.img} className='rounded-2xl' height={300} width={400} alt='' />
                                 </div>
-                                <div className='flex flex-col gap-4  lg:w-1/2'>
+                                <div className='flex flex-col gap-4 lg:items-start items-center lg:w-1/2'>
                                     <p className='text-[32px] text-black font-bold'>{e.title}</p>
-                                    <p>{e.content}</p>
+                                    <p className='text-justify'>{e.content}</p>
                                     <div>
                                         <button className='text-[#2B2B2B] bg-[#E3B522] rounded-2xl font-bold text-[20px] px-6 py-1'>{e.join}</button>
                                     </div>
