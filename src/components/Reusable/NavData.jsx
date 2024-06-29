@@ -1,15 +1,15 @@
 export const involved = [
     {
         title:"As a Sponsor",
-        link:"/sponsor"
+        link:"/involved"
     },
     {
         title:"As a Mentor",
-        link:"/mentor"
+        link:"/involved"
     },
     {
         title:"As Volunteer",
-        link:"/volunteer"
+        link:"/involved"
     },
 ]
 export const tribes = [

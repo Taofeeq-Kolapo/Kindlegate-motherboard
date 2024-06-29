@@ -9,24 +9,24 @@ const Message = () => {
             <form action="" className=''>
                 <div className='grid grid-cols-2 gap-8'>
                     <span>
-                        <p className='text-[#1E1E1E] text-[24px] font-bold'>NAME</p>
+                        <p className='text-[#1E1E1E] lg:text-[24px] font-bold'>NAME</p>
                         <input type="text" className='w-full rounded-lg p-2 outline-none border-black border' name="" id="" />
-                        <p className='text-[#5F5F5F] text-[20px]'>First Name</p>
+                        <p className='text-[#5F5F5F] lg:text-[20px] text-[12px]'>First Name</p>
                     </span>
                     <span>
-                        <p className='text-[#1E1E1E] text-[24px] font-bold'>NAME</p>
+                        <p className='text-[#1E1E1E] lg:text-[24px] font-bold'>NAME</p>
                         <input type="text" className='w-full rounded-lg p-2 outline-none border-black border' name="" id="" />
-                        <p className='text-[#5F5F5F] text-[20px]'>Last Name</p>
+                        <p className='text-[#5F5F5F] lg:text-[20px] text-[12px]'>Last Name</p>
                     </span>
                     <span>
-                        <p className='text-[#1E1E1E] text-[24px] font-bold'>EMAIL ADDRESS</p>
+                        <p className='text-[#1E1E1E] lg:text-[24px] font-bold'>EMAIL ADDRESS</p>
                         <input type="email" name="" className='w-full rounded-lg p-2 outline-none border-black border' id="" />
-                        <p className='text-[#5F5F5F] text-[20px]'>example@example.com</p>
+                        <p className='text-[#5F5F5F] lg:text-[20px] text-[12px]'>example@example.com</p>
                     </span>
                     <span>
-                        <p className='text-[#1E1E1E] text-[24px] font-bold'>PHONE NUMBER</p>
+                        <p className='text-[#1E1E1E] lg:text-[24px] font-bold'>PHONE NUMBER</p>
                         <input type="text" name="" className='w-full rounded-lg p-2 outline-none border-black border' id="" />
-                        <p className='text-[#5F5F5F] text-[20px]'>Please enter a valid phone number</p>
+                        <p className='text-[#5F5F5F] lg:text-[20px] text-[12px]'>Please enter a valid phone number</p>
                     </span>
                 </div>
                 <span>

@@ -7,8 +7,8 @@ const ContactInfo = () => {
             <div className="w-full justify-center mb-6 flex">
                 <p className="text-[36px] text-white font-bold">CONTACT INFORMATION</p>
             </div>
-            <div className='w-full flex flex-row justify-between '>
-                <div className='flex flex-col items-start gap-4'>
+            <div className='w-full flex lg:flex-row flex-col lg:justify-between justify-center gap-6'>
+                <div className='flex flex-col lg:items-start items-center gap-4'>
                     <div className='flex flex-col items-center'>
                         <p className='text-[32px] text-white font-bold'>Address</p>
                         <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
@@ -28,7 +28,7 @@ const ContactInfo = () => {
                         <p className='font-bold text-[20px] '>info@kindlegatefoundation.org</p>
                     </div>
                 </div>
-                <div className='flex flex-col items-start gap-4'>
+                <div className='flex flex-col lg:items-start items-center gap-4'>
                     <div className='flex flex-col items-center'>
                         <p className='text-[32px] text-white font-bold'>Social Media</p>
                         <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
