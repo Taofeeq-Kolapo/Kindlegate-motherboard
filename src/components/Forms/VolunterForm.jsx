@@ -2,9 +2,9 @@ import React from 'react'
 
 const VolunterForm = () => {
   return (
-    <div className='p-[10%]'>
+    <div className='px-[10%] py-4'>
       <p className='text-[30px] font-bold text-black'>VOLUNTEER TO WORK WITH US</p>
-      <form className='bg-[#EEEEEE] p-4 px-[6%] rounded-md w-full'>
+      <form className='bg-[#EEEEEE] p-4 px-[6%] rounded-md w-full flex flex-col gap-6'>
         <span className='flex flex-col w-full'>
           <p className='text-[#1E1E1E] lg:text-[30px] text-[20px] font-bold'>NAME</p>
           <div className='flex lg:flex-row flex-col w-full justify-between items-center gap-5'>

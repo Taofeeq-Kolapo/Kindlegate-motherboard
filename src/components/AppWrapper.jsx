@@ -4,14 +4,21 @@ import React from 'react'
 import Nav from '../components/Reusable/Navigation'
 import Journey from './Index/Journey'
 import Footer from './Index/Footer'
+import { usePathname } from 'next/navigation'
 
-const AppWrapper = ({children}) => {
+const AppWrapper = ({ children }) => {
+    const pathname = usePathname()
     return (
         <div>
-            <Nav />
+            {
+                pathname === "/vform" ? ("")
+                    : pathname === "/mentorform" ? ("")
+                        :
+                        <Nav />
+            }
             {children}
-            <Journey/>
-            <Footer/>
+            <Journey />
+            <Footer />
         </div>
     )
 }
