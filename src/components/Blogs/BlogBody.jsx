@@ -157,15 +157,15 @@ const BlogBody = () => {
     };
 
     return (
-        <div className='flex flex-col lg:px-[10%] lg:my-[5%]'>
-            <div className='flex lg:flex-row flex-col items-center justify-between w-full '>
+        <div className='flex flex-col px-[10%] lg:my-[5%]'>
+            <div className='flex lg:flex-row my-5 flex-col items-center justify-between w-full '>
                 <div className='flex flex-col gap-5 lg:w-[60%]'>
                     {
                         blogData.map((b, i) => {
                             return (
                                 <div key={i} className='flex flex-col gap-2'>
                                     <div>
-                                        <p className='text-[40px] text-[#1E1E1E] font-bold leading-none'>{b.title}</p>
+                                        <p className='lg:text-[40px] text-[25px] lg:text-start text-center text-[#1E1E1E] font-bold leading-none'>{b.title}</p>
                                         <p>{b.date}</p>
                                     </div>
                                     <p>{b.paragraph}</p>
@@ -174,22 +174,22 @@ const BlogBody = () => {
                         })
                     }
                 </div>
-                <div className='w-[30%]'>
+                <div className='lg:w-[30%] w-full'>
                     <Image src={"/img/blogvid.svg"} className='w-full' width={300} height={300} alt='' />
                 </div>
             </div>
             <div className='flex flex-col items-start gap-3 mt-5'>
-                <div className='flex lg:flex-row flex-col gap-5'>
+                <div className='flex lg:flex-row flex-col-reverse gap-5'>
                     <Image src={data2[currentIndex].image} className='w-full' width={200} height={200} alt='' />
                     <div className='flex flex-col gap-6'>
                         <div>
-                            <p className='text-[40px] text-[#1E1E1E] font-bold leading-none'>{data2[currentIndex].title}</p>
+                            <p className='lg:text-[40px] text-[25px] lg:text-start text-center text-[#1E1E1E] font-bold leading-none'>{data2[currentIndex].title}</p>
                             <p>{data2[currentIndex].date}</p>
                         </div>
                         <p>{data2[currentIndex].paragraph}</p>
                     </div>
                 </div>
-                <div className="w-full justify-center flex flex-row gap-2 mt-7">
+                <div className="w-full justify-center flex flex-row gap-2 mb-4 mt-7">
                     <button
                         onClick={handlePrev}
                         className={`w-[32px] h-[32px] rounded-full bg-[#14BDE3] flex items-center justify-center ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
