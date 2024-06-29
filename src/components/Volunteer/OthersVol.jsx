@@ -44,7 +44,6 @@ const VolHero = () => {
                 </div>
                 <p className='w-[70%]'>{d.content}</p>
               </div>
-
             )
           })
         }
