@@ -12,7 +12,7 @@ const Journey = () => {
                     text={"GET INVOLVED"}
                 />
             </div>
-            <Image className='lg:block hidden' src={"/img/half2.svg"} width={200} height={200} alt='' />
+            <Image className='lg:block relative right-[-13%] hidden' src={"/img/half2.svg"} width={200} height={200} alt='' />
         </div>
     )
 }

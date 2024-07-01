@@ -5,11 +5,14 @@ import Image from 'next/image';
 import { TbChevronDown } from 'react-icons/tb'
 import { involved, tribes } from "./NavData";
 import Link from "next/link";
+import { RxHamburgerMenu } from "react-icons/rx";
+import MobNavigation from "./MobNav";
 
 const Nav = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [involve, setInvolve] = useState(false)
     const [tribe, setTribe] = useState(false)
+    const [mobileNav, setMobileNav] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -57,8 +60,15 @@ const Nav = () => {
         }
     }, [])
 
+    const Openmobilenav = () => {
+        setMobileNav(!mobileNav)
+    }
+    const handleClosenow = ()=>{
+        setMobileNav(false)
+    }
+
     return (
-        <div className={`flex fixed top-0 w-full flex-row justify-between z-[500] items-center py-4 transition-all lg:px-[7%] duration-300 ${isScrolled ? 'bg-[#1086A0] backdrop-blur-md' : 'bg-transparent'}`}>
+        <div className={`flex fixed top-0 w-full flex-row justify-between z-[500] items-center py-4 transition-all px-[7%] duration-300 ${isScrolled ? 'bg-[#1086A0] backdrop-blur-md' : 'bg-transparent'}`}>
             <Image width={50} height={50} src={"/img/klogo.svg"} alt="Logo" />
             <div className="lg:flex hidden lg:gap-x-14 text-[16px]  items-center text-white font-bold">
                 <div className="relative">
@@ -71,12 +81,12 @@ const Nav = () => {
                     <TbChevronDown className="text-2xl font-bold" />
                     {
                         tribe && (
-                            <div className="lg:flex flex-col tribe hidden gap-3 py-6 px-3 border-2 border-white rounded-lg  justify-center top-14 absolute">
+                            <div className="lg:flex flex-col tribe hidden gap-3  backdrop:blur-lg py-6 px-3 border-2 border-white rounded-lg  justify-center top-14 absolute">
                                 {
                                     tribes.map((d, i) => {
                                         return (
                                             <div key={i}>
-                                                <Link onClick={() => setTribe(false)} className="hover:bg-[#14BDE3] hover:rounded-lg hover:w-full w-full p-2" href={d.link}>{d.title}</Link>
+                                                <Link onClick={() => setTribe(!tribe)} className="hover:bg-[#14BDE3] hover:rounded-lg hover:w-full w-full p-2" href={d.link}>{d.title}</Link>
                                             </div>)
                                     })
                                 }
@@ -108,9 +118,19 @@ const Nav = () => {
                     }
                 </div>
             </div>
-            <div>
-                <button className="bg-[#00A859] font-bold border-white text-white px-3 py-1 rounded-2xl">Donate</button>
+            <Link href={"/donate"}>
+                <button className="bg-[#00A859] lg:block hidden font-bold border-white text-white px-3 py-1 rounded-2xl">Donate</button>
+            </Link>
+            <div onClick={Openmobilenav} className="bg-[#1086A0] lg:hidden flex w-[30px] h-[30px] justify-center items-center cursor-pointer">
+                <RxHamburgerMenu className="text-xl font-bold" />
             </div>
+
+            {
+                mobileNav && (
+                    <MobNavigation HandleCloseNav={handleClosenow} />
+                )
+            }
+
         </div>
     );
 }

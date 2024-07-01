@@ -25,7 +25,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <Image src={"/img/right.svg"} className='lg:block hidden' alt='' width={300} height={300}/>
+            <Image src={"/img/right.svg"} className='lg:block relative right-[-14%] hidden' alt='' width={300} height={300}/>
         </div>
     )
 }
