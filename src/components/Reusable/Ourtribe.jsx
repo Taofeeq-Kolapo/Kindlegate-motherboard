@@ -11,7 +11,6 @@ export default function OurTribebtn() {
                 <Button className="tab flex flex-row gap-2 items-center "
                 >
                     <p className="tab">OUR TRIBE</p>
-                    {/* <MdKeyboardDoubleArrowDown className="text-xl"/> */}
                 </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" className="bg-transparent border-2 border-black w-[240px] p-3 rounded-2xl justify-center flex items-center">

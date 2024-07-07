@@ -1,13 +1,17 @@
-import Team from '@/components/Mandate/Team'
-import Teams from '@/components/Tribes/Teams'
-import TribeHome from '@/components/Tribes/TribeHome'
+'use client'
+import dynamic from 'next/dynamic'
+// import Tribe from '@/components/Tribes/Tribe'
+const DynamicTribe = dynamic(() => import('@/components/Tribes/Tribe'), {
+  ssr: false,
+})
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <TribeHome/>
-        <Teams/>
+        {/* <TribeHome/>
+        <Teams/> */}
+        <DynamicTribe/>
     </div>
   )
 }
