@@ -11,21 +11,21 @@ const Footer = () => {
                     <p className='text-[#F1F1F1]'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, </p>
                 </div>
                 <div className='text-white text-[20px] flex flex-col lg:items-start items-center gap-2 w-full'>
-                    <Link href={""}>Reach Us</Link>
-                    <Link href={""}>About Us</Link>
-                    <Link href={""}>Contact Us</Link>
+                    <Link href={"/contact"}>Reach Us</Link>
+                    <Link href={"/aboutus"}>About Us</Link>
+                    <Link href={"/contact"}>Contact Us</Link>
                 </div>
                 <div className='text-white text-[20px] lg:items-start items-center flex flex-col gap-2 w-full'>
-                    <Link href={""}>Programs</Link>
+                    <Link href={"/programs"}>Programs</Link>
                     <Link href={""}>Arts</Link>
                     <Link href={""}>SDGs</Link>
                     <Link href={""}>Entrepreneurship</Link>
                 </div>
                 <div className='text-white text-[20px] lg:items-start items-center flex flex-col gap-2 w-full'>
                     <Link href={""}>Resources</Link>
-                    <Link href={""}>Blog</Link>
+                    <Link href={"/blog"}>Blog</Link>
                     <Link href={""}>Privacy Policy</Link>
-                    <Link href={""}>News</Link>
+                    <Link href={"/news"}>News</Link>
                 </div>
             </div>
             <hr />

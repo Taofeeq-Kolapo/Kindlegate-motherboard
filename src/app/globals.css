@@ -6,6 +6,9 @@
 *{
     font-family: "Calibri", sans-serif;
 }
+.tab{
+    font-family: "Calibri", sans-serif;
+}
 .backgound{
     background: url(../../public/img/Landing\ Image.svg);
     background-repeat: no-repeat;

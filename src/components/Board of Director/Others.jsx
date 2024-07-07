@@ -4,39 +4,39 @@ import React from 'react'
 const Others = () => {
     const Data = [
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         },
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         },
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         },
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         }
     ]
     const Data2 = [
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         },
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         },
         {
-            img: "/img/AvatarD.svg",
+            img: "/img/Avatard.svg",
             title: "LOREM IPSUM",
             content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.aecenas porttitor congue massa.Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.Fusce est.Vivamus a tellus.Pellentesque habitant "
         }

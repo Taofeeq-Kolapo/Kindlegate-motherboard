@@ -19,6 +19,7 @@ const Mission = () => {
                 <div className='flex w-full justify-end'>
                     <Btn1
                         text={"LEARN MORE"}
+                        link={""}
                     />
                 </div>
             </div>

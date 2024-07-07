@@ -10,6 +10,7 @@ const Journey = () => {
                 <p className='font-semibold text-black lg:w-[80%]'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                 <Btn1
                     text={"GET INVOLVED"}
+                    link={"/involved"}
                 />
             </div>
             <Image className='lg:block relative right-[-13%] hidden' src={"/img/half2.svg"} width={200} height={200} alt='' />

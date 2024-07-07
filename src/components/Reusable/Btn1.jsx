@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-export const Btn1 = ({ text }) => {
+export const Btn1 = ({ text, link }) => {
     return (
-        <div>
+        <Link href={link}>
             <button className="bg-[#14BDE3] text-black w-[361px] font-bold h-[60px] rounded-[56px]">{text}</button>
-        </div>
+        </Link>
     )
 }
 export const Btn2 = ({ text }) => {
