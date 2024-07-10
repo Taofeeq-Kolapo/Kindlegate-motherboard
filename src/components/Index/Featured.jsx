@@ -26,7 +26,7 @@ const Featured = () => {
     return (
         <div className='flex flex-col gap-8 px-[7%] mt-10 items-center justify-center mb-7'>
             <p className='text-[36px] font-bold text-[#14242C]'>Featured Programs</p>
-            <div className='grid lg:grid-cols-3 justify-between w-full md:grid-cols-2 grid-cols-1 gap-7'>
+            <div data-aos="zoom-in-down" className='grid lg:grid-cols-3 justify-between w-full md:grid-cols-2 grid-cols-1 gap-7'>
                 {
                     Data.map((d, i) => {
                         return (

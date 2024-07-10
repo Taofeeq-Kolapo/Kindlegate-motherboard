@@ -77,16 +77,16 @@ const Value = () => {
 
     return (
         <div className='flex flex-col bg-[#00586B] rounded-xl p-6 py-10 lg:gap-0 gap-4 '>
-            <p className='lg:w-[40%] lg:text-[40px] text-[30px] font-bold text-white'>OUR VALUE ADDING ROADMAP <span className='border-b-2 border-[#E3B522] '>(HESS MANDATE)</span></p>
+            <p data-aos="fade-down-left" className='lg:w-[34%] lg:text-[40px] text-[30px] font-bold text-white'>OUR VALUE ADDING ROADMAP <span className='border-b-2 border-[#E3B522] '>(HESS MANDATE)</span></p>
 
             <div className='flex lg:flex-row flex-col items-center relative'>
-                <div className='lg:w-[40%] w-full lg:absolute lg:left-[15%]'>
+                <div data-aos="flip-up" className='lg:w-[40%] w-full lg:absolute lg:left-[19%] z-[300]'>
                     <div className='flex flex-col gap-2 p-4 text-[22px] text-white bg-[#4B4B4B] rounded-lg lg:w-full '>
                         <p>{data[currentIndex].text}</p>
                         <p>{data[currentIndex].paragraph}</p>
                     </div>
                 </div>
-                <div className='flex lg:justify-end w-full lg:pr-[12%]'>
+                <div data-aos="flip-right" className='flex lg:justify-end w-full lg:pr-[12%]'>
                     <Image src={data[currentIndex].imgSrc} className='w-[532px] h-[572px]' width={250} height={250} alt='' />
                 </div>
             </div>
