@@ -16,7 +16,7 @@ const Mission = () => {
                     content={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. "}
                 />
 
-                <div className='flex w-full justify-end'>
+                <div className='flex w-full lg:justify-end justify-center'>
                     <Btn1
                         text={"LEARN MORE"}
                         link={""}

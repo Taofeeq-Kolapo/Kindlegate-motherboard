@@ -13,7 +13,7 @@ const Journey = () => {
                     link={"/involved"}
                 />
             </div>
-            <Image data-aos="zoom-in-left" className='lg:block relative right-[-13%] hidden' src={"/img/half2.svg"} width={200} height={200} alt='' />
+            <Image data-aos="zoom-in-left" className='lg:block relative right-[-12.3%] hidden' src={"/img/half2.svg"} width={200} height={200} alt='' />
         </div>
     )
 }
