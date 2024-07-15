@@ -37,7 +37,7 @@ const MentorBody = () => {
                 <p className='flex lg:text-center text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”</p>
 
                 <div className='w-full flex justify-center'>
-                    <Link href={"/apply"}>
+                    <Link href={"/mentorform"}>
                         <button className='px-10 py-3 rounded-[56px] bg-[#14BDE3] font-bold'>Apply</button>
                     </Link>
                 </div>

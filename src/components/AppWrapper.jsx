@@ -12,29 +12,38 @@ const AppWrapper = ({ children }) => {
     const pathname = usePathname()
     useEffect(() => {
         AOS.init({
-          easing: "ease-in-out",
-          duration: 800,
+            easing: "ease-in-out",
+            duration: 800,
         });
-      }, []);
+    }, []);
     return (
         <div>
             {
                 pathname === "/vform" ? ("")
                     : pathname === "/mentorform" ? ("")
-                        :
-                        <Nav />
+                        : pathname === "/partnerform" ? ("")
+                            : pathname === "/sponsorform" ? ("")
+                                : pathname === "/attestation" ? ("")
+                                    :
+                                    <Nav />
             }
             {children}
             {
-                pathname === "/vform"?("")
-                :<Journey/>
+                pathname === "/vform" ? ("")
+                    : pathname === "/mentorform" ? ("")
+                        : pathname === "/partnerform" ? ("")
+                            : pathname === "/sponsorform" ? ("")
+                                : pathname === "/attestation" ? ("")
+                                    : <Journey />
             }
             {
-                pathname === "/vform"?("")
-                :<Footer/>
+                pathname === "/vform" ? ("")
+                    : pathname === "/mentorform" ? ("")
+                        : pathname === "/partnerform" ? ("")
+                            : pathname === "/sponsorform" ? ("")
+                                : pathname === "/attestation" ? ("")
+                                    : <Footer />
             }
-            {/* <Footer /> */}
-            {/* <Journey /> */}
         </div>
     )
 }
