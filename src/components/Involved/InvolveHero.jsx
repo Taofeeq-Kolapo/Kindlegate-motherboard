@@ -2,7 +2,7 @@ import React from 'react'
 
 const InvolveHero = () => {
     return (
-        <div className="involved bg-no-repeat bg-cover h-screen justify-center flex items-center w-full relative">
+        <div className="bg-[url(/img/involve.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full relative">
             <div className='w-full h-screen absolute top-0 bg-black bg-opacity-55'></div>
             <div className="lg:pt-[5%] px-[7%] flex w-full ">
                 <div className="lg:w-[50%] flex flex-col z-[200] items-center gap-4">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewsHero = () => {
     return (
-        <div className="news bg-no-repeat bg-cover h-screen justify-center flex items-center w-full ">
+        <div className="bg-[url(/img/news.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
             <div className="pt-[5%] px-[7%] flex w-full justify-end ">
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold lg:text-[64px] text-[40px] text-white leading-none">NEWS AND EVENTS</p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const GovHero = () => {
   return (
-    <div className="governing bg-no-repeat bg-cover h-screen justify-center flex items-center w-full ">
+    <div className="bg-[url(/img/governing.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
       <div className="pt-[5%] px-[7%] flex w-full ">
         <div className="lg:w-[60%] flex flex-col items-center gap-4">
           <p className="font-bold text-[60px] text-white leading-none">GOVERNING COUNCIL</p>

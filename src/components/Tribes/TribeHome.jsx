@@ -2,7 +2,7 @@ import React from 'react'
 
 const TribeHome = () => {
   return (
-    <div className="backgound4 bg-no-repeat bg-cover h-screen justify-center flex items-center w-full ">
+    <div className="bg-[url(/img/tribe.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
             <div className="pt-[5%] px-[7%] flex w-full ">
                 <div className="w-[50%] flex flex-col items-center gap-4">
                     <p className="font-bold text-[64px] text-white leading-none">OUR TRIBE</p>

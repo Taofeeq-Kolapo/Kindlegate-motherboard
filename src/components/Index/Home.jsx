@@ -4,7 +4,7 @@ import { Btn1, Btn2 } from "@/components/Reusable/Btn1";
 
 export default function Home() {
   return (
-    <div className="backgound bg-no-repeat bg-cover h-screen justify-center flex items-center w-full ">
+    <div className="bg-[url(/img/LandingImage.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
       <div className="pt-[5%] px-[7%] flex w-full justify-end">
         <div data-aos="fade-left" className="lg:w-[45%] w-full flex flex-col gap-4 lg:items-start items-center">
           <p className="font-bold lg:text-[64px] md:text-[30px] text-[25px] text-white leading-none"><span className="flex tracking-wider">KINDLEGATE</span> FOUNDATION</p>

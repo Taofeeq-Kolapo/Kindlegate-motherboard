@@ -25,8 +25,16 @@ const AppWrapper = ({ children }) => {
                         <Nav />
             }
             {children}
-            <Journey />
-            <Footer />
+            {
+                pathname === "/vform"?("")
+                :<Journey/>
+            }
+            {
+                pathname === "/vform"?("")
+                :<Footer/>
+            }
+            {/* <Footer /> */}
+            {/* <Journey /> */}
         </div>
     )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 const VolHero = () => {
     return (
-        <div className="volunteer bg-no-repeat bg-cover h-screen justify-center flex items-center w-full relative">
+        <div className="bg-[url(/img/volunteer.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full relative">
             <div className="w-full h-screen bg-[black] absolute top-0 onset-0 bg-opacity-50"></div>
             <div className="pt-[5%] px-[7%] flex w-full ">
                 <div className="lg:w-[60%] flex flex-col items-center z-[300] gap-4">
@@ -13,7 +13,7 @@ const VolHero = () => {
                         </p>
                     </div>
                     <button className='flex bg-[#14BDE3] px-[4%] rounded-2xl py-3'>
-                        <Link className=' text-[25px] ' href={"/apply"}>Apply</Link>
+                        <Link className=' text-[25px] ' href={"/vform"}>Apply</Link>
                     </button>
                 </div>
             </div>
