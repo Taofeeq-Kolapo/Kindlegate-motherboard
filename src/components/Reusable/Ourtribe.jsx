@@ -16,7 +16,7 @@ export default function OurTribebtn() {
             <DropdownMenu aria-label="Static Actions" className="bg-transparent border-2 border-black w-[240px] p-3 rounded-2xl justify-center flex items-center">
                 <DropdownItem className="text-xl" key="new">
                     {
-                        <div className="lg:flex flex-col hidden gap-3 w-full">
+                        <div className="lg:flex flex-col hidden gap-3 w-full text-black">
                             {
                                     tribes.map((d, i) => {
                                         return (

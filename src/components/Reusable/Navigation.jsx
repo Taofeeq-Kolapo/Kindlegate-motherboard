@@ -39,8 +39,8 @@ const Nav = () => {
 
     return (
         <div className={`flex fixed top-0 w-full flex-row justify-between z-[500] items-center py-4 transition-all px-[7%] duration-300 ${isScrolled ? 'bg-[#1086A0] backdrop-blur-md' : 'bg-transparent'}`}>
-            <Image width={90} height={90} src={"/img/klogo.svg"} alt="Logo" />
-            <div className="lg:flex hidden lg:gap-x-20 text-[16px]  items-center text-white font-bold">
+            <Image width={80} height={80} src={"/img/klogo.svg"} alt="Logo" />
+            <div className="lg:flex hidden lg:gap-x-20 text-[14px]  items-center text-white font-bold">
                 <div className="relative">
                     <Link href={"/"}>HOME</Link>
                 </div>
