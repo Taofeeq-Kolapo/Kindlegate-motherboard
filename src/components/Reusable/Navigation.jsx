@@ -54,7 +54,7 @@ const Nav = () => {
                 {/* <div></div> */}
                 <Button2/>
             </div>
-            <Link href={"/donate"}>
+            <Link target="_blank" href={"/http://Paystack.com/pay/kindlegatefoundation"}>
                 <button className="bg-[#00A859] lg:block hidden font-bold border-[2px] border-white text-white px-3 py-1 rounded-2xl">Donate</button>
             </Link>
             <div onClick={Openmobilenav} className="bg-[#1086A0] lg:hidden flex w-[30px] h-[30px] justify-center items-center cursor-pointer">
