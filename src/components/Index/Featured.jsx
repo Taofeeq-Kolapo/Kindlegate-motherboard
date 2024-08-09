@@ -26,12 +26,14 @@ const Featured = () => {
     return (
         <div className='flex flex-col gap-8 px-[7%] mt-10 items-center justify-center mb-7'>
             <p className='text-[36px] font-bold text-[#14242C]'>Featured Programs</p>
-            <div data-aos="zoom-in-down" className='grid lg:grid-cols-3 justify-between w-full md:grid-cols-2 grid-cols-1 gap-7'>
+            <div
+                // data-aos="zoom-in-down"
+                className='grid lg:grid-cols-3 justify-between w-full md:grid-cols-2 grid-cols-1 gap-7'>
                 {
                     Data.map((d, i) => {
                         return (
                             <div key={i} className='flex lg:flex-col flex-row gap-3 items-center'>
-                                <Image src={d.img} width={300} height={300} className='lg:w-full md:w-[50%]' alt='' />
+                                <Image src={d.img} width={300} height={300} className='lg:w-full md:w-[50%] w-[40%]' alt='' />
                                 <div>
                                     <div className='flex w-full lg:justify-center'>
                                         <p className='text-[#0A2640] text-[24px] font-bold'>{d.title}</p>
