@@ -21,7 +21,7 @@ export default function OurTribebtn() {
                                     tribes.map((d, i) => {
                                         return (
                                             <div key={i}>
-                                                <Link className="hover:bg-[#14BDE3] hover:rounded-lg hover:w-full w-full p-2" href={d.link}>{d.title}</Link>
+                                                <Link href={d.link} className="hover:bg-[#14BDE3] hover:rounded-lg hover:w-full w-full p-2">{d.title}</Link>
                                             </div>)
                                     })
                                 }

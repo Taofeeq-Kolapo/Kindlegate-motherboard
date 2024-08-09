@@ -14,6 +14,10 @@ export const involved = [
 ]
 export const tribes = [
     {
+        title:"TRIBE",
+        link:"/tribe"
+    },
+    {
         title:"BOARD OF DIRECTORS",
         link:"/board"
     },

@@ -3,15 +3,16 @@ import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@
 import { involved } from "./NavData";
 import Link from "next/link";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { FaCaretDown } from "react-icons/fa6";
 
 export default function Button2() {
     return (
         <Dropdown className="tab">
             <DropdownTrigger>
-                <Button className="tab flex flex-row gap-2 items-center "
+                <Button className="tab flex flex-row gap-1 items-center "
                 >
                     <p className="tab">GET INVOLVED</p>
-                    <MdKeyboardDoubleArrowDown className="text-xl"/>
+                    <FaCaretDown className="text-xl"/>
 
                 </Button>
             </DropdownTrigger>

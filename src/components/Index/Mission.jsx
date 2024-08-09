@@ -4,8 +4,8 @@ import { Btn1, MissionProps } from '../Reusable/Btn1'
 
 const Mission = () => {
     return (
-        <div className='bg-white flex items-center justify-between w-full py-[2%]'>
-            <Image data-aos="fade-right" className='lg:block hidden' src={"/img/half.svg"} width={250} height={250} alt='' />
+        <div className='bg-white flex lg:items-center justify-between w-full py-[2%] relative'>
+            <Image data-aos="fade-right" className='lg:block  md:w-[182px] md:h-[202px] sm:w-[107px] sm:h-[107px] top-1' src={"/img/half.svg"} width={250} height={250} alt='' />
             <div data-aos="fade-left" className='lg:w-[60%] lg:px-[6%] gap-5 flex flex-col px-[4%]'>
                 <MissionProps
                     title={"OUR MANDATE"}

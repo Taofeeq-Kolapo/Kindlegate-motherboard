@@ -5,27 +5,27 @@ import React from "react";
 export const Btn1 = ({ text, link }) => {
     return (
         <Link href={link}>
-            <button className="bg-[#14BDE3] text-black w-[361px] font-bold h-[60px] rounded-[56px]">{text}</button>
+            <button className="bg-[#14BDE3] text-black lg:w-[361px] w-[150px] font-bold h-[60px] rounded-[56px]">{text}</button>
         </Link>
     )
 }
 export const Btn2 = ({ text }) => {
     return (
         <div>
-            <button className="bg-[#E3B522] text-black w-[361px] font-bold h-[60px] rounded-[56px]">{text}</button>
+            <button className="bg-[#E3B522] text-black lg:w-[361px] w-[252px] font-bold h-[60px] rounded-[56px]">{text}</button>
         </div>
     )
 }
 export const MissionProps = ({ title, content }) => {
     return (
         <div >
-            <div className='flex w-full lg:justify-end justify-center'>
+            <div className='flex w-full justify-end '>
                 <span className='flex flex-col gap-1 items-center'>
                     <p className='text-[32px] font-bold'>{title}</p>
                     <p className='bg-[#E3B522] h-1 w-[90%] rounded-3xl'></p>
                 </span>
             </div>
-            <p className='flex text-justify'>{content}</p>
+            <p className='flex text-justify lg:w-full md:w-[438px] sm:w-[321px]'>{content}</p>
         </div>
     )
 }
@@ -40,7 +40,7 @@ export const Whatwedo = ({ img, role, text1, text2, text3 }) => {
                     <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 lg:w-[60%] mt-3 text-justify w-full ">
+            <div className="flex flex-col gap-4 lg:w-[60%] mt-3 lg:text-justify text-center w-full ">
                 <p>{text1}</p>
                 <p>{text2}</p>
                 <p>{text3}</p>
@@ -65,6 +65,7 @@ export const TeamProps = ({ img, role, text1, text2, text3, btntext }) => {
                     <p>{text3}</p>
                 </div>
                 <Btn1
+                    link={""}
                     text={btntext}
                 />
             </div>

@@ -30,10 +30,10 @@ const Featured = () => {
                 {
                     Data.map((d, i) => {
                         return (
-                            <div key={i} className='flex flex-col gap-3 items-center'>
-                                <Image src={d.img} width={300} height={300} className='w-full' />
+                            <div key={i} className='flex lg:flex-col flex-row gap-3 items-center'>
+                                <Image src={d.img} width={300} height={300} className='lg:w-full md:w-[50%]' alt='' />
                                 <div>
-                                    <div className='flex w-full justify-center'>
+                                    <div className='flex w-full lg:justify-center'>
                                         <p className='text-[#0A2640] text-[24px] font-bold'>{d.title}</p>
                                     </div>
                                     {/* <p>{d.content}</p> */}
