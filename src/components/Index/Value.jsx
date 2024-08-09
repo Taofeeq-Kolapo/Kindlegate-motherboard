@@ -39,7 +39,7 @@ const Value = () => {
                 <button
                     onClick={handlePrev}
                     disabled={currentIndex === 0}
-                    className={`absolute left-0 top-[50%] transform -translate-y-[50%] w-[40px] h-[40px] rounded-full bg-[#14BDE3] flex items-center justify-center z-[5000] ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    className={`absolute left-0 top-[50%] transform -translate-y-[50%] w-[40px] h-[40px] rounded-full bg-[#14BDE3] flex items-center justify-center z-[400] ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
                     <TbChevronLeft />
                 </button>
@@ -57,7 +57,7 @@ const Value = () => {
                 <button
                     onClick={handleNext}
                     disabled={currentIndex === data.length - 1}
-                    className={`absolute right-0 top-[50%] transform -translate-y-[50%] w-[40px] h-[40px] rounded-full bg-[#14BDE3] flex items-center justify-center z-[5000] ${currentIndex === data.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    className={`absolute right-0 top-[50%] transform -translate-y-[50%] w-[40px] h-[40px] rounded-full bg-[#14BDE3] flex items-center justify-center z-[400] ${currentIndex === data.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
                     <TbChevronRight />
                 </button>
