@@ -43,17 +43,19 @@ const Team = () => {
     ]
     return (
         <div className='flex flex-col px-[10%] lg:my-[5%] lg:gap-10 '>
-            <div className='w-full flex justify-center'>
-                <p className='text-[36px] text-[#1E1E1E] font-bold'>Our Team</p>
-            </div>
-            <div className='flex flex-col gap-3 mb-6'>
-                <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
-                <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
-                <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
-                <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
+            <div className='flex lg:flex-col flex-row lg:items-start  w-full'>
+                <div className='flex lg:justify-center lg:w-full w-[30%]'>
+                    <p className='text-[#1E1E1E] lg:text-[36px] font-bold '>Our Team</p>
+                </div>
+                <div className='lg:text-[20px] md:text-[16px] text-[14px] lg:w-full w-[70%] '>
+                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
+                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
+                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
+                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
+                </div>
             </div>
 
-            <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-[10%]'>
+            <div className='w-full grid lg:grid-cols-3 mt-7 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-[10%]'>
                 {
                     trustee.map((d, i) => {
                         return (
