@@ -1,106 +1,4 @@
-// import Image from 'next/image'
-// import React from 'react'
 
-// const BlogBody = () => {
-//     const blogData = [
-//         {
-//             title: "How systemic justice builds the power of communities to use the law for good",
-//             date: "May 23, 2023",
-//             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
-//         },
-//         {
-//             title: "How systemic justice builds the power of communities to use the law for good",
-//             date: "May 23, 2023",
-//             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
-//         },
-//         {
-//             title: "How systemic justice builds the power of communities to use the law for good",
-//             date: "May 23, 2023",
-//             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
-//         },
-//     ]
-//     const data2 = [
-//         {
-//             image: "/img/blogvid.svg",
-//             title: "How systemic justice builds the power of communities to use the law for good",
-//             date: "May 23, 2023",
-//             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
-//         },
-//         {
-//             image: "/img/blogvid.svg",
-//             title: "How systemic justice builds the power of communities to use the law for good 2",
-//             date: "May 23, 2023",
-//             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
-//         },
-//         {
-//             image: "/img/blogvid.svg",
-//             title: "How systemic justice builds the power of communities to use the law for good 3",
-//             date: "May 23, 2023",
-//             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
-//         },
-
-//     ]
-//     return (
-//         <div className='flex flex-col lg:px-[10%] lg:my-[5%]'>
-//             <div className='flex lg:flex-row flex-col items-center justify-between w-full '>
-//                 <div className='flex flex-col gap-5 lg:w-[60%]'>
-//                     {
-//                         blogData.map((b, i) => {
-//                             return (
-//                                 <div key={i} className='flex flex-col gap-2'>
-//                                     <div>
-//                                         <p className='text-[40px] text-[#1E1E1E] font-bold leading-none'>{b.title}</p>
-//                                         <p>{b.date}</p>
-//                                     </div>
-//                                     <p>{b.paragraph}</p>
-//                                 </div>
-//                             )
-//                         })
-//                     }
-//                 </div>
-//                 <div className='w-[30%]'>
-//                     <Image src={"/img/blogvid.svg"} className='w-full' width={300} height={300} alt='' />
-//                 </div>
-//             </div>
-//             <div className='flex lg:flex-row flex-col items-start gap-3 '>
-//                 {
-//                     data2.map((d, i) => {
-//                         return (
-//                             <div key={i}>
-//                                 <Image src={d.image} className='w-full' width={300} height={300} alt='' />
-//                                 <div key={i} className='flex flex-col gap-2'>
-//                                     <div>
-//                                         <p className='text-[40px] text-[#1E1E1E] font-bold leading-none'>{d.title}</p>
-//                                         <p>{d.date}</p>
-//                                     </div>
-//                                     <p>{d.paragraph}</p>
-//                                 </div>
-//                             </div>
-//                         )
-//                     })
-//                 }
-//                 <div className="w-full justify-center flex flex-row gap-2 mt-7">
-//           <button
-//             onClick={handlePrev}
-//             disabled={currentIndex === 0}
-//             className={`w-[32px] h-[32px] rounded-full bg-[#14BDE3] flex items-center justify-center ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
-//           >
-//             <TbChevronLeft />
-//           </button>
-//           <button
-//             onClick={handleNext}
-//             disabled={currentIndex + itemsPerPage >= newsData.length}
-//             className={`w-[32px] h-[32px] rounded-full bg-[#14BDE3] flex items-center justify-center ${currentIndex + itemsPerPage >= newsData.length ? 'opacity-50 cursor-not-allowed' : ''}`}
-//           >
-//             <TbChevronRight />
-//           </button>
-//         </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default BlogBody
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -111,16 +9,19 @@ const BlogBody = () => {
         {
             title: "How systemic justice builds the power of communities to use the law for good",
             date: "May 23, 2023",
+            image: "/img/blogvid.svg",
             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
         },
         {
             title: "How systemic justice builds the power of communities to use the law for good",
             date: "May 23, 2023",
+            image: "/img/blogvid.svg",
             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
         },
         {
             title: "How systemic justice builds the power of communities to use the law for good",
             date: "May 23, 2023",
+            image: "/img/blogvid.svg",
             paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”"
         },
     ];

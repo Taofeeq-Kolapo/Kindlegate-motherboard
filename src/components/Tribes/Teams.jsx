@@ -3,7 +3,7 @@ import { TeamProps } from '../Reusable/Btn1'
 
 const Teams = () => {
   return (
-    <div className='lg:px-[10%] py-[2%] flex flex-col gap-6'>
+    <div className='px-[10%] py-[2%] flex flex-col gap-6'>
         <div className='w-full justify-center flex'>
             <p className='text-[36px] text-[#14242C] font-bold'>Our Team</p>
         </div>

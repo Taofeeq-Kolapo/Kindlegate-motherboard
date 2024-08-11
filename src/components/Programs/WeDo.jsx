@@ -5,7 +5,7 @@ const WeDo = () => {
   return (
     <div className='lg:px-[10%] py-[2%] flex flex-col gap-6'>
         <div className='w-full justify-center flex'>
-            <p className='text-[36px] text-[#14242C] font-bold'>What we do</p>
+            <p className='lg:text-[36px] md:text-[24px] text-[20px] text-[#14242C] font-bold'>What we do</p>
         </div>
         <div className='flex flex-col gap-10 mb-[3%]'>
             <Whatwedo

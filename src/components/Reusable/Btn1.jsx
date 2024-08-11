@@ -36,11 +36,11 @@ export const Whatwedo = ({ img, role, text1, text2, text3 }) => {
             <div className="flex flex-col gap-2 items-center lg:w-[40%]">
                 <Image src={img} alt="" className="w-full" width={300} height={300} />
                 <div className='flex flex-col gap-1 items-center'>
-                    <p className='text-[20px] text-[#1E1E1E] font-bold '>{role}</p>
+                    <p className='lg:text-[20px] text-[16px] text-[#1E1E1E] font-bold '>{role}</p>
                     <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                 </div>
             </div>
-            <div className="flex flex-col gap-4 lg:w-[60%] mt-3 lg:text-justify text-center w-full ">
+            <div className="flex flex-col gap-4 lg:w-[60%] mt-3 lg:text-justify text-center w-full lg:text-[20px] md:text-[16px] text-[10px] ">
                 <p>{text1}</p>
                 <p>{text2}</p>
                 <p>{text3}</p>
@@ -50,7 +50,7 @@ export const Whatwedo = ({ img, role, text1, text2, text3 }) => {
 }
 export const TeamProps = ({ img, role, text1, text2, text3, btntext }) => {
     return (
-        <div className="flex lg:flex-row flex-col w-full justify-between items-start">
+        <div className="flex lg:flex-row flex-col w-full justify-between lg:items-start">
             <div className="flex flex-col gap-2 items-center lg:w-[60%]">
                 <Image src={img} alt="" className="" width={300} height={300} />
                 <div className='flex flex-col items-center'>

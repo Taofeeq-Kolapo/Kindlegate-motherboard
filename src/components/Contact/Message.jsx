@@ -7,7 +7,7 @@ const Message = () => {
                 <p className="text-[36px] text-[#1E1E1E] font-bold">SEND A MESSAGE</p>
             </div>
             <form action="" className=''>
-                <div className='grid grid-cols-2 gap-8'>
+                <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>
                     <span>
                         <p className='text-[#1E1E1E] lg:text-[24px] font-bold'>NAME</p>
                         <input type="text" className='w-full rounded-lg p-2 outline-none border-black border' name="" id="" />
