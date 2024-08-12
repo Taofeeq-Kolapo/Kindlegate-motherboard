@@ -22,12 +22,12 @@ export const tribes = [
         link:"/board"
     },
     {
-        title:"EXECUTIVE ADVISORY",
-        link:"/executive"
+        title:"BOARD OF TRUSTEE",
+        link:"/trustee"
     },
     {
-        title:"DEVELOPMENT TEAM",
-        link:"/development"
+        title:"GOVERNING COUNCIL",
+        link:"/governing"
     },
 ]
 export const program = [

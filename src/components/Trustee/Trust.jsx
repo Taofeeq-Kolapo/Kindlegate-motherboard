@@ -32,11 +32,11 @@ const Trust = () => {
                     <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                 </div>
             </div>
-            <div className='grid grid-cols-2 gap-[6%] w-full px-[10%] mb-[2%]'>
+            <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[6%] gap-4 w-full px-[10%] lg:mb-[2%]'>
                 {
                     Data.map((d, i) => {
                         return (
-                            <div key={i} className='flex flex-col items-center '>
+                            <div key={i} className='flex flex-col items-center'>
                                 <Image src={d.img} width={300} height={300} alt='' />
                                 <div className='flex flex-col items-center'>
                                     <p className='text-[20px] text-[#1E1E1E] font-bold '>{d.title}</p>
