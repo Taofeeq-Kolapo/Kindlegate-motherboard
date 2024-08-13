@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 const Mentorform = () => {
@@ -62,7 +63,7 @@ const Mentorform = () => {
 
   return (
     <div className='px-[10%] py-6 flex flex-col gap-3'>
-      <p className='text-[30px] font-bold text-black'>VOLUNTEER TO WORK WITH US</p>
+      <p className='lg:text-[30px] text-[22px] font-bold text-black'>VOLUNTEER TO WORK WITH US</p>
       <form className='bg-[#EEEEEE] p-4 px-[6%] rounded-md w-full flex flex-col gap-6'>
         <span className='flex flex-col w-full'>
           <p className='text-[#1E1E1E] lg:text-[30px] text-[20px] font-bold'>NAME</p>
@@ -145,8 +146,8 @@ const Mentorform = () => {
         </div>
         <div>
           <p className='text-[#1E1E1E] lg:text-[30px] text-[20px] font-bold'>AWARD/RECOGNITION</p>
-          <div className='w-full flex justify-between items-center'>
-            <span className='flex flex-row items-center gap-1'>
+          <div className='w-full flex lg:flex-row flex-col justify-between lg:items-center'>
+            <span className='flex lg:flex-row items-center gap-1'>
               <input type="checkbox" name="" value={yes} onChange={(e) => setYes(e.target.value)} className='w-[20px] h-[20px]' id="" />
               <p className='font-bold text-[24px]'>YES</p>
             </span>
@@ -162,44 +163,46 @@ const Mentorform = () => {
             </span>
           </div>
         </div>
-        <div>
+        <div >
           <p className='text-[#1E1E1E] lg:text-[30px] text-[20px] font-bold'>AWARD/RECOGNITION</p>
-          <span className='flex flex-row items-center gap-1'>
+          <span className='flex lg:flex-row flex-col lg:items-center gap-1'>
             <p>Upload CV:</p>
-            <input type="file" value={cv} onChange={(e) => setCv(e.target.files[0])} name="" id="" />
+            <input type="file" onChange={(e) => setCv(e.target.files[0])} name="" id="" />
           </span>
-          <span className='flex flex-row items-center gap-1'>
+          <span className='flex lg:flex-row flex-col lg:items-center gap-1'>
             <p>Upload Passport Photo:</p>
-            <input type="file" value={passport} onChange={(e) => setPassport(e.target.files[0])} name="" id="" />
+            <input type="file"  onChange={(e) => setPassport(e.target.files[0])} name="" id="" />
           </span>
         </div>
         <div>
           <p className='text-[#1E1E1E] lg:text-[30px] text-[20px] font-bold'>REFREE</p>
           <div className='flex flex-col gap-2'>
-            <span className='flex flex-row items-center gap-1'>
+            <span className='flex lg:flex-row flex-col lg:items-center gap-1'>
               <p>REFREE NAME:</p>
               <input required type="text" value={refName} onChange={(e) => setrefName(e.target.value)} className='w-[90%] outline-none border-b-2 border-black bg-transparent' name="" id="" />
             </span>
-            <span className='flex flex-row items-center gap-1'>
+            <span className='flex lg:flex-row flex-col  lg:items-center gap-1'>
               <p>REFREE JOB TITLE:</p>
               <input required type="text" value={reftitle} onChange={(e) =>setreftitle(e.target.value)} className='w-[88%] outline-none border-b-2 border-black bg-transparent' name="" id="" />
             </span>
-            <span className='flex flex-row items-center gap-1'>
+            <span className='flex lg:flex-row flex-col  lg:items-center gap-1'>
               <p>REFREE COMPANY NAME:</p>
               <input required type="text" value={refcompanyname} onChange={(e) => setrefcompanyname(e.target.value)} className='w-[84%] outline-none border-b-2 border-black bg-transparent' name="" id="" />
             </span>
-            <span className='flex flex-row items-center gap-1'>
+            <span className='flex lg:flex-row flex-col  lg:items-center gap-1'>
               <p>REFREE OFFICIAL EMAIL :</p>
               <input required type="text" value={refemail} onChange={(e) => setrefemail(e.target.value)} className='w-[84%] outline-none border-b-2 border-black bg-transparent' name="" id="" />
             </span>
-            <span className='flex flex-row items-center gap-1'>
+            <span className='flex lg:flex-row flex-col  lg:items-center gap-1'>
               <p>REFREE  ADDRESS:</p>
               <input required type="text" value={refaddress} onChange={(e) => setrefaddress(e.target.value)} className='w-[88%] outline-none border-b-2 border-black bg-transparent' name="" id="" />
             </span>
           </div>
         </div>
         <div className='w-full flex justify-center'>
-          <button onClick={HandleSubmitform} className='bg-[#0A2640] rounded-[56px] px-10 py-3 text-white font-bold'>Proceed to Attest</button>
+          <Link href={"/attestation"} 
+          onClick={HandleSubmitform} 
+          className='bg-[#0A2640] rounded-[56px] px-10 py-3 text-white font-bold'>Proceed to Attest</Link>
         </div>
       </form>
     </div>

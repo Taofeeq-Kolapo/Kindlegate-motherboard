@@ -4,10 +4,10 @@ const ContactHero = () => {
     return (
         <div className="bg-[url(/img/bg-3.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
             <div className="lg:pt-[5%] lg:px-[7%] flex w-full ">
-                <div className="lg:w-[50%] flex flex-col items-center gap-4">
-                    <p className="font-bold text-[64px] text-white leading-none">REACH US</p>
+                <div className="lg:w-[50%] flex flex-col w-full items-center gap-4">
+                    <p className="font-bold lg:text-[64px] md:text-[48px] text-[30px] text-white leading-none">REACH US</p>
                     <div className="flex flex-col items-center ">
-                        <p className="text-[20px] text-white text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+                        <p className="lg:text-[20px] lg:w-full w-[313px] text-white text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                     </div>
                 </div>
             </div>

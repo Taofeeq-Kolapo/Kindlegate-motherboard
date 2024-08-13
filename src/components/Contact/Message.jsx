@@ -4,7 +4,7 @@ const Message = () => {
     return (
         <div className='px-[10%] bg-white py-[5%] flex flex-col gap-6'>
             <div className="w-full justify-center flex">
-                <p className="text-[36px] text-[#1E1E1E] font-bold">SEND A MESSAGE</p>
+                <p className="lg:text-[36px] text-[20px] text-[#1E1E1E] font-bold">SEND A MESSAGE</p>
             </div>
             <form action="" className=''>
                 <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>

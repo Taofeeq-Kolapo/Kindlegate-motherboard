@@ -5,10 +5,10 @@ const Attestation = () => {
     const [applicant, setApplicant] = useState("")
     return (
         <div className='px-[10%] py-6 flex flex-col gap-3'>
-            <p className='text-[30px] font-bold text-black'>KINDLEGATE  FONDATION APPLICANT ATTESTATION</p>
+            <p className='lg:text-[30px] font-bold text-black'>KINDLEGATE  FONDATION APPLICANT ATTESTATION</p>
             <form className='bg-[#EEEEEE] p-4 px-[10%] rounded-md w-full flex flex-col gap-6 text-[24px]'>
-                <p className='text-[24px] font-bold'>On behalf of the organization mentioned above</p>
-                <div className='flex flex-col gap-5 text-justify'>
+                <p className='lg:text-[24px] text-[16px] font-bold text-center'>On behalf of the organization mentioned above</p>
+                <div className='flex flex-col gap-5 text-justify lg:text-[16px] text-[12px]'>
                     <p>I agree with the Terms and Conditions of Membership.</p>
                     <p>
                         I hereby apply for membership of the Kindlegate Foundation. I understand that the membership will be based on the information provided in my Application form at the date of submission and that I will be asked to provide additional additional information to support my education, professional certification (if any), and experience.
@@ -22,7 +22,7 @@ const Attestation = () => {
                     <p>Having read through this, I hereby accept the obligation to observe the regulations of the Organization as set out in it’s Memorandum and Article of Association, this Membership form and any determination of the Governing Council.</p>
                 </div>
                 <div>
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-2 lg:text-[16px] text-[12px]'>
                         <span className='flex flex-row items-center gap-1'>
                             <p>Applicant Signature:</p>
                             <input required type="text"
@@ -70,7 +70,7 @@ const Attestation = () => {
                 <div className='w-full flex justify-center'>
                     <button
                         // onClick={HandleSubmitform}
-                        className='bg-[#0A2640] rounded-[56px] px-10 py-3 text-white font-bold'>Proceed to Attest</button>
+                        className='bg-[#0A2640] rounded-[56px] lg:px-10 px-5 py-3 lg:text-[20px] text-[12px] text-white font-bold'>Submit</button>
                 </div>
             </form>
 

@@ -64,7 +64,7 @@ const BlogBody = () => {
                     {
                         blogData.map((b, i) => {
                             return (
-                                <div key={i} className='flex flex-col gap-2'>
+                                <div key={i} className='flex flex-col lg:gap-2 gap-5'>
                                     <div>
                                         <p className='lg:text-[40px] text-[25px] lg:text-start text-center text-[#1E1E1E] font-bold leading-none'>{b.title}</p>
                                         <p>{b.date}</p>
