@@ -9,6 +9,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import MobNavigation from "./MobNav";
 import Button2 from "./Buttn";
 import OurTribebtn from "./Ourtribe";
+import Language from "./Language";
 
 
 const Nav = () => {
@@ -53,6 +54,7 @@ const Nav = () => {
                 <Link href={"/contact"}>CONTACT US</Link>
                 {/* <div></div> */}
                 <Button2 />
+                <Language/>
 
                 <TbSearch className="text-xl"/>
                 <Link target="_blank" href={"http://Paystack.com/pay/kindlegatefoundation"}>
