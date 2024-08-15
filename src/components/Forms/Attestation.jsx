@@ -5,7 +5,7 @@ const Attestation = () => {
     const [applicant, setApplicant] = useState("")
     return (
         <div className='px-[10%] py-6 flex flex-col gap-3'>
-            <p className='lg:text-[30px] font-bold text-black'>KINDLEGATE  FONDATION APPLICANT ATTESTATION</p>
+            <p className='lg:text-[30px] font-bold text-black'>KINDLEGATE FONDATION APPLICANT ATTESTATION</p>
             <form className='bg-[#EEEEEE] p-4 px-[10%] rounded-md w-full flex flex-col gap-6 text-[24px]'>
                 <p className='lg:text-[24px] text-[16px] font-bold text-center'>On behalf of the organization mentioned above</p>
                 <div className='flex flex-col gap-5 text-justify lg:text-[16px] text-[12px]'>

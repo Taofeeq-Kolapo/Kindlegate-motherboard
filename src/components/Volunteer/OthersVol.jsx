@@ -32,7 +32,7 @@ const VolHero = () => {
           <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
         </div>
       </div>
-      <div className='grid grid-cols-2 gap-[6%] w-full px-[10%] py-[2%] mb-[3%]'>
+      <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-[6%] gap-3 w-full px-[10%] py-[2%] mb-[3%]'>
         {
           Data.map((d, i) => {
             return (
