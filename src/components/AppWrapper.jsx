@@ -7,6 +7,8 @@ import Footer from './Index/Footer'
 import { usePathname } from 'next/navigation'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import i18n from '../../src/components/Reusable/i18n'
+import { useTranslation } from 'react-i18next'
 
 const AppWrapper = ({ children }) => {
     const pathname = usePathname()
@@ -16,8 +18,14 @@ const AppWrapper = ({ children }) => {
             duration: 800,
         });
     }, []);
+
+    const {t} = useTranslation()
+
+
+
     return (
         <div>
+            {/* <LanguageProvider> */}
             {
                 pathname === "/vform" ? ("")
                     : pathname === "/mentorform" ? ("")
@@ -44,6 +52,7 @@ const AppWrapper = ({ children }) => {
                                 : pathname === "/attestation" ? ("")
                                     : <Footer />
             }
+            {/* </LanguageProvider> */}
         </div>
     )
 }

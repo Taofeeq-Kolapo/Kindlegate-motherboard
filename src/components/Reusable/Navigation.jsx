@@ -10,9 +10,10 @@ import MobNavigation from "./MobNav";
 import Button2 from "./Buttn";
 import OurTribebtn from "./Ourtribe";
 import Language from "./Language";
+import LanguageSelector from "./LanguageSelector";
 
 
-const Nav = () => {
+const Nav = ({handleChangeLanguage}) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileNav, setMobileNav] = useState(false)
 
@@ -38,6 +39,7 @@ const Nav = () => {
         setMobileNav(false)
     }
 
+
     return (
         <div className={`flex fixed top-0 w-full flex-row justify-between z-[500] items-center py-4 transition-all px-[7%] duration-300 ${isScrolled ? 'bg-[#1086A0] backdrop-blur-md' : 'bg-transparent'}`}>
             <Image width={80} height={80} src={"/img/klogo.svg"} alt="Logo" />
@@ -54,7 +56,8 @@ const Nav = () => {
                 <Link href={"/contact"}>CONTACT US</Link>
                 {/* <div></div> */}
                 <Button2 />
-                <Language/>
+                <LanguageSelector/>
+                {/* <Language/> */}
 
                 <TbSearch className="text-xl"/>
                 <Link target="_blank" href={"http://Paystack.com/pay/kindlegatefoundation"}>
