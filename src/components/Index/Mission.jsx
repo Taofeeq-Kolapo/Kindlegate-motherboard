@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Btn1, MissionProps } from '../Reusable/Btn1'
 import { useTranslation } from 'react-i18next'
-// import { t } from 'i18next'
+
 
 const Mission = () => {
     const {t} = useTranslation()
@@ -18,11 +18,9 @@ const Mission = () => {
                     title={t("objective")}
                     content={t("objectiveConten")}
                 />
-
                 <div className='flex w-full lg:justify-end justify-center'>
                     <Btn1
                         text={t("learnbtn")}
-                        // text={"LEARN MORE"}
                         link={""}
                     />
                 </div>
