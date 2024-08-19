@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import i18n from '../../src/components/Reusable/i18n'
 import { useTranslation } from 'react-i18next'
+import Subscribe from './Subscribe'
 
 const AppWrapper = ({ children }) => {
     const pathname = usePathname()
@@ -25,7 +26,6 @@ const AppWrapper = ({ children }) => {
 
     return (
         <div>
-            {/* <LanguageProvider> */}
             {
                 pathname === "/vform" ? ("")
                     : pathname === "/mentorform" ? ("")
@@ -50,9 +50,16 @@ const AppWrapper = ({ children }) => {
                         : pathname === "/partnerform" ? ("")
                             : pathname === "/sponsorform" ? ("")
                                 : pathname === "/attestation" ? ("")
+                                    : <Subscribe />
+            }
+            {
+                pathname === "/vform" ? ("")
+                    : pathname === "/mentorform" ? ("")
+                        : pathname === "/partnerform" ? ("")
+                            : pathname === "/sponsorform" ? ("")
+                                : pathname === "/attestation" ? ("")
                                     : <Footer />
             }
-            {/* </LanguageProvider> */}
         </div>
     )
 }

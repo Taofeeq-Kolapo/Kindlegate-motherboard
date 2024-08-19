@@ -26,3 +26,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.clip-slant {
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  }
