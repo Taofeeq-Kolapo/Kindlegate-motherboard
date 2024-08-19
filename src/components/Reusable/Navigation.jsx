@@ -61,7 +61,7 @@ const Nav = ({handleChangeLanguage}) => {
 
                 <TbSearch className="text-xl"/>
                 <Link target="_blank" href={"http://Paystack.com/pay/kindlegatefoundation"}>
-                    <button className="bg-[#00A859] lg:block hidden font-bold border-[2px] border-white text-white px-3 py-1 rounded-2xl">Donate</button>
+                    <button className="bg-[#00A859] lg:block hidden font-bold text-white px-3 py-1 rounded-2xl">Donate</button>
                 </Link>
             </div>
             <div onClick={Openmobilenav} className="lg:hidden flex w-[30px] h-[30px] justify-center items-center cursor-pointer">
