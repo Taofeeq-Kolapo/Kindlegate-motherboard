@@ -16,15 +16,15 @@ export default function Button2() {
 
                 </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Static Actions" className="bg-transparent border-2 border-black w-[150px] p-3 rounded-2xl justify-center flex items-center">
+            <DropdownMenu aria-label="Static Actions" className="bg-transparent border-2 border-black w-[150px] p-3 rounded-2xl bg-black  justify-center flex items-center">
                 <DropdownItem className="text-xl" key="new">
                     {
-                        <div className="lg:flex flex-col hidden gap-3 w-full text-black">
+                        <div className="lg:flex flex-col hidden gap-3 w-full text-white">
                             {
                                 involved.map((d, i) => {
                                     return (
                                         <div key={i}>
-                                            <Link className="hover:bg-[#14BDE3] hover:rounded-lg hover:w-full w-full p-2" href={d.link}>{d.title}</Link>
+                                            <Link className="hover:bg-[#14BDE3] hover:rounded-lg font-semibold hover:w-full w-full p-2" href={d.link}>{d.title}</Link>
                                         </div>)
                                 })
                             }

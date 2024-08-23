@@ -10,10 +10,10 @@ export default function Home() {
     <div className="bg-[url(/img/LandingImage.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
       <div className="pt-[5%] px-[7%] flex w-full justify-end">
         <div data-aos="fade-left" className="lg:w-[45%] w-full flex flex-col gap-4 lg:items-start lg:pl-[15%] items-center">
-          <p className="font-bold lg:text-[64px] md:text-[48px] text-[25px] text-white leading-none"><span className="flex tracking-wider">KINDLEGATE</span> FOUNDATION</p>
+          <p className="font-semibold lg:text-[60px] md:text-[48px] text-[25px] text-white leading-none tracking-wider"><span className="flex tracking-widest">KINDLEGATE</span> FOUNDATION</p>
           <div className="flex flex-col items-center lg:gap-3 gap-5">
             {/* <p>{t("welcome")}</p> */}
-            <p className="lg:text-[20px] md:text-[16px] lg:w-[382px] w-[324px] lg:text-start md:text-center text-[13px] text-white text-justify ">{t("HeroHeader")}
+            <p className="lg:text-[18px] md:text-[16px] lg:w-[382px] w-[324px] lg:text-start md:text-center text-[13px] text-white text-justify ">{t("HeroHeader")}
             </p>
             <Btn1
               text={t("herobtn")}

@@ -13,15 +13,15 @@ export default function OurTribebtn() {
                     <p className="tab">OUR TRIBE</p>
                 </Button>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Static Actions" className="bg-transparent border-2 border-black w-[240px] p-3 rounded-2xl justify-center flex items-center">
+            <DropdownMenu aria-label="Static Actions" className="bg-transparent border-2 border-black w-[230px] bg-black p-3 rounded-2xl justify-center flex items-center">
                 <DropdownItem className="text-xl" key="new">
                     {
-                        <div className="lg:flex flex-col hidden gap-3 w-full text-black">
+                        <div className="lg:flex flex-col hidden gap-3 w-full text-white">
                             {
                                     tribes.map((d, i) => {
                                         return (
                                             <div key={i}>
-                                                <Link href={d.link} className="hover:bg-[#14BDE3] hover:rounded-lg hover:w-full w-full p-2">{d.title}</Link>
+                                                <Link href={d.link} className="hover:bg-[#14BDE3] font-bold hover:rounded-lg hover:w-full w-full p-2">{d.title}</Link>
                                             </div>)
                                     })
                                 }
