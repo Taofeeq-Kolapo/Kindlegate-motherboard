@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { TbChevronLeft, TbChevronRight } from 'react-icons/tb';
+import Swipers from './Swipers';
 
 const Value = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -38,9 +39,8 @@ const Value = () => {
     return (
         <div className='flex flex-col bg-[#00586B] lg:h-[810px] rounded-xl p-6 py-10 lg:gap-0 gap-4 relative'>
             <p data-aos="fade-down-left" className='lg:w-[40%] lg:text-[40px] text-[30px] font-bold text-white lg:ml-[10%]'>OUR VALUE ADDING ROADMAP <span className='border-b-2 border-[#E3B522] '>(HESS MANDATE)</span></p>
-
-            <div className='flex lg:flex-row flex-col items-center relative'>
-                {/* Left arrow */}
+            <Swipers/>
+            {/* <div className='flex lg:flex-row flex-col items-center relative'>
                 <button
                     onClick={handlePrev}
                     disabled={currentIndex === 0}
@@ -58,7 +58,6 @@ const Value = () => {
                 <div data-aos="flip-right" className='flex lg:justify-end w-full lg:pr-[12%] '>
                     <Image src={data[currentIndex].imgSrc} className='lg:w-[532px] lg:h-[572px]' width={250} height={250} alt='' />
                 </div>
-                {/* Right arrow */}
                 <button
                     onClick={handleNext}
                     disabled={currentIndex === data.length - 1}
@@ -77,7 +76,7 @@ const Value = () => {
                         ></span>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
