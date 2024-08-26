@@ -54,8 +54,6 @@ const Swipers = () => {
                                     </div>
                                     <Image src={d.imgSrc} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[200px] md:top-[30%]' width={250} height={250} alt=''/>
                                 </SwiperSlide>
-
-
                             )
                         })
                     }
