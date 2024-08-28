@@ -12,42 +12,43 @@ const Team = () => {
         },
         {
             img: "/img/Avatard.svg",
-            post: 'TRUSTEES',
+            post: 'BOARD OF DIRECTORS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
         },
         {
             img: "/img/Avatard.svg",
-            post: 'TRUSTEES',
+            post: 'GOVERNING COUNCIL',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
         },
         {
             img: "/img/Avatard.svg",
-            post: 'TRUSTEES',
+            post: 'VOLUNTEERS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
         },
         {
             img: "/img/Avatard.svg",
-            post: 'TRUSTEES',
+            post: 'SPONSORS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
         },
         {
             img: "/img/Avatard.svg",
-            post: 'TRUSTEES',
+            post: 'MENTORS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
         },
     ]
     return (
-        <div className='flex flex-col px-[10%] lg:my-[5%] lg:gap-10 '>
-            <div className='flex lg:flex-col flex-row lg:items-start  w-full'>
-                <div className='flex lg:justify-center lg:w-full w-[30%]'>
+        <div className='flex flex-col px-[10%] lg:my-[5%] lg:gap-10 items-center'>
+            <div className='flex lg:flex-col flex-row lg:items-center w-full'>
+                <div className='flex flex-col lg:justify-center lg:items-center items-start lg:w-full  w-[30%]'>
                     <p className='text-[#1E1E1E] lg:text-[36px] font-bold '>Our Team</p>
+                    <p className='h-1 lg:w-[135.2px] w-[66px] rounded-full bg-[#E3B522]'></p>
                 </div>
-                <div className='lg:text-[20px] md:text-[16px] text-[14px] lg:w-full w-[70%] '>
+                <div className='lg:text-[20px] md:text-[16px] text-[14px] lg:w-[70%] w-[70%] lg:text-center text-start flex flex-col gap-5'>
                     <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
                     <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
                     <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
@@ -55,13 +56,13 @@ const Team = () => {
                 </div>
             </div>
 
-            <div className='w-full grid lg:grid-cols-3 mt-7 md:grid-cols-2 grid-cols-1 gap-6 lg:gap-[10%]'>
+            <div className='w-full grid lg:grid-cols-3 mt-7 md:grid-cols-2 grid-cols-1 gap-6 lg:w-[70%] lg:gap-[10%]'>
                 {
                     trustee.map((d, i) => {
                         return (
                             <div key={i} className='flex flex-col w-full'>
-                                <div className='bg-[#E3B522] p-4 flex justify-center items-center'>
-                                    <Image src={d.img} alt='' width={200} height={200} />
+                                <div className='bg-[#E3B522] pt-4 flex justify-center items-end'>
+                                    <Image src={d.img} alt='' width={150} height={200} />
                                 </div>
                                 <div className='flex justify-center py-2 bg-[#14BDE3]'>
                                     <p className='font-bold'>{d.post}</p>
