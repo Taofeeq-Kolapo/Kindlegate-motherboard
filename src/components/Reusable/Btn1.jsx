@@ -5,7 +5,14 @@ import React from "react";
 export const Btn1 = ({ text, link }) => {
     return (
         <Link href={link}>
-            <button className="bg-[#14BDE3] text-black lg:text-[25px] lg:w-[361px] w-[150px] font-bold h-[60px] rounded-[56px]">{text}</button>
+            <button className="bg-[#14BDE3] text-black lg:text-[22px] lg:w-[361px] w-[150px] font-bold h-[60px] rounded-[56px]">{text}</button>
+        </Link>
+    )
+}
+export const Btn3 = ({ text, link }) => {
+    return (
+        <Link href={link}>
+            <button className="bg-[#14BDE3] text-black lg:text-[22px] lg:w-[231px] w-[150px] font-bold h-[60px] rounded-[56px]">{text}</button>
         </Link>
     )
 }
@@ -64,7 +71,7 @@ export const TeamProps = ({ img, role, text1, text2, text3, btntext }) => {
                     <p>{text2}</p>
                     <p>{text3}</p>
                 </div>
-                <Btn1
+                <Btn3
                     link={""}
                     text={btntext}
                 />

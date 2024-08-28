@@ -6,7 +6,7 @@ const TribeHome = () => {
             <div className="pt-[5%] px-[7%] flex w-full lg:justify-start justify-center">
                 <div className="lg:w-[50%] flex flex-col items-center gap-4">
                     <p className="font-bold lg:text-[50px] md:text-[48px] text-[40px] text-white leading-none">OUR TRIBE</p>
-                    <div className="flex flex-col items-center lg:w-full md:w-[356px] ">
+                    <div className="flex flex-col items-center lg:w-[80%] md:w-[356px] ">
                         <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                     </div>
                 </div>
