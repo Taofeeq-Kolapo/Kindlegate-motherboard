@@ -6,6 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 const Subscribe = () => {
     const [email, setEmail] = useState('');
     const [success, setSuccess] = useState('');
+    const [error, setError] = useState("")
 
     const payload = {
         email: email
@@ -33,7 +34,7 @@ const Subscribe = () => {
             } catch (error) {
                 console.log(error)
                 console.log(error);
-                setSuccess('An error occurred. Please try again.');
+                setError('An error occurred. Please try again.');
                 setTimeout(() => {
                     setSuccess('');
                 }, 3000);
@@ -50,6 +51,7 @@ const Subscribe = () => {
                 <button onClick={handlePost} className='text-[20px] font-bold text-black'><FaLocationArrow /></button>
             </div>
             {success && <p className='text-green-500 mt-4'>{success}</p>}
+            {error && <p className='text-red-500 mt-4'>{error}</p>}
             <div className='bg-gradient-to-tr from-[#0B9CBB] to-[#DFF9FF] w-[20%] lg:h-[100px] h-[50px] clip-slant absolute top-0 left-0'>
             </div>
 
