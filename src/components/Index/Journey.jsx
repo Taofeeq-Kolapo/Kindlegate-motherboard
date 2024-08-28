@@ -8,8 +8,8 @@ const Journey = () => {
     return (
         <div className='lg:pl-[10%] px-[10%] flex lg:flex-row py-6 lg:gap-11 lg:items-center items-start bg-[#E3B522] justify-between'>
             <div  className='flex flex-col lg:items-start items-center gap-6'>
-                <p className='text-[#1D1D1D] lg:text-[25px] md:text-[20px] sm:text-[14px] font-bold'>{t("journey")}</p>
-                <p className='font-semibold text-black lg:w-[80%]'>{t("journeyContent")}</p>
+                <p className='text-[#1D1D1D] lg:text-[30px] md:text-[20px] sm:text-[14px] font-bold'>{t("journey")}</p>
+                <p className='font-semibold text-black lg:text-[20px] lg:w-[80%]'>{t("journeyContent")}</p>
                 <Btn1
                     text={t("herobtn")}
                     link={"/involved"}

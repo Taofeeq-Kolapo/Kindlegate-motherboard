@@ -31,9 +31,9 @@ const Swipers = () => {
         },
     ];
     return (
-        <div className="h-[60vh] mt-4 items-center">
+        <div className="lg:h-[60vh] h-[70vh] mt-4 items-center">
             <Swiper
-            className='h-[80vh]'
+            className='lg:h-[80vh] h-[60vh]'
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={50}
@@ -47,12 +47,12 @@ const Swipers = () => {
                     {
                         data.map((d, i) => {
                             return (
-                                <SwiperSlide key={i} className='w-full px-[10%] flex flex-row items-center'>
-                                    <div className='flex flex-col gap-2 p-4 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] rounded-lg lg:w-[772px] lg:h-[354px] md:w-[455px] lg:ml-0 md:ml-[5%] z-[500] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
+                                <SwiperSlide key={i} className='w-full px-[11%] flex flex-row items-center'>
+                                    <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-0 md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
                                         <p>{d.text}</p>
-                                        <p className='lg:mt-10 lg:text-[18px] md:text-[12px] text-[10px]'>{d.paragraph}</p>
+                                        <p className='lg:mt-10 lg:text-[20px] md:text-[12px] text-[10px]'>{d.paragraph}</p>
                                     </div>
-                                    <Image src={d.imgSrc} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[200px] md:top-[30%]' width={250} height={250} alt=''/>
+                                    <Image src={d.imgSrc} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
                                 </SwiperSlide>
                             )
                         })

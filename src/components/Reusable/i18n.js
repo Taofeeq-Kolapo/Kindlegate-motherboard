@@ -12,7 +12,7 @@ i18n
       en: {
         translation: {
           "HeroHeader": "It's important to have a good customer service, a customer service provider. Maecenas airline planning mass. To place a fusce, a large but ultricie pillow, a pure bed, and a free bed, let it be a great comfort for any urn. Now for cartoons. It is clinical.",
-          "herobtn":"GET INVOLVE",
+          "herobtn":"GET INVOLVED",
           "mandate":"OUR MANDATE",
           "mandateConten":"It's important to have a good customer service, a customer service provider. Maecenas airline planning mass. To place a fusce, a large but ultricie pillow, a pure bed, and a free bed, let it be a great comfort for any urn. Now for cartoons. It is clinical.",
           "objective":"OBJECTIVES",

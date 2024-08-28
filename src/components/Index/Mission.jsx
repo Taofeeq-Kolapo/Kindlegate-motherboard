@@ -8,7 +8,7 @@ const Mission = () => {
     const {t} = useTranslation()
     return (
         <div className='bg-white flex lg:items-center justify-between w-full py-[2%] relative'>
-            <Image data-aos="fade-right" className='lg:block  md:w-[182px] md:h-[202px] w-[57px] h-[107px] top-1' src={"/img/half.svg"} width={250} height={250} alt='' />
+            <Image data-aos="fade-right" className='lg:block lg:w-[305.05px] lg:h-[305.05px] relative lg:left-[-3rem] lg:top-[-4rem] md:w-[182px] md:h-[202px] w-[57px] h-[107px]' src={"/img/half.svg"} width={250} height={250} alt='' />
             <div data-aos="fade-left" className='lg:w-[60%] lg:px-[6%] gap-5 flex flex-col px-[4%]'>
                 <MissionProps
                     title={t("mandate")}

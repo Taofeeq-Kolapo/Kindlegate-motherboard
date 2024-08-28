@@ -5,7 +5,7 @@ import React from "react";
 export const Btn1 = ({ text, link }) => {
     return (
         <Link href={link}>
-            <button className="bg-[#14BDE3] text-black lg:w-[361px] w-[150px] font-bold h-[60px] rounded-[56px]">{text}</button>
+            <button className="bg-[#14BDE3] text-black lg:text-[25px] lg:w-[361px] w-[150px] font-bold h-[60px] rounded-[56px]">{text}</button>
         </Link>
     )
 }
@@ -18,14 +18,14 @@ export const Btn2 = ({ text }) => {
 }
 export const MissionProps = ({ title, content }) => {
     return (
-        <div >
+        <div className="flex flex-col justify-end items-end">
             <div className='flex w-full justify-end '>
                 <span className='flex flex-col gap-1 items-center'>
                     <p className='text-[32px] font-bold'>{title}</p>
                     <p className='bg-[#E3B522] h-1 w-[90%] rounded-3xl'></p>
                 </span>
             </div>
-            <p className='flex text-justify lg:w-full md:w-[438px] sm:w-[321px]'>{content}</p>
+            <p className='flex text-justify text-[20px] lg:w-[550px] md:w-[438px] sm:w-[321px]'>{content}</p>
         </div>
     )
 }
