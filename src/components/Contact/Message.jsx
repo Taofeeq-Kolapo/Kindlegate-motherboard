@@ -92,7 +92,7 @@ const Message = () => {
                 </div>
                 <div className='flex w-full items-center justify-center'>
                     {
-                        success && <div className="text-[#1E1E1E] text-[20px] text-center">{success}</div>
+                        success && <div className="text-green-500 text-[20px] text-center">{success}</div>
                     }
                     {error && <div className="text-red-500 text-[20px] text-center">{error}</div>}
                 </div>
