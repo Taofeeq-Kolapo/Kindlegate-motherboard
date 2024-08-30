@@ -1,6 +1,7 @@
 'use client'
 import axios from 'axios'
 import React, { useState } from 'react'
+import GeneralModal from '../Reusable/Modal'
 
 const Message = () => {
     const [firstName, setFirstName] = useState("")
@@ -10,6 +11,9 @@ const Message = () => {
     const [message, setMessage] = useState("")
     const [success, setSuccess] = useState("")
     const [error, setError] = useState("")
+    const [loading, setLoading] = useState(false)
+
+    const [openModal, setOpenModal] = useState(false)
 
     const payload = {
         first_name: firstName,
@@ -23,6 +27,7 @@ const Message = () => {
     const base_url = "/api/contact"
     const handlePost = async (e) => {
         e.preventDefault();
+        setLoading(true)
         if (!email) {
             alert('Please enter your email')
             return;
@@ -38,6 +43,8 @@ const Message = () => {
                     setLastName("")
                     setPhone("")
                     setMessage("")
+                    setOpenModal(true)
+                    setLoading(false)
 
                     setTimeout(() => {
                         // setSuccess("")
@@ -46,13 +53,16 @@ const Message = () => {
             } catch (error) {
                 console.log(error)
                 console.log(error);
+                setLoading(false)
                 setError('An error occurred. Please try again.');
                 setTimeout(() => {
                     // setSuccess('');
                 }, 3000);
             }
         }
-
+    }
+    const closeModal = () =>{
+        setOpenModal(false)
     }
 
     return (
@@ -88,7 +98,9 @@ const Message = () => {
                     <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="" className='w-full rounded-lg p-2 outline-none border-black border' rows={10} id=""></textarea>
                 </span>
                 <div className='flex w-full justify-end'>
-                    <button onClick={handlePost} className='text-[#1E1E1E] font-bold py-2 px-6 bg-[#14BDE3] rounded-2xl'>Send</button>
+                    <button onClick={handlePost} className='text-[#1E1E1E] font-bold py-2 px-6 bg-[#14BDE3] rounded-2xl'>{
+                        loading ? "Sending..." : "Send"}
+                    </button>
                 </div>
                 <div className='flex w-full items-center justify-center'>
                     {
@@ -97,6 +109,14 @@ const Message = () => {
                     {error && <div className="text-red-500 text-[20px] text-center">{error}</div>}
                 </div>
             </form>
+            {
+                openModal && (
+                    <GeneralModal
+                    handleClose={closeModal}
+                        content={<p className='text-black text-[23px] font-semibold'>Thank you for reaching out to us, we will get back to you shortly!</p>}
+                    />
+                )
+            }
         </div>
     )
 }
