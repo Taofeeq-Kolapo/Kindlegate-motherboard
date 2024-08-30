@@ -26,7 +26,7 @@ const UpcomingEvent = () => {
         }
     ]
     return (
-        <div className='flex flex-col py-[6%] gap-9 px-[10%] bg-white'>
+        <div className='flex flex-col py-[6%] gap-9 lg:px-[15%] px-[10%] bg-white'>
             <div className="w-full justify-center flex">
                 <p className="lg:text-[36px] text-[20px] text-[#14242C] font-bold">Upcoming Event</p>
             </div>
@@ -34,7 +34,7 @@ const UpcomingEvent = () => {
                 {
                     event.map((e, i) => {
                         return (
-                            <div key={i} className='flex lg:flex-row items-center gap-[5%] w-full rouded-[20px] shadow-md p-8'>
+                            <div key={i} className='flex lg:flex-row items-center gap-[5%] w-full rounded-[20px] shadow-lg p-8'>
                                 <div className='lg:w-1/2'>
                                     <Image src={e.img} className='rounded-2xl' height={300} width={400} alt='' />
                                 </div>
