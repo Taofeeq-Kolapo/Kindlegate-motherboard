@@ -54,10 +54,8 @@ const Nav = ({handleChangeLanguage}) => {
                 <Link href={"/news"}>NEWS</Link>
                 <Link href={"/blog"}>BLOG</Link>
                 <Link href={"/contact"}>CONTACT US</Link>
-                {/* <div></div> */}
                 <Button2 />
                 <LanguageSelector/>
-                {/* <Language/> */}
 
                 <TbSearch className="text-xl"/>
                 <Link target="_blank" href={"http://Paystack.com/pay/kindlegatefoundation"}>
