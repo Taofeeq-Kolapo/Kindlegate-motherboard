@@ -75,8 +75,21 @@ const BlogBody = () => {
                         })
                     }
                 </div>
-                <div className='lg:w-[30%] w-full'>
+                {/* <div className='lg:w-[30%] w-full'>
                     <Image src={"/img/blogvid.svg"} className='w-full' width={300} height={300} alt='' />
+                    <iframe src="https://www.youtube.com/watch?v=TnfPXjrEOyk" width={300} height={300} frameborder="0"></iframe>
+                </div> */}
+                <div className='lg:w-[30%] w-full'>
+                    <div className='relative overflow-hidden' style={{ paddingTop: '56.25%' }}> {/* 16:9 Aspect Ratio */}
+                        <iframe
+                            src="https://www.youtube.com/embed/TnfPXjrEOyk"
+                            title="YouTube video player"
+                            className='absolute top-0 left-0 w-full h-full'
+                            // frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
             </div>
             <div className='flex flex-col items-start gap-3 mt-5'>
