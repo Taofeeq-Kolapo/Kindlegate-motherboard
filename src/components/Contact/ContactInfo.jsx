@@ -4,10 +4,10 @@ import Image from 'next/image'
 const ContactInfo = () => {
     return (
         <div className='bg-[#00586B] px-[5%] flex flex-col gap-5 py-[5%] text-white rounded-b-[20px]'>
-            <div className="w-full justify-center mb-6 flex">
+            <div className="w-full justify-center mb-6 lg:ml-[5%] flex">
                 <p className="lg:text-[36px] text-[20px] text-white font-bold">CONTACT INFORMATION</p>
             </div>
-            <div className='w-full flex lg:flex-row flex-col lg:justify-between gap-6'>
+            <div className='w-full flex lg:flex-row flex-col lg:justify-around gap-6'>
                 <div className='flex flex-col lg:items-center gap-4'>
                     <div className='flex flex-col lg:items-center'>
                         <p className='lg:text-[32px] text-[20px] text-white font-bold'>Address</p>

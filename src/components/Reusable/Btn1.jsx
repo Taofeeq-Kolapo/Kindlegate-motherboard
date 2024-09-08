@@ -55,9 +55,9 @@ export const Whatwedo = ({ img, role, text1, text2, text3 }) => {
         </div>
     )
 }
-export const TeamProps = ({ img, role, text1, text2, text3, btntext }) => {
+export const TeamProps = ({ img, role, text1, text2, text3, btntext, teamLink }) => {
     return (
-        <div className="flex lg:flex-row flex-col w-full justify-between lg:items-start">
+        <div id={teamLink} className="flex lg:flex-row flex-col w-full justify-between lg:items-start">
             <div className="flex flex-col gap-2 items-center lg:w-[60%]">
                 <Image src={img} alt="" className="" width={300} height={300} />
                 <div className='flex flex-col items-center'>

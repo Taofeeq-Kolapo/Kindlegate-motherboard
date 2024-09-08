@@ -17,7 +17,7 @@ const MobNavigation = ({ HandleCloseNav }) => {
     }
 
     return (
-        <div className='flex flex-col gap-4 p-5 bg-white left-0 text-black font-bold fixed top-0 w-full h-[100vh] lg:hidden pl-[25%]'>
+        <div className='flex flex-col gap-4 p-5 bg-white left-0 text-black font-bold fixed top-0 w-full h-[100vh] lg:hidden md:pl-0 pl-[25%]'>
             <div className='flex w-full justify-end items-center'>
                 {/* <Image src={"/img/klogo.svg"} alt='' width={70} height={70} /> */}
                 <TbX onClick={HandleCloseNav} className='text-3xl cursor-pointer' />

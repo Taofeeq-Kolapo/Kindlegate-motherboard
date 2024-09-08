@@ -62,6 +62,28 @@ export const desktribes = [
         link:"/governing"
     },
 ]
+export const deskprograms = [
+    {
+        title:"ART",
+        link:"/art"
+    },
+    {
+        title:"LEADERSHIP",
+        link:"/leadership"
+    },
+    {
+        title:"ENTREPRENEURSHIP",
+        link:"/entrepreneurship"
+    },
+    {
+        title:"FOOD SHELTER",
+        link:"/shelter"
+    },
+    {
+        title:"SDG AWARENESS",
+        link:"/sdg-awareness"
+    },
+]
 export const program = [
     {
         title:"ARTS",

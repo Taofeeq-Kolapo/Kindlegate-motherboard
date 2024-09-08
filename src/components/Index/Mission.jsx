@@ -21,7 +21,7 @@ const Mission = () => {
                 <div className='flex w-full lg:justify-end justify-center'>
                     <Btn1
                         text={t("learnbtn")}
-                        link={""}
+                        link={"/mandate"}
                     />
                 </div>
             </div>

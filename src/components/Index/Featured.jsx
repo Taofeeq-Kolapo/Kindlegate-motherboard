@@ -12,13 +12,13 @@ const Featured = () => {
         },
         {
             img: "/img/two.svg",
-            title: "Leadership",
+            title: "Entrepreneurship",
             content: "Promoting thought based Leadership in the Community",
             more: "Read more"
         },
         {
             img: "/img/three.svg",
-            title: "Leadership",
+            title: "Art",
             content: "Promoting thought based Leadership in the Community",
             more: "Read more"
         },

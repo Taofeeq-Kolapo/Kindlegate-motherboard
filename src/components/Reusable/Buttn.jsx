@@ -37,7 +37,7 @@
 //     );
 // }
 import React, { useState, useRef, useEffect } from "react";
-import { deskinvolved, desktribes, involved, tribes } from "./NavData";
+import { deskinvolved } from "./NavData";
 import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
 
@@ -94,13 +94,13 @@ export default function OurTribebtn() {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                         onClick={handleMouseLeave}
-                        className="absolute flex flex-col gap-2 bg-black p-3 rounded-2xl border-2 border-black w-[200px] mt-2 "
+                        className="absolute flex flex-col gap-3 bg-white p-3 border-[1px] border-[#14BDE3] w-[180px] mt-2 "
                     >
                         {deskinvolved.map((d, i) => (
                             <Link
                                 key={i}
                                 href={d.link}
-                                className="hover:bg-[#14BDE3] font-bold hover:rounded-lg w-full p-2 text-white"
+                                className="hover:bg-gray-200 font-bold w-full p-2 text-[#14BDE3] text-[16px]"
                             >
                                 {d.title}
                             </Link>

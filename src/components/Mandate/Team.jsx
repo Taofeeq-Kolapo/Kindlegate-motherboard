@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Team = () => {
 
@@ -8,37 +9,43 @@ const Team = () => {
             img: "/img/Avatard.svg",
             post: 'TRUSTEES',
             name: "Maecenas porttitor congue massa",
-            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
+            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
+            link:"/tribe/#trustee"
         },
         {
             img: "/img/Avatard.svg",
             post: 'BOARD OF DIRECTORS',
             name: "Maecenas porttitor congue massa",
-            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
+            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
+            link:"/tribe/#board"
         },
         {
             img: "/img/Avatard.svg",
             post: 'GOVERNING COUNCIL',
             name: "Maecenas porttitor congue massa",
-            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
+            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
+            link:"/tribe/#council"
         },
         {
             img: "/img/Avatard.svg",
             post: 'VOLUNTEERS',
             name: "Maecenas porttitor congue massa",
-            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
+            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
+            link:"/tribe/#volunteer"
         },
         {
             img: "/img/Avatard.svg",
             post: 'SPONSORS',
             name: "Maecenas porttitor congue massa",
-            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
+            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
+            link:"/tribe/#trustee"
         },
         {
             img: "/img/Avatard.svg",
             post: 'MENTORS',
             name: "Maecenas porttitor congue massa",
-            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina"
+            desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
+            link:"/tribe/#trustee"
         },
     ]
     return (
@@ -60,7 +67,7 @@ const Team = () => {
                 {
                     trustee.map((d, i) => {
                         return (
-                            <div key={i} className='flex flex-col w-full'>
+                            <Link href={d.link} key={i} className='flex flex-col w-full'>
                                 <div className='bg-[#E3B522] pt-4 flex justify-center items-end'>
                                     <Image src={d.img} alt='' width={150} height={200} />
                                 </div>
@@ -71,7 +78,7 @@ const Team = () => {
                                     <p className='font-semibold'>{d.name}</p>
                                     <p>{d.desc}</p>
                                 </div>
-                            </div>
+                            </Link>
                         )
                     })
                 }
