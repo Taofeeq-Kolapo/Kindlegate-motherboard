@@ -44,14 +44,6 @@ const AppWrapper = ({ children }) => {
                                 : pathname === "/attestation" ? ("")
                                     : <Journey />
             }
-            {/* {
-                pathname === "/vform" ? ("")
-                    : pathname === "/mentorform" ? ("")
-                        : pathname === "/partnerform" ? ("")
-                            : pathname === "/sponsorform" ? ("")
-                                : pathname === "/attestation" ? ("")
-                                    : <Subscribe />
-            } */}
             {
                 pathname === "/" ? (<Subscribe />)
                     : ("")

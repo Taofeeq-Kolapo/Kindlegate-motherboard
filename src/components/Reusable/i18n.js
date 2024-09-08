@@ -4,6 +4,7 @@ import Languagedetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next';
 
 // Setup i18next
+// const test = "hello world"
 i18n
   .use(Languagedetector).use(initReactI18next)
   .init({

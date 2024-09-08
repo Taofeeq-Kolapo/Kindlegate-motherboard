@@ -2,16 +2,15 @@
 'use client';
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
-import { TbChevronDown, TbSearch } from 'react-icons/tb'
-import { involved, tribes } from "./NavData";
+import { TbSearch } from 'react-icons/tb'
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobNavigation from "./MobNav";
 import Button2 from "./Buttn";
 import OurTribebtn from "./Ourtribe";
-import Language from "./Language";
 import LanguageSelector from "./LanguageSelector";
 import ProgramsBtn from "./Programe";
+
 
 
 const Nav = ({handleChangeLanguage}) => {
