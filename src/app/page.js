@@ -6,7 +6,12 @@ import Value from '@/components/Index/Value';
 import axios from 'axios';
 import { useEffect } from 'react';
 
-export default function page() {
+export default function Page() {
+
+
+  useEffect(()=>{
+    fetchIndexpage()
+  },[])
 
   const fetchIndexpage =async ()=>{
     const base_url = "/api/mothership/homepage"
@@ -19,9 +24,7 @@ export default function page() {
     }
   }
 
-  // useEffect(()=>{
-  //   fetchIndexpage()
-  // },[])
+  
 
 
   return (

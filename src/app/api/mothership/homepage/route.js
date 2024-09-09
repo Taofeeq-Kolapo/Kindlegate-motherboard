@@ -3,7 +3,7 @@ import { error } from "console"
 import { NextResponse } from "next/server"
 
 export async function GET(req){
-    const base_url = `${process.env.KGF_BASE_URL}/node/39`
+    const base_url = `${process.env.KGF_BASE_URL}/jsonapi/node/home`
     try {
         const resp = await axios.get(base_url)
         const result = resp.data
