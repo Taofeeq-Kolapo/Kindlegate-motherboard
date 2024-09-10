@@ -10,27 +10,14 @@ const Mission = () => {
     const [mandate, setMandate] = useState("")
     const [mission, setMission] = useState("")
 
-    // useEffect(() => {
-    //     fetchIndexpage()
-    // }, [])
-
-    // const fetchIndexpage = async () => {
-    //     const base_url = "/api/mothership/homepage"
-    //     try {
-    //         const resp = await axios.get(base_url)
-    //         const result = resp.data
-    //         console.log(result)
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
-
 
     const fetchMission = async () => {
-        const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/home/4cbb35b6-4570-4d80-8aeb-2cac04412094/field_mandate_and_objective_sect?resourceVersion=id%3A41`
+        // const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/home/4cbb35b6-4570-4d80-8aeb-2cac04412094/field_mandate_and_objective_sect?resourceVersion=id%3A41`
+        const base_url = "/api/mothership/homepage/mission"
         const response = await axios.get(base_url)
         const result = response.data
-        console.log(result.data)
+        // console.log(result)
+        // console.log(result.data)
         console.log(result.data[0].attributes.field_objeactive_caption.value)
         setMandate(result.data[0].attributes.field_mandate_caption.value)
         setMission(result.data[0].attributes.field_objeactive_caption.value)
