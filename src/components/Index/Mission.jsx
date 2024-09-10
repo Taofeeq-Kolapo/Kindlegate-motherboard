@@ -27,16 +27,6 @@ const Mission = () => {
     useEffect(() => {
         fetchMission()
     }, [])
-    // const parser = new DOMParser();
-    // const parser2 = new DOMParser();
-    // const parsedHtml = parser.parseFromString(mandate, 'text/html');
-    // const parsedHtml2 = parser2.parseFromString(mission, 'text/html');
-    // const plainText = parsedHtml.body.textContent || "";
-    // const plainText2 = parsedHtml2.body.textContent || "";
-    // if (typeof window !== 'undefined') {
-    //     localStorage.setItem('mandate', plainText);
-    //     localStorage.setItem('mission', plainText2);
-    // }
     if (typeof window !== 'undefined') {
         const parser = new DOMParser();
         const parser2 = new DOMParser();

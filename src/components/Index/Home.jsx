@@ -2,10 +2,39 @@
 import { Btn1, Btn2 } from "@/components/Reusable/Btn1";
 import { useTranslation } from "react-i18next";
 import i18n from "../Reusable/i18n";
+import axios from "axios";
+import { useEffect, useState } from "react";
 // import Image from "next/image";
 
 export default function Home() {
-  const {t} = useTranslation()
+  const [index, setIndex] = useState("")
+
+  const FetchIndex = async () => {
+    const base_url = "/api/mothership/homepage/index"
+    const response = await axios.get(base_url)
+    const result = response.data
+    // console.log(result)
+    console.log(result.data)
+    console.log(result.data.attributes.field_hero_caption_body.value)
+    setIndex(result.data.attributes.field_hero_caption_body.value)
+    // setMission(result.data[0].attributes.field_objeactive_caption.value)
+  }
+
+  if (typeof window !== 'undefined') {
+    const parser = new DOMParser();
+    // const parser2 = new DOMParser();
+    const parsedHtml = parser.parseFromString(index, 'text/html');
+    // const parsedHtml2 = parser2.parseFromString(mission, 'text/html');
+    const plainText = parsedHtml.body.textContent || "";
+    // const plainText2 = parsedHtml2.body.textContent || "";
+    localStorage.setItem('IndCon', plainText);
+  }
+
+
+  useEffect(() => {
+    FetchIndex()
+  }, [])
+  const { t } = useTranslation()
   return (
     <div className="bg-[url(/img/LandingImage.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
       <div className="pt-[5%] px-[7%] flex w-full justify-end">

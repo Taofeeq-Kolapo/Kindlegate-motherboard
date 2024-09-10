@@ -5,6 +5,9 @@ import { initReactI18next } from 'react-i18next';
 // Setup i18next
 const mandateText = typeof window !== 'undefined' ? localStorage.getItem("mandate") : null;
 const mission = typeof window !== 'undefined' ? localStorage.getItem("mission") : null;
+const indexContent = typeof window !== 'undefined' ? localStorage.getItem("IndCon") : null;
+
+console.log(indexContent)
 
 
 i18n
@@ -14,7 +17,8 @@ i18n
     resources: {
       en: {
         translation: {
-          "HeroHeader": "It's important to have a good customer service, a customer service provider. Maecenas airline planning mass. To place a fusce, a large but ultricie pillow, a pure bed, and a free bed, let it be a great comfort for any urn. Now for cartoons. It is clinical.",
+          "HeroHeader":indexContent ,
+          // "HeroHeader": "It's important to have a good customer service, a customer service provider. Maecenas airline planning mass. To place a fusce, a large but ultricie pillow, a pure bed, and a free bed, let it be a great comfort for any urn. Now for cartoons. It is clinical.",
           "herobtn":"GET INVOLVED",
           "mandate":"OUR MANDATE",
           "mandateConten":mandateText,
@@ -27,7 +31,7 @@ i18n
       },
       fr: {
         translation: {
-          "HeroHeader": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.",
+          "HeroHeader": "Accueillir! Faites partie d'un mouvement qui défend le leadership éthique, l'innovation et la créativité d'inspiration africaine. Ensemble, nous pouvons responsabiliser les communautés, transformer des vies et inspirer un changement mondial grâce à la mission de la Fondation Kindlegate.",
           "herobtn":"IMPLIQUEZ-VOUS",
           "mandate":"NOTRE MANDAT",
           "mandateConten":"Promouvoir la création d’une future société éthique de leadership éclairé et d’entrepreneuriat ; tirer parti de la technologie et des écosystèmes de marque pour accélérer la mise en œuvre des objectifs de développement durable intégrés tout en promouvant les arts d’inspiration africaine à travers le monde.",
