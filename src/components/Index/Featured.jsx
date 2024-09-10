@@ -29,22 +29,16 @@ const Featured = () => {
     const [prog2, setProg2] = useState("")
     const [prog3, setProg3] = useState("")
     // const [prog4, setProg4] = useState("")
-    // const [mission, setMission] = useState("")
-
 
     const fetchProgram = async () => {
-        // const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/home/4cbb35b6-4570-4d80-8aeb-2cac04412094/field_mandate_and_objective_sect?resourceVersion=id%3A41`
         const base_url = "/api/mothership/homepage/prog"
         const response = await axios.get(base_url)
         const result = response.data
-        // console.log(result)
-        // console.log(result.data)
         console.log(result.data[0].attributes.field_program_caption_body.value)
         setProg1(result.data[0].attributes.field_program_caption_body.value)
         setProg2(result.data[1].attributes.field_program_caption_body.value)
         setProg3(result.data[2].attributes.field_program_caption_body.value)
     }
-
 
     useEffect(() => {
         fetchProgram()

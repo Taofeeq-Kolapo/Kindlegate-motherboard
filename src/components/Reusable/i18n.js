@@ -2,7 +2,6 @@ import i18n from 'i18next';
 import Languagedetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next';
 
-// Setup i18next
 const mandateText = typeof window !== 'undefined' ? localStorage.getItem("mandate") : null;
 const mission = typeof window !== 'undefined' ? localStorage.getItem("mission") : null;
 const indexContent = typeof window !== 'undefined' ? localStorage.getItem("IndCon") : null;
@@ -14,8 +13,6 @@ const slide2 = typeof window !== 'undefined' ? localStorage.getItem("swiper2") :
 const slide3 = typeof window !== 'undefined' ? localStorage.getItem("swiper3") : null;
 const slide4 = typeof window !== 'undefined' ? localStorage.getItem("swiper4") : null;
 
-// console.log(indexContent)
-
 
 i18n
   .use(Languagedetector).use(initReactI18next)
@@ -25,7 +22,6 @@ i18n
       en: {
         translation: {
           "HeroHeader":indexContent ,
-          // "HeroHeader": "It's important to have a good customer service, a customer service provider. Maecenas airline planning mass. To place a fusce, a large but ultricie pillow, a pure bed, and a free bed, let it be a great comfort for any urn. Now for cartoons. It is clinical.",
           "herobtn":"GET INVOLVED",
           "mandate":"OUR MANDATE",
           "mandateConten":mandateText,
@@ -58,9 +54,9 @@ i18n
           "prog2Content":"À la Fondation Kindlegate, notre programme d'entrepreneuriat donne aux individus les compétences et les ressources nécessaires pour transformer des idées innovantes en entreprises réussies. Nous proposons une formation ciblée, un mentorat et un soutien aux entrepreneurs en herbe, en nous concentrant sur la planification d'entreprise, la gestion financière, la discipline financière et les stratégies de marché. Grâce à des ateliers, des événements de présentation et des conseils pratiques, les participants acquièrent des connaissances pratiques et une expérience essentielles au démarrage et au développement de leur entreprise. En favorisant un écosystème entrepreneurial dynamique, nous visons à stimuler la croissance économique et la création d’emplois. Rejoignez-nous pour former une nouvelle génération d'entrepreneurs qui stimulent l'innovation, bâtissent des entreprises durables et contribuent au développement communautaire.",
           "prog3Content":"À la Fondation Kindlegate, notre programme d'expositions d'art célèbre et promeut diverses expressions artistiques tout en soutenant les artistes émergents et établis. Nous organisons des expositions dynamiques présentant des arts, de l'artisanat et des objets culturels d'inspiration africaine. Notre programme offre aux artistes des plateformes pour présenter leur travail, interagir avec le public et gagner en reconnaissance. En organisant des événements en galerie, des ateliers et des projets collaboratifs, nous favorisons une appréciation plus profonde des arts et créons des opportunités d'échange culturel. Grâce à ces expositions, nous visons à enrichir les communautés, à préserver le patrimoine culturel et à inspirer la créativité. Rejoignez-nous pour soutenir les arts et célébrer la riche tapisserie des traditions artistiques mondiales.",
           "slide1Content":"Nous pensons que lorsque nos communautés sont saines et respectueuses de l'environnement, les gens prospèrent. Par conséquent, de nombreux services qui maintiennent les gens en bonne santé sont souvent difficiles d’accès pour ceux qui en ont le plus besoin. Nous faciliterons les environnements propices à la promotion de la créativité, de l’innovation et de la collaboration pour les causes et les objectifs des soins de santé. Nous veillerons à ce que, grâce à nos réseaux communautaires, chaque citoyen affamé à notre portée reçoive une aide alimentaire et que les sans-abri bénéficient d'un environnement de vie propre avec accès aux médicaments de prévention des maladies.",
-          "slide2Content":slide2,
-          "slide3Content":slide3,
-          "slide4Content":slide4,
+          "slide2Content":"Nous pensons que les villes et les régions sont plus fortes lorsque leurs habitants ont la possibilité de s’épanouir en tant qu’entrepreneurs, employeurs et employés. La Fondation Kindle Gate s'associera avec des organisations privées et publiques, en utilisant la technologie pour fournir aux citoyens indigents et aux demandeurs d'emploi l'acquisition des compétences nécessaires et mettre en relation les employeurs avec des employés potentiels formés. Cela contribuera à éliminer les obstacles à l’emploi en modernisant le système de main-d’œuvre. Grâce au plaidoyer et à la recherche fondée sur des preuves, nous servirons de guide aux décideurs politiques des gouvernements africains afin de promouvoir un leadership et un entrepreneuriat fondés sur la pensée.",
+          "slide3Content":"Nous croyons en un avenir éthique dans lequel les communautés sûres et justes disposent de systèmes judiciaires réactifs, équitables et qui fonctionnent pour les populations les plus vulnérables de notre pays, en particulier celles les plus touchées par la criminalité, la violence et les inégalités entre les sexes. Nous fournirons des systèmes de soutien et d'aide juridique qui réduiront les incarcérations inutiles.",
+          "slide4Content":"Nous pensons qu'en articulant une position commune en faveur du déploiement de nos ressources culturelles diverses et riches, nous contribuerions à lutter contre des vices tels que l'agitation des jeunes, l'insécurité et le chômage. Ces efforts se manifesteront par la promotion d'activités, d'événements et par l'organisation d'expositions, d'ateliers, de formations et de festivals d'arts, de théâtre, de musique, d'artisanat et de culture d'inspiration africaine. En outre, les entrepreneurs seront responsabilisés grâce au développement des capacités, au capital d’amorçage, au mentorat et au réseautage.",
         }
 
       }
