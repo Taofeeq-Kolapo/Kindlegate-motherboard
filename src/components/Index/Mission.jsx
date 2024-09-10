@@ -34,11 +34,9 @@ const Mission = () => {
         const parsedHtml2 = parser2.parseFromString(mission, 'text/html');
         const plainText = parsedHtml.body.textContent || "";
         const plainText2 = parsedHtml2.body.textContent || "";
-      
         localStorage.setItem('mandate', plainText);
         localStorage.setItem('mission', plainText2);
       }
-
 
     const { t } = useTranslation()
     return (
