@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import Swiper from 'swiper'
 
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
@@ -11,6 +11,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
+import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 const Swipers = () => {
     const data = [
@@ -30,6 +32,50 @@ const Swipers = () => {
             imgSrc: "/img/safetyjustice.svg",
         },
     ];
+    const [Swiper1, setSwiper1] = useState("")
+    const [Swiper2, setSwiper2] = useState("")
+    const [Swiper3, setSwiper3] = useState("")
+    const [Swiper4, setSwiper4] = useState("")
+
+
+    const fetchSwiper = async () => {
+        // const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/home/4cbb35b6-4570-4d80-8aeb-2cac04412094/field_mandate_and_objective_sect?resourceVersion=id%3A41`
+        const base_url = "/api/mothership/homepage/sliders"
+        const response = await axios.get(base_url)
+        const result = response.data
+        // console.log(result)
+        // console.log(result.data)
+        console.log(result.data[0].attributes.field_slide_caption.value)
+        setSwiper1(result.data[0].attributes.field_slide_caption.value)
+        setSwiper2(result.data[1].attributes.field_slide_caption.value)
+        setSwiper3(result.data[2].attributes.field_slide_caption.value)
+        setSwiper4(result.data[3].attributes.field_slide_caption.value)
+    }
+
+
+    useEffect(() => {
+        fetchSwiper()
+    }, [])
+    if (typeof window !== 'undefined') {
+        const parser = new DOMParser();
+        const parser2 = new DOMParser();
+        const parser3 = new DOMParser();
+        const parser4 = new DOMParser();
+        const parsedHtml = parser.parseFromString(Swiper1, 'text/html');
+        const parsedHtml2 = parser2.parseFromString(Swiper2, 'text/html');
+        const parsedHtml3 = parser3.parseFromString(Swiper3, 'text/html');
+        const parsedHtml4 = parser4.parseFromString(Swiper4, 'text/html');
+        const plainText = parsedHtml.body.textContent || "";
+        const plainText2 = parsedHtml2.body.textContent || "";
+        const plainText3 = parsedHtml3.body.textContent || "";
+        const plainText4 = parsedHtml3.body.textContent || "";
+        localStorage.setItem('swiper1', plainText);
+        localStorage.setItem('swiper2', plainText2);
+        localStorage.setItem('swiper3', plainText3);
+        localStorage.setItem('swiper4', plainText4);
+    }
+
+    const { t } = useTranslation()
     return (
         <div className="lg:h-[60vh] h-[70vh] mt-4 items-center">
             <Swiper
@@ -44,19 +90,40 @@ const Swipers = () => {
                 scrollbar={ false}
             >
                 <div className='w-full flex relative h-full'>
-                    {
+                    {/* {
                         data.map((d, i) => {
-                            return (
-                                <SwiperSlide key={i} className='w-full px-[11%] flex flex-row items-center'>
+                            return ( */}
+                                <SwiperSlide className='w-full px-[11%] flex flex-row items-center'>
+                                    <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
+                                        <p>Healthy communities</p>
+                                        <p className='lg:mt-10 lg:text-[20px] md:text-[12px] text-[10px]'>{t("slide1Content")}</p>
+                                    </div>
+                                    <Image src={"/img/outdoor.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
+                                </SwiperSlide>
+                                <SwiperSlide className='w-full px-[11%] flex flex-row items-center'>
+                                    <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
+                                        <p>Social Economic Empowerment</p>
+                                        <p className='lg:mt-10 lg:text-[20px] md:text-[12px] text-[10px]'>{t("slide2Content")}</p>
+                                    </div>
+                                    <Image src={"/img/socialeconomic.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
+                                </SwiperSlide>
+                                <SwiperSlide className='w-full px-[11%] flex flex-row items-center'>
+                                    <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
+                                        <p>Safety and Justice</p>
+                                        <p className='lg:mt-6 lg:text-[20px] md:text-[12px] text-[10px]'>{t("slide3Content")}</p>
+                                    </div>
+                                    <Image src={"/img/safetyjustice.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
+                                </SwiperSlide>
+                                {/* <SwiperSlide key={i} className='w-full px-[11%] flex flex-row items-center'>
                                     <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
                                         <p>{d.text}</p>
                                         <p className='lg:mt-10 lg:text-[20px] md:text-[12px] text-[10px]'>{d.paragraph}</p>
                                     </div>
                                     <Image src={d.imgSrc} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
-                                </SwiperSlide>
-                            )
+                                </SwiperSlide> */}
+                            {/* )
                         })
-                    }
+                    } */}
                 </div>
                 ...
             </Swiper>

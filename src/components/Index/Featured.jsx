@@ -28,7 +28,7 @@ const Featured = () => {
     const [prog1, setProg1] = useState("")
     const [prog2, setProg2] = useState("")
     const [prog3, setProg3] = useState("")
-    const [prog4, setProg4] = useState("")
+    // const [prog4, setProg4] = useState("")
     // const [mission, setMission] = useState("")
 
 
