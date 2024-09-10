@@ -1,11 +1,69 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Btn1, MissionProps } from '../Reusable/Btn1'
 import { useTranslation } from 'react-i18next'
+import axios from 'axios'
 
 
 const Mission = () => {
-    const {t} = useTranslation()
+    const [mandate, setMandate] = useState("")
+    const [mission, setMission] = useState("")
+
+    // useEffect(() => {
+    //     fetchIndexpage()
+    // }, [])
+
+    // const fetchIndexpage = async () => {
+    //     const base_url = "/api/mothership/homepage"
+    //     try {
+    //         const resp = await axios.get(base_url)
+    //         const result = resp.data
+    //         console.log(result)
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }
+
+
+    const fetchMission = async () => {
+        const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/home/4cbb35b6-4570-4d80-8aeb-2cac04412094/field_mandate_and_objective_sect?resourceVersion=id%3A41`
+        const response = await axios.get(base_url)
+        const result = response.data
+        console.log(result.data)
+        console.log(result.data[0].attributes.field_objeactive_caption.value)
+        setMandate(result.data[0].attributes.field_mandate_caption.value)
+        setMission(result.data[0].attributes.field_objeactive_caption.value)
+    }
+
+
+    useEffect(() => {
+        fetchMission()
+    }, [])
+    // const parser = new DOMParser();
+    // const parser2 = new DOMParser();
+    // const parsedHtml = parser.parseFromString(mandate, 'text/html');
+    // const parsedHtml2 = parser2.parseFromString(mission, 'text/html');
+    // const plainText = parsedHtml.body.textContent || "";
+    // const plainText2 = parsedHtml2.body.textContent || "";
+    // if (typeof window !== 'undefined') {
+    //     localStorage.setItem('mandate', plainText);
+    //     localStorage.setItem('mission', plainText2);
+    // }
+    if (typeof window !== 'undefined') {
+        const parser = new DOMParser();
+        const parser2 = new DOMParser();
+        const parsedHtml = parser.parseFromString(mandate, 'text/html');
+        const parsedHtml2 = parser2.parseFromString(mission, 'text/html');
+        const plainText = parsedHtml.body.textContent || "";
+        const plainText2 = parsedHtml2.body.textContent || "";
+      
+        localStorage.setItem('mandate', plainText);
+        localStorage.setItem('mission', plainText2);
+      }
+
+
+    const { t } = useTranslation()
     return (
         <div className='bg-white flex lg:items-center justify-between w-full py-[2%] relative'>
             <Image data-aos="fade-right" className='lg:block lg:w-[305.05px] lg:h-[305.05px] relative lg:left-[-3rem] lg:top-[-4rem] md:w-[182px] md:h-[202px] w-[57px] h-[107px]' src={"/img/half.svg"} width={250} height={250} alt='' />
