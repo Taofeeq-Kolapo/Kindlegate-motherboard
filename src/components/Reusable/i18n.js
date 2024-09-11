@@ -64,8 +64,8 @@ i18n
           "slide3Content":"Nous croyons en un avenir éthique dans lequel les communautés sûres et justes disposent de systèmes judiciaires réactifs, équitables et qui fonctionnent pour les populations les plus vulnérables de notre pays, en particulier celles les plus touchées par la criminalité, la violence et les inégalités entre les sexes. Nous fournirons des systèmes de soutien et d'aide juridique qui réduiront les incarcérations inutiles.",
           "slide4Content":"Nous pensons qu'en articulant une position commune en faveur du déploiement de nos ressources culturelles diverses et riches, nous contribuerions à lutter contre des vices tels que l'agitation des jeunes, l'insécurité et le chômage. Ces efforts se manifesteront par la promotion d'activités, d'événements et par l'organisation d'expositions, d'ateliers, de formations et de festivals d'arts, de théâtre, de musique, d'artisanat et de culture d'inspiration africaine. En outre, les entrepreneurs seront responsabilisés grâce au développement des capacités, au capital d’amorçage, au mentorat et au réseautage.",
           "footer":"Rejoignez le mouvement qui transforme des vies grâce à un leadership éthique, à l'innovation et à une créativité d'inspiration africaine. Ensemble, nous bâtirons des communautés prospères.",
-          "mandateTitle":"",
-          "mandateContent":""
+          "mandateTitle":"NOTRE MANDAT",
+          "mandateContent":"Promouvoir la création d’une future société éthique de leadership éclairé et d’entrepreneuriat ; tirer parti de la technologie et des écosystèmes de marque pour accélérer la mise en œuvre des objectifs de développement durable intégrés tout en promouvant les arts d’inspiration africaine à travers le monde."
         }
 
       }
