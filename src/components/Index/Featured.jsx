@@ -28,6 +28,7 @@ const Featured = () => {
     const [prog1, setProg1] = useState("")
     const [prog2, setProg2] = useState("")
     const [prog3, setProg3] = useState("")
+    const [footer, setFooter] = useState("")
     // const [prog4, setProg4] = useState("")
 
     const fetchProgram = async () => {
@@ -40,23 +41,37 @@ const Featured = () => {
         setProg3(result.data[2].attributes.field_program_caption_body.value)
     }
 
+    const fetchFooter = async () => {
+        const base_url = "/api/mothership/homepage/footer"
+        const response = await axios.get(base_url)
+        const result = response.data
+        console.log(result.data[0].attributes.field_fotter_caption.value)
+        setFooter(result.data[0].attributes.field_fotter_caption.value)  
+    }
+
     useEffect(() => {
-        fetchProgram()
+        fetchProgram();
+        fetchFooter();
     }, [])
     if (typeof window !== 'undefined') {
         const parser = new DOMParser();
         const parser2 = new DOMParser();
         const parser3 = new DOMParser();
+        const parser4 = new DOMParser();
         const parsedHtml = parser.parseFromString(prog1, 'text/html');
         const parsedHtml2 = parser2.parseFromString(prog2, 'text/html');
         const parsedHtml3 = parser3.parseFromString(prog3, 'text/html');
+        const parsedHtml4 = parser4.parseFromString(footer, 'text/html');
         const plainText = parsedHtml.body.textContent || "";
         const plainText2 = parsedHtml2.body.textContent || "";
         const plainText3 = parsedHtml3.body.textContent || "";
+        const plainText4 = parsedHtml4.body.textContent || "";
         localStorage.setItem('prog1', plainText);
         localStorage.setItem('prog2', plainText2);
         localStorage.setItem('prog3', plainText3);
+        localStorage.setItem('footer', plainText4);
     }
+
 
     const { t } = useTranslation()
 

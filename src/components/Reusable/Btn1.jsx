@@ -19,7 +19,7 @@ export const Btn3 = ({ text, link }) => {
 export const Btn2 = ({ text }) => {
     return (
         <div>
-            <button className="bg-[#E3B522] text-black lg:w-[361px] w-[252px] font-bold h-[60px] rounded-[56px]">{text}</button>
+            <button className="bg-[#E3B522] text-black lg:text-[22px] lg:w-[361px] w-[252px] font-bold h-[60px] rounded-[56px]">{text}</button>
         </div>
     )
 }

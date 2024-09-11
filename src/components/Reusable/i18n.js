@@ -12,6 +12,9 @@ const slide1 = typeof window !== 'undefined' ? localStorage.getItem("swiper1") :
 const slide2 = typeof window !== 'undefined' ? localStorage.getItem("swiper2") : null;
 const slide3 = typeof window !== 'undefined' ? localStorage.getItem("swiper3") : null;
 const slide4 = typeof window !== 'undefined' ? localStorage.getItem("swiper4") : null;
+const footer = typeof window !== 'undefined' ? localStorage.getItem("footer") : null;
+const MandateTitle = typeof window !== 'undefined' ? localStorage.getItem("mandTitle") : null;
+const MandateContent = typeof window !== 'undefined' ? localStorage.getItem("mandCont") : null;
 
 
 i18n
@@ -37,6 +40,9 @@ i18n
           "slide2Content":slide2,
           "slide3Content":slide3,
           "slide4Content":slide4,
+          "footer":footer,
+          "mandateTitle":MandateTitle,
+          "mandateContent":MandateContent,
         }
       },
       fr: {
@@ -57,6 +63,9 @@ i18n
           "slide2Content":"Nous pensons que les villes et les régions sont plus fortes lorsque leurs habitants ont la possibilité de s’épanouir en tant qu’entrepreneurs, employeurs et employés. La Fondation Kindle Gate s'associera avec des organisations privées et publiques, en utilisant la technologie pour fournir aux citoyens indigents et aux demandeurs d'emploi l'acquisition des compétences nécessaires et mettre en relation les employeurs avec des employés potentiels formés. Cela contribuera à éliminer les obstacles à l’emploi en modernisant le système de main-d’œuvre. Grâce au plaidoyer et à la recherche fondée sur des preuves, nous servirons de guide aux décideurs politiques des gouvernements africains afin de promouvoir un leadership et un entrepreneuriat fondés sur la pensée.",
           "slide3Content":"Nous croyons en un avenir éthique dans lequel les communautés sûres et justes disposent de systèmes judiciaires réactifs, équitables et qui fonctionnent pour les populations les plus vulnérables de notre pays, en particulier celles les plus touchées par la criminalité, la violence et les inégalités entre les sexes. Nous fournirons des systèmes de soutien et d'aide juridique qui réduiront les incarcérations inutiles.",
           "slide4Content":"Nous pensons qu'en articulant une position commune en faveur du déploiement de nos ressources culturelles diverses et riches, nous contribuerions à lutter contre des vices tels que l'agitation des jeunes, l'insécurité et le chômage. Ces efforts se manifesteront par la promotion d'activités, d'événements et par l'organisation d'expositions, d'ateliers, de formations et de festivals d'arts, de théâtre, de musique, d'artisanat et de culture d'inspiration africaine. En outre, les entrepreneurs seront responsabilisés grâce au développement des capacités, au capital d’amorçage, au mentorat et au réseautage.",
+          "footer":"Rejoignez le mouvement qui transforme des vies grâce à un leadership éthique, à l'innovation et à une créativité d'inspiration africaine. Ensemble, nous bâtirons des communautés prospères.",
+          "mandateTitle":"",
+          "mandateContent":""
         }
 
       }

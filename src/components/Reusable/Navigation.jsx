@@ -13,7 +13,7 @@ import ProgramsBtn from "./Programe";
 
 
 
-const Nav = ({handleChangeLanguage}) => {
+const Nav = ({ handleChangeLanguage }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [mobileNav, setMobileNav] = useState(false)
 
@@ -42,7 +42,9 @@ const Nav = ({handleChangeLanguage}) => {
 
     return (
         <div className={`flex fixed top-0 w-full flex-row justify-between z-[500] items-center py-1 transition-all px-[7%] duration-300 ${isScrolled ? 'bg-[#14BDE3] backdrop-blur-md' : 'bg-transparent'}`}>
-            <Image width={70} height={70} src={"/img/klogo.svg"} alt="Logo" />
+            <Link href="/">
+                <Image width={70} height={70} src={"/img/klogo.svg"} alt="Logo" />
+            </Link>
             <div className="lg:flex hidden  text-[14px] justify-between items-center text-white font-bold w-[90%]">
                 <div className="relative">
                     <Link href={"/"}>HOME</Link>
@@ -56,9 +58,9 @@ const Nav = ({handleChangeLanguage}) => {
                 <Link href={"/blog"}>BLOG</Link>
                 <Link href={"/contact"}>CONTACT US</Link>
                 <Button2 />
-                <LanguageSelector/>
+                <LanguageSelector />
 
-                <TbSearch className="text-xl"/>
+                <TbSearch className="text-xl" />
                 <Link target="_blank" href={"http://Paystack.com/pay/kindlegatefoundation"}>
                     <button className="bg-[#00A859] lg:block hidden font-bold text-white px-3 py-1 rounded-2xl">Donate</button>
                 </Link>
