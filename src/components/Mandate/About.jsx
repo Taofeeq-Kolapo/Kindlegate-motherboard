@@ -70,6 +70,7 @@ const About = () => {
                     <div className='lg:text-[20px] md:text-[16px] text-[14px] lg:w-full w-[70%]'>
                         <p className='flex text-justify'>{t("aboutContent")}
                         </p>
+                        <br />
                         {/* <p>
                             purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
                         </p>
