@@ -15,7 +15,14 @@ const slide4 = typeof window !== 'undefined' ? localStorage.getItem("swiper4") :
 const footer = typeof window !== 'undefined' ? localStorage.getItem("footer") : null;
 const MandateTitle = typeof window !== 'undefined' ? localStorage.getItem("mandTitle") : null;
 const MandateContent = typeof window !== 'undefined' ? localStorage.getItem("mandCont") : null;
+const aboutContent = typeof window !== 'undefined' ? localStorage.getItem("aboutContent") : null;
+const aboutTitle = typeof window !== 'undefined' ? localStorage.getItem("aboutTitle") : null;
+const historyContent = typeof window !== 'undefined' ? localStorage.getItem("historyContent") : null;
+const historyTitle = typeof window !== 'undefined' ? localStorage.getItem("historyTitle") : null;
+const teamContent = typeof window !== 'undefined' ? localStorage.getItem("teamContent") : null;
+const teamTitle = typeof window !== 'undefined' ? localStorage.getItem("teamTitle") : null;
 
+// console.log(MandateTitle)
 
 i18n
   .use(Languagedetector).use(initReactI18next)
@@ -43,6 +50,12 @@ i18n
           "footer":footer,
           "mandateTitle":MandateTitle,
           "mandateContent":MandateContent,
+          "aboutTitle":aboutTitle,
+          "aboutContent":aboutContent,
+          "historyTitle":historyTitle,
+          "historyContent":historyContent,
+          "teamTitle":teamTitle,
+          "teamContent":teamContent,
         }
       },
       fr: {
@@ -65,7 +78,13 @@ i18n
           "slide4Content":"Nous pensons qu'en articulant une position commune en faveur du déploiement de nos ressources culturelles diverses et riches, nous contribuerions à lutter contre des vices tels que l'agitation des jeunes, l'insécurité et le chômage. Ces efforts se manifesteront par la promotion d'activités, d'événements et par l'organisation d'expositions, d'ateliers, de formations et de festivals d'arts, de théâtre, de musique, d'artisanat et de culture d'inspiration africaine. En outre, les entrepreneurs seront responsabilisés grâce au développement des capacités, au capital d’amorçage, au mentorat et au réseautage.",
           "footer":"Rejoignez le mouvement qui transforme des vies grâce à un leadership éthique, à l'innovation et à une créativité d'inspiration africaine. Ensemble, nous bâtirons des communautés prospères.",
           "mandateTitle":"NOTRE MANDAT",
-          "mandateContent":"Promouvoir la création d’une future société éthique de leadership éclairé et d’entrepreneuriat ; tirer parti de la technologie et des écosystèmes de marque pour accélérer la mise en œuvre des objectifs de développement durable intégrés tout en promouvant les arts d’inspiration africaine à travers le monde."
+          "mandateContent":"Promouvoir la création d’une future société éthique de leadership éclairé et d’entrepreneuriat ; tirer parti de la technologie et des écosystèmes de marque pour accélérer la mise en œuvre des objectifs de développement durable intégrés tout en promouvant les arts d’inspiration africaine à travers le monde.",
+          "aboutTitle":"",
+          "aboutContent":"",
+          "historyTitle":"",
+          "historyContent":"",
+          "teamTitle":"",
+          "teamContent":"",
         }
 
       }

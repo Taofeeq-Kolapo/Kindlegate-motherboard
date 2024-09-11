@@ -33,6 +33,8 @@ if (typeof window !== 'undefined') {
     localStorage.setItem('mandTitle', plainText1);
 }
 
+
+
 const {t} = useTranslation();
   return (
     <div className="bg-[url(/img/mandate.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">

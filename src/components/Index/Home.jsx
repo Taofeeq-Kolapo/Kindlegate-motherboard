@@ -34,7 +34,7 @@ export default function Home() {
   useEffect(() => {
     FetchIndex()
   }, [])
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
   return (
     <div className="bg-[url(/img/LandingImage.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
       <div className="pt-[5%] px-[7%] flex w-full justify-end">

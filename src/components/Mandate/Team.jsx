@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 const Team = () => {
 
@@ -48,18 +50,20 @@ const Team = () => {
             link:"/tribe/#trustee"
         },
     ]
+
+    const { t } = useTranslation()
     return (
         <div className='flex flex-col px-[10%] lg:my-[5%] lg:gap-10 items-center'>
             <div className='flex lg:flex-col flex-row lg:items-center w-full'>
                 <div className='flex flex-col lg:justify-center lg:items-center items-start lg:w-full  w-[30%]'>
-                    <p className='text-[#1E1E1E] lg:text-[36px] font-bold '>Our Team</p>
+                    <p className='text-[#1E1E1E] lg:text-[36px] font-bold '>{t("teamTitle")}</p>
                     <p className='h-1 lg:w-[135.2px] w-[66px] rounded-full bg-[#E3B522]'></p>
                 </div>
                 <div className='lg:text-[20px] md:text-[16px] text-[14px] lg:w-[70%] w-[70%] lg:text-center text-start flex flex-col gap-5'>
+                    <p>{t("teamContent")}</p>
+                    {/* <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
                     <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
-                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
-                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
-                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p>
+                    <p>purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant</p> */}
                 </div>
             </div>
 
