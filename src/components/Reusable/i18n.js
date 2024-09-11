@@ -86,7 +86,6 @@ i18n
           "teamTitle":"NOTRE ÉQUIPE",
           "teamContent":"Notre équipe de la Fondation Kindlegate est animée par une passion commune pour l’impact transformateur. Dirigée par le leadership visionnaire de notre président et directeur général, notre force réside dans la diversité et l’expertise de notre équipe. Guidée par un groupe d'administrateurs dédiés assurant une surveillance stratégique et un conseil consultatif qui offre des conseils sur les initiatives clés, notre orientation stratégique est façonnée par le Conseil d'administration et les sous-directions spécialisées pour garantir une mise en œuvre efficace du programme. Le conseil d'administration assure une gouvernance efficace, tandis que notre chef des programmes supervise et oriente nos activités axées sur notre mission grâce à la mise en œuvre d'initiatives percutantes. L'équipe de développement technologique, dirigée par notre directeur exécutif visionnaire, travaille sans relâche pour stimuler l'innovation et le changement durable. Ensemble, nous sommes unis dans notre engagement à favoriser la créativité, à autonomiser les communautés et à faire progresser les objectifs de développement durable à travers l’Afrique.",
         }
-
       }
     },
     lng: "en",
