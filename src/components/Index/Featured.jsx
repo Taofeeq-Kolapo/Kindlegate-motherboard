@@ -29,6 +29,8 @@ const Featured = () => {
     const [prog2, setProg2] = useState("")
     const [prog3, setProg3] = useState("")
     const [footer, setFooter] = useState("")
+    const [ctaContent, setCtacontent] = useState("")
+    const [ctaTitle, setCtaTitle] = useState("")
     // const [prog4, setProg4] = useState("")
 
     const fetchProgram = async () => {
@@ -48,28 +50,45 @@ const Featured = () => {
         console.log(result.data[0].attributes.field_fotter_caption.value)
         setFooter(result.data[0].attributes.field_fotter_caption.value)  
     }
+    const fetchcta = async () => {
+        const base_url = "/api/mothership/homepage/cta"
+        const response = await axios.get(base_url)
+        const result = response.data
+        console.log(result.data[0].attributes.field_call_to_action_section_cap.value)
+        setCtacontent(result.data[0].attributes.field_call_to_action_section_cap.value)
+        setCtaTitle(result.data[0].attributes.field_call_to_action_section_hea)  
+    }
 
     useEffect(() => {
         fetchProgram();
         fetchFooter();
+        fetchcta();
     }, [])
     if (typeof window !== 'undefined') {
         const parser = new DOMParser();
         const parser2 = new DOMParser();
         const parser3 = new DOMParser();
         const parser4 = new DOMParser();
+        const parser5 = new DOMParser();
+        const parser6 = new DOMParser();
         const parsedHtml = parser.parseFromString(prog1, 'text/html');
         const parsedHtml2 = parser2.parseFromString(prog2, 'text/html');
         const parsedHtml3 = parser3.parseFromString(prog3, 'text/html');
         const parsedHtml4 = parser4.parseFromString(footer, 'text/html');
+        const parsedHtml5 = parser5.parseFromString(ctaContent, 'text/html');
+        const parsedHtml6 = parser6.parseFromString(ctaTitle, 'text/html');
         const plainText = parsedHtml.body.textContent || "";
         const plainText2 = parsedHtml2.body.textContent || "";
         const plainText3 = parsedHtml3.body.textContent || "";
         const plainText4 = parsedHtml4.body.textContent || "";
+        const plainText5 = parsedHtml5.body.textContent || "";
+        const plainText6 = parsedHtml6.body.textContent || "";
         localStorage.setItem('prog1', plainText);
         localStorage.setItem('prog2', plainText2);
         localStorage.setItem('prog3', plainText3);
         localStorage.setItem('footer', plainText4);
+        localStorage.setItem('ctaContent', plainText5);
+        localStorage.setItem('ctaTitle', plainText6);
     }
 
 

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 
 const Journey = () => {
+    
     const {t} = useTranslation()
     return (
         <div className='lg:pl-[10%] px-[10%] flex lg:flex-row py-6 lg:gap-11 lg:items-center items-start bg-[#E3B522] justify-between'>
