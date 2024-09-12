@@ -1,8 +1,9 @@
 "use client"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
+import axios from 'axios'
 
 const Team = () => {
 
@@ -12,44 +13,78 @@ const Team = () => {
             post: 'TRUSTEES',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
-            link:"/tribe/#trustee"
+            link: "/tribe/#trustee"
         },
         {
             img: "/img/Avatard.svg",
             post: 'BOARD OF DIRECTORS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
-            link:"/tribe/#board"
+            link: "/tribe/#board"
         },
         {
             img: "/img/Avatard.svg",
             post: 'GOVERNING COUNCIL',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
-            link:"/tribe/#council"
+            link: "/tribe/#council"
         },
         {
             img: "/img/Avatard.svg",
             post: 'VOLUNTEERS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
-            link:"/tribe/#volunteer"
+            link: "/tribe/#volunteer"
         },
         {
             img: "/img/Avatard.svg",
             post: 'SPONSORS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
-            link:"/tribe/#trustee"
+            link: "/tribe/#trustee"
         },
         {
             img: "/img/Avatard.svg",
             post: 'MENTORS',
             name: "Maecenas porttitor congue massa",
             desc: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvina",
-            link:"/tribe/#trustee"
+            link: "/tribe/#trustee"
         },
     ]
+
+    const [team, setTeam] = useState("")
+    const [teamName, setTeamName] = useState("")
+    const [teamRole, setTeamRole] = useState("")
+    const [teams, setTeams] = useState([])
+
+
+    const FetchIndex = async () => {
+        const base_url = "/api/mothership/mandate_page/Teams"
+        const response = await axios.get(base_url)
+        const result = response.data
+        // console.log(result)
+        setTeams(result.data)
+        console.log(result.data[0].attributes.field_member_caption_body.value)
+        setTeam(result.data[0].attributes.field_member_caption_body.value)
+        setTeamName(result.data[0].attributes.field_member_name)
+        setTeamRole(result.data[0].attributes.field_member_role)
+    }
+
+    if (typeof window !== 'undefined') {
+        const parser = new DOMParser();
+        const parsedHtml = parser.parseFromString(team, 'text/html');
+        const plainText = parsedHtml.body.textContent || "";
+        localStorage.setItem('teamCont', plainText);
+        localStorage.setItem('teamName', teamName);
+        localStorage.setItem('teamrole', teamRole);
+    }
+
+
+    useEffect(() => {
+        FetchIndex()
+    }, [])
+
+
 
     const { t } = useTranslation()
     return (
@@ -69,18 +104,19 @@ const Team = () => {
 
             <div className='w-full grid lg:grid-cols-3 mt-7 md:grid-cols-2 grid-cols-1 gap-6 lg:w-[70%] lg:gap-[10%]'>
                 {
-                    trustee.map((d, i) => {
+                    teams.map((d, i) => {
                         return (
-                            <Link href={d.link} key={i} className='flex flex-col w-full'>
+                            <Link href={"/#"} key={i} className='flex flex-col w-full'>
                                 <div className='bg-[#E3B522] pt-4 flex justify-center items-end'>
                                     <Image src={d.img} alt='' width={150} height={200} />
                                 </div>
                                 <div className='flex justify-center py-2 bg-[#14BDE3]'>
-                                    <p className='font-bold'>{d.post}</p>
+                                    <p className='font-bold'>{d.attributes.field_member_role}</p>
                                 </div>
                                 <div className='bg-white border-1 border-black'>
-                                    <p className='font-semibold'>{d.name}</p>
-                                    <p>{d.desc}</p>
+                                    <p className='font-semibold'>{d.attributes.field_member_name}</p>
+                                    {/* <p>{d.attributes.field_member_caption_body.value}</p> */}
+                                    <p className='text-justify' dangerouslySetInnerHTML={{ __html: d.attributes.field_member_caption_body.value.slice(0, 140) }} />
                                 </div>
                             </Link>
                         )

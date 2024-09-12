@@ -21,8 +21,6 @@ const About = () => {
         setAboutTitle(result.data[0].attributes.field_about_us_title)
         sethistoryContent(result.data[1].attributes.field_history_caption_body.value)
         sethistoryTitle(result.data[1].attributes.field_history_title)
-        // sethistoryContent(result.data[1].attributes.field_history_caption_body.value)
-        // sethistoryTitle(result.data[1].attributes.field_history_title)
         setTeam(result.data[2].attributes.field_our_team_caption_body.value)
         setTeamTitle(result.data[2].attributes.field_our_team_title)
       }
