@@ -68,9 +68,9 @@ export const TeamProps = ({ img, role, text1, text2, text3, btntext, teamLink })
             </div>
             <div className="flex flex-col w-full items-center  gap-3">
                 <div className="flex flex-col gap-4 lg:w-full">
-                    <p>{text1}</p>
-                    <p>{text2}</p>
-                    <p>{text3}</p>
+                <p dangerouslySetInnerHTML={{ __html: text1 }} />
+                    {/* <p>{text2}</p>
+                    <p>{text3}</p> */}
                 </div>
                 <Btn3
                     link={""}

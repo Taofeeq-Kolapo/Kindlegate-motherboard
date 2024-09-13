@@ -27,8 +27,10 @@ const teamTitle = typeof window !== 'undefined' ? localStorage.getItem("teamTitl
 const journey = typeof window !== 'undefined' ? localStorage.getItem("ctaTitle") : null;
 const journeyContent = typeof window !== 'undefined' ? localStorage.getItem("ctaContent") : null;
 const programTitle = typeof window !== 'undefined' ? localStorage.getItem("progPageTitle") : null;
+const tribeC = typeof window !== 'undefined' ? localStorage.getItem("tribeC") : null;
+const tribeTitle = typeof window !== 'undefined' ? localStorage.getItem("tribeTitle") : null;
 
-console.log(prog1T, prog2Title, prog3Title)
+// console.log(prog1T, prog2Title, prog3Title)
 
 i18n
   .use(Languagedetector).use(initReactI18next)
@@ -66,6 +68,8 @@ i18n
           "teamTitle":teamTitle,
           "teamContent":teamContent,
           "progPageTitle":programTitle,
+          "tribeC":tribeC,
+          "tribeTitle":tribeTitle,
         }
       },
       fr: {
@@ -98,7 +102,9 @@ i18n
           "historyContent":"La Fondation Kindlegate a été créée en 2018 avec pour vision de créer un changement durable et positif dans les communautés africaines. Ancrée dans la conviction que chaque individu mérite une chance de s'épanouir, la fondation a commencé par relever des défis critiques en matière de soins de santé, d'éducation et de réduction de la pauvreté dans l'État de Lagos, au Nigeria. Depuis sa création, la fondation a aligné ses efforts sur le programme de développement durable des Nations Unies. Objectifs, axés sur la création de communautés saines, la promotion du développement économique et la garantie de la justice et de la sécurité pour tous. Au fil des années, Kindlegate a fait des progrès significatifs, en particulier à Lagos, où ses initiatives en matière de sécurité alimentaire, d'accès aux soins de santé et d'autonomisation des jeunes ont eu un impact sur des centaines de milliers de vies. Grâce à des partenariats stratégiques et à un engagement en faveur de l'innovation, Kindlegate a élargi sa portée et approfondi son impact. Aujourd'hui, la fondation continue de promouvoir le développement durable, en mettant particulièrement l'accent sur l'exploitation de la technologie, la promotion des arts d'inspiration africaine et la défense d'un leadership éthique à travers le continent.",
           "teamTitle":"NOTRE ÉQUIPE",
           "teamContent":"Notre équipe de la Fondation Kindlegate est animée par une passion commune pour l’impact transformateur. Dirigée par le leadership visionnaire de notre président et directeur général, notre force réside dans la diversité et l’expertise de notre équipe. Guidée par un groupe d'administrateurs dédiés assurant une surveillance stratégique et un conseil consultatif qui offre des conseils sur les initiatives clés, notre orientation stratégique est façonnée par le Conseil d'administration et les sous-directions spécialisées pour garantir une mise en œuvre efficace du programme. Le conseil d'administration assure une gouvernance efficace, tandis que notre chef des programmes supervise et oriente nos activités axées sur notre mission grâce à la mise en œuvre d'initiatives percutantes. L'équipe de développement technologique, dirigée par notre directeur exécutif visionnaire, travaille sans relâche pour stimuler l'innovation et le changement durable. Ensemble, nous sommes unis dans notre engagement à favoriser la créativité, à autonomiser les communautés et à faire progresser les objectifs de développement durable à travers l’Afrique.",
-          "progPageTitle":"La Fondation Kindlegate responsabilise les communautés grâce à divers programmes, notamment le développement du leadership, la formation à l'entrepreneuriat et la formation à l'entrepreneuriat. Ateliers, expositions artistiques, aide à la nourriture et au logement, formation informatique, ateliers professionnels, ateliers de sensibilisation aux ODD. Chaque initiative est conçue pour favoriser la croissance, la résilience et des moyens de subsistance durables à travers l’Afrique."
+          "progPageTitle":"La Fondation Kindlegate responsabilise les communautés grâce à divers programmes, notamment le développement du leadership, la formation à l'entrepreneuriat et la formation à l'entrepreneuriat. Ateliers, expositions artistiques, aide à la nourriture et au logement, formation informatique, ateliers professionnels, ateliers de sensibilisation aux ODD. Chaque initiative est conçue pour favoriser la croissance, la résilience et des moyens de subsistance durables à travers l’Afrique.",
+          "tribeC":"Rencontrez le cœur de la Fondation Kindlegate, notre équipe dévouée qui conduit le changement. Des administrateurs visionnaires et un conseil consultatif dynamique à notre conseil d'administration proactif, notre conseil d'administration et notre équipe de développement technologique spécialisée, nous sommes unis sous la direction de notre président/directeur exécutif. Découvrez comment chaque membre contribue à notre mission et transforme les communautés.",
+          "tribeTitle":"NOTRE TRIBU",
         }
       }
     },
