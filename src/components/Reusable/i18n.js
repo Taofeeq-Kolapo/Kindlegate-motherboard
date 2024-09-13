@@ -8,6 +8,9 @@ const indexContent = typeof window !== 'undefined' ? localStorage.getItem("IndCo
 const prog1 = typeof window !== 'undefined' ? localStorage.getItem("prog1") : null;
 const prog2 = typeof window !== 'undefined' ? localStorage.getItem("prog2") : null;
 const prog3 = typeof window !== 'undefined' ? localStorage.getItem("prog3") : null;
+const prog1T = typeof window !== 'undefined' ? localStorage.getItem("prog1t") : null;
+const prog2Title = typeof window !== 'undefined' ? localStorage.getItem("programTitle2") : null;
+const prog3Title = typeof window !== 'undefined' ? localStorage.getItem("progTitle3") : null;
 const slide1 = typeof window !== 'undefined' ? localStorage.getItem("swiper1") : null;
 const slide2 = typeof window !== 'undefined' ? localStorage.getItem("swiper2") : null;
 const slide3 = typeof window !== 'undefined' ? localStorage.getItem("swiper3") : null;
@@ -23,8 +26,9 @@ const teamContent = typeof window !== 'undefined' ? localStorage.getItem("teamCo
 const teamTitle = typeof window !== 'undefined' ? localStorage.getItem("teamTitle") : null;
 const journey = typeof window !== 'undefined' ? localStorage.getItem("ctaTitle") : null;
 const journeyContent = typeof window !== 'undefined' ? localStorage.getItem("ctaContent") : null;
+const programTitle = typeof window !== 'undefined' ? localStorage.getItem("progPageTitle") : null;
 
-// console.log(MandateTitle)
+console.log(prog1T, prog2Title, prog3Title)
 
 i18n
   .use(Languagedetector).use(initReactI18next)
@@ -42,6 +46,9 @@ i18n
           "learnbtn":"LEARN MORE",
           "journey":journey,
           "journeyContent":journeyContent,
+          "prog1t":prog1T,
+          "prog2t":prog2Title,
+          "prog3t":prog3Title,
           "prog1Content":prog1,
           "prog2Content":prog2,
           "prog3Content":prog3,
@@ -58,6 +65,7 @@ i18n
           "historyContent":historyContent,
           "teamTitle":teamTitle,
           "teamContent":teamContent,
+          "progPageTitle":programTitle,
         }
       },
       fr: {
@@ -71,6 +79,9 @@ i18n
           "learnbtn":"Apprendre encore plus",
           "journey":"LE VOYAGE POUR CONSTRUIRE UN MONDE MEILLEUR COMMENCE ICI AVEC VOUS",
           "journeyContent":"Soyez le catalyseur d’un réel changement. En tant que bénévole, partenaire, mentor ou sponsor, vous détenez le pouvoir de façonner un avenir meilleur. Ensemble, nous pouvons améliorer la qualité de vie et bâtir des communautés plus fortes et prospères. Commencez votre voyage avec nous dès aujourd'hui !",
+          "prog1t":"Direction",
+          "prog2t":"Entrepreneuriat",
+          "prog3t":"Art",
           "prog1Content":"À la Fondation Kindlegate, notre programme de leadership façonne des leaders visionnaires engagés dans un changement positif. Nous proposons une formation, un mentorat et des ressources approfondis, mettant l'accent sur la pensée critique, la prise de décision stratégique et le leadership éthique. Nos ateliers, séminaires et expériences pratiques permettent aux individus de diriger efficacement et d'inspirer leurs communautés. En collaborant avec des experts et des organisations, nous dotons les participants des outils nécessaires pour conduire un changement impactant. Notre objectif est de construire un réseau de leaders innovants dédiés à l’impact social et au développement durable. Rejoignez-nous pour favoriser un avenir où un leadership informé et éthique alimente le progrès et la croissance transformateurs.",
           "prog2Content":"À la Fondation Kindlegate, notre programme d'entrepreneuriat donne aux individus les compétences et les ressources nécessaires pour transformer des idées innovantes en entreprises réussies. Nous proposons une formation ciblée, un mentorat et un soutien aux entrepreneurs en herbe, en nous concentrant sur la planification d'entreprise, la gestion financière, la discipline financière et les stratégies de marché. Grâce à des ateliers, des événements de présentation et des conseils pratiques, les participants acquièrent des connaissances pratiques et une expérience essentielles au démarrage et au développement de leur entreprise. En favorisant un écosystème entrepreneurial dynamique, nous visons à stimuler la croissance économique et la création d’emplois. Rejoignez-nous pour former une nouvelle génération d'entrepreneurs qui stimulent l'innovation, bâtissent des entreprises durables et contribuent au développement communautaire.",
           "prog3Content":"À la Fondation Kindlegate, notre programme d'expositions d'art célèbre et promeut diverses expressions artistiques tout en soutenant les artistes émergents et établis. Nous organisons des expositions dynamiques présentant des arts, de l'artisanat et des objets culturels d'inspiration africaine. Notre programme offre aux artistes des plateformes pour présenter leur travail, interagir avec le public et gagner en reconnaissance. En organisant des événements en galerie, des ateliers et des projets collaboratifs, nous favorisons une appréciation plus profonde des arts et créons des opportunités d'échange culturel. Grâce à ces expositions, nous visons à enrichir les communautés, à préserver le patrimoine culturel et à inspirer la créativité. Rejoignez-nous pour soutenir les arts et célébrer la riche tapisserie des traditions artistiques mondiales.",
@@ -87,6 +98,7 @@ i18n
           "historyContent":"La Fondation Kindlegate a été créée en 2018 avec pour vision de créer un changement durable et positif dans les communautés africaines. Ancrée dans la conviction que chaque individu mérite une chance de s'épanouir, la fondation a commencé par relever des défis critiques en matière de soins de santé, d'éducation et de réduction de la pauvreté dans l'État de Lagos, au Nigeria. Depuis sa création, la fondation a aligné ses efforts sur le programme de développement durable des Nations Unies. Objectifs, axés sur la création de communautés saines, la promotion du développement économique et la garantie de la justice et de la sécurité pour tous. Au fil des années, Kindlegate a fait des progrès significatifs, en particulier à Lagos, où ses initiatives en matière de sécurité alimentaire, d'accès aux soins de santé et d'autonomisation des jeunes ont eu un impact sur des centaines de milliers de vies. Grâce à des partenariats stratégiques et à un engagement en faveur de l'innovation, Kindlegate a élargi sa portée et approfondi son impact. Aujourd'hui, la fondation continue de promouvoir le développement durable, en mettant particulièrement l'accent sur l'exploitation de la technologie, la promotion des arts d'inspiration africaine et la défense d'un leadership éthique à travers le continent.",
           "teamTitle":"NOTRE ÉQUIPE",
           "teamContent":"Notre équipe de la Fondation Kindlegate est animée par une passion commune pour l’impact transformateur. Dirigée par le leadership visionnaire de notre président et directeur général, notre force réside dans la diversité et l’expertise de notre équipe. Guidée par un groupe d'administrateurs dédiés assurant une surveillance stratégique et un conseil consultatif qui offre des conseils sur les initiatives clés, notre orientation stratégique est façonnée par le Conseil d'administration et les sous-directions spécialisées pour garantir une mise en œuvre efficace du programme. Le conseil d'administration assure une gouvernance efficace, tandis que notre chef des programmes supervise et oriente nos activités axées sur notre mission grâce à la mise en œuvre d'initiatives percutantes. L'équipe de développement technologique, dirigée par notre directeur exécutif visionnaire, travaille sans relâche pour stimuler l'innovation et le changement durable. Ensemble, nous sommes unis dans notre engagement à favoriser la créativité, à autonomiser les communautés et à faire progresser les objectifs de développement durable à travers l’Afrique.",
+          "progPageTitle":"La Fondation Kindlegate responsabilise les communautés grâce à divers programmes, notamment le développement du leadership, la formation à l'entrepreneuriat et la formation à l'entrepreneuriat. Ateliers, expositions artistiques, aide à la nourriture et au logement, formation informatique, ateliers professionnels, ateliers de sensibilisation aux ODD. Chaque initiative est conçue pour favoriser la croissance, la résilience et des moyens de subsistance durables à travers l’Afrique."
         }
       }
     },

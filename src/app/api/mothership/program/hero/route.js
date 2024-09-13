@@ -3,7 +3,7 @@ import axios from "axios"
 import { NextResponse } from "next/server"
 
 export async function GET(req){
-    const base_url = `http://test.kindlegatefoundation.org/jsonapi/paragraph/what_we_do_section/82094301-42d9-4e9f-a14d-50aefef4e125/field_what_we_do_items?resourceVersion=id%3A63`
+    const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/programs/0b1d82b8-6a09-4fef-97a5-a04fd5c8518b/field_program_hero_section?resourceVersion=id%3A44`
     try {
         const resp = await axios.get(base_url)
         const result = resp.data

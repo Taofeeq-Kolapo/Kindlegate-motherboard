@@ -26,6 +26,9 @@ const Featured = () => {
     //     },
     // ]
     const [prog1, setProg1] = useState("")
+    const [prog1T, setProg1T] = useState("")
+    const [prog2T, setProg2T] = useState("")
+    const [prog3T, setProg3T] = useState("")
     const [prog2, setProg2] = useState("")
     const [prog3, setProg3] = useState("")
     const [footer, setFooter] = useState("")
@@ -39,6 +42,9 @@ const Featured = () => {
         const result = response.data
         console.log(result.data[0].attributes.field_program_caption_body.value)
         setProg1(result.data[0].attributes.field_program_caption_body.value)
+        setProg1T(result.data[0].attributes.field_program_header)
+        setProg2T(result.data[1].attributes.field_program_header)
+        setProg3T(result.data[2].attributes.field_program_header)
         setProg2(result.data[1].attributes.field_program_caption_body.value)
         setProg3(result.data[2].attributes.field_program_caption_body.value)
     }
@@ -84,6 +90,9 @@ const Featured = () => {
         const plainText5 = parsedHtml5.body.textContent || "";
         const plainText6 = parsedHtml6.body.textContent || "";
         localStorage.setItem('prog1', plainText);
+        localStorage.setItem('prog1t', prog1T);
+        localStorage.setItem('programTitle2', prog2T);
+        localStorage.setItem('progTitle3', prog3T);
         localStorage.setItem('prog2', plainText2);
         localStorage.setItem('prog3', plainText3);
         localStorage.setItem('footer', plainText4);
@@ -108,7 +117,7 @@ const Featured = () => {
                     <Image src="/img/one.svg" width={300} height={300} className='lg:w-full md:w-[50%] w-[40%]' alt='' />
                     <div>
                         <div className='flex w-full lg:justify-center'>
-                            <p className='text-[#0A2640] text-[24px] font-bold'>Leadership</p>
+                            <p className='text-[#0A2640] text-[24px] font-bold'>{t("prog1t")}</p>
                         </div>
                         {/* <p>{d.content}</p> */}
                         <p className="text-justify">{t("prog1Content").slice(0,300)}...</p>
@@ -119,7 +128,7 @@ const Featured = () => {
                     <Image src="/img/two.svg" width={300} height={300} className='lg:w-full md:w-[50%] w-[40%]' alt='' />
                     <div>
                         <div className='flex w-full lg:justify-center'>
-                            <p className='text-[#0A2640] text-[24px] font-bold'>Entrepreneurship</p>
+                            <p className='text-[#0A2640] text-[24px] font-bold'>{t("prog2t")}</p>
                         </div>
                         {/* <p>{d.content}</p> */}
                         <p className="text-justify">{t("prog2Content").slice(0,300)}...</p>
@@ -130,7 +139,7 @@ const Featured = () => {
                     <Image src="/img/three.svg" width={300} height={300} className='lg:w-full md:w-[50%] w-[40%]' alt='' />
                     <div>
                         <div className='flex w-full lg:justify-center'>
-                            <p className='text-[#0A2640] text-[24px] font-bold'>Art</p>
+                            <p className='text-[#0A2640] text-[24px] font-bold'>{t("prog3t")}</p>
                         </div>
                         {/* <p>{d.content}</p> */}
                         <p className="text-justify">{t("prog3Content").slice(0, 300)}...</p>

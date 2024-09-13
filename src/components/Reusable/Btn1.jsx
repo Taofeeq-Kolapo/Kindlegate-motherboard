@@ -39,7 +39,7 @@ export const MissionProps = ({ title, content }) => {
 
 export const Whatwedo = ({ img, role, text1, text2, text3 }) => {
     return (
-        <div className="flex lg:flex-row flex-col w-full gap-[6%] lg:px-0 px-[10%] justify-between items-center">
+        <div className="flex lg:flex-row flex-col w-full gap-[6%] lg:px-0 px-[10%] justify-between items-start">
             <div className="flex flex-col gap-2 items-center lg:w-[40%]">
                 <Image src={img} alt="" className="w-full" width={300} height={300} />
                 <div className='flex flex-col gap-1 items-center'>
@@ -48,9 +48,10 @@ export const Whatwedo = ({ img, role, text1, text2, text3 }) => {
                 </div>
             </div>
             <div className="flex flex-col gap-4 lg:w-[60%] mt-3 lg:text-justify text-center w-full lg:text-[20px] md:text-[16px] text-[10px] ">
-                <p>{text1}</p>
-                <p>{text2}</p>
-                <p>{text3}</p>
+                {/* <p dangerouslySetInnerHTML={{__html}}>{text1}</p> */}
+                <p dangerouslySetInnerHTML={{ __html: text1 }} />
+                {/* <p>{text2}</p>
+                <p>{text3}</p> */}
             </div>
         </div>
     )
