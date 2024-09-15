@@ -29,8 +29,15 @@ const journeyContent = typeof window !== 'undefined' ? localStorage.getItem("cta
 const programTitle = typeof window !== 'undefined' ? localStorage.getItem("progPageTitle") : null;
 const tribeC = typeof window !== 'undefined' ? localStorage.getItem("tribeC") : null;
 const tribeTitle = typeof window !== 'undefined' ? localStorage.getItem("tribeTitle") : null;
+const newsC = typeof window !== 'undefined' ? localStorage.getItem("newsC") : null;
+const newsTitle = typeof window !== 'undefined' ? localStorage.getItem("newsTitle") : null;
+const blogC = typeof window !== 'undefined' ? localStorage.getItem("blogC") : null;
+const blogTitle = typeof window !== 'undefined' ? localStorage.getItem("blogTitle") : null;
+const newsBody = typeof window !== 'undefined' ? localStorage.getItem("newsBody") : null;
+const newsHeader = typeof window !== 'undefined' ? localStorage.getItem("newsHeader") : null;
 
 // console.log(prog1T, prog2Title, prog3Title)
+
 
 i18n
   .use(Languagedetector).use(initReactI18next)
@@ -70,6 +77,12 @@ i18n
           "progPageTitle":programTitle,
           "tribeC":tribeC,
           "tribeTitle":tribeTitle,
+          "newsTitle":newsTitle,
+          "newsC":newsC,
+          "newsHeader":newsHeader,
+          "newsBody":newsBody,
+          "blogC":blogC,
+          "blogTitle":blogTitle,
         }
       },
       fr: {
@@ -105,6 +118,12 @@ i18n
           "progPageTitle":"La Fondation Kindlegate responsabilise les communautés grâce à divers programmes, notamment le développement du leadership, la formation à l'entrepreneuriat et la formation à l'entrepreneuriat. Ateliers, expositions artistiques, aide à la nourriture et au logement, formation informatique, ateliers professionnels, ateliers de sensibilisation aux ODD. Chaque initiative est conçue pour favoriser la croissance, la résilience et des moyens de subsistance durables à travers l’Afrique.",
           "tribeC":"Rencontrez le cœur de la Fondation Kindlegate, notre équipe dévouée qui conduit le changement. Des administrateurs visionnaires et un conseil consultatif dynamique à notre conseil d'administration proactif, notre conseil d'administration et notre équipe de développement technologique spécialisée, nous sommes unis sous la direction de notre président/directeur exécutif. Découvrez comment chaque membre contribue à notre mission et transforme les communautés.",
           "tribeTitle":"NOTRE TRIBU",
+          "newsTitle":"NOUVELLES ET ÉVÉNEMENTS",
+          "newsC":"Restez connecté avec les derniers événements de la Fondation Kindlegate grâce à notre page Actualités et événements. Vous trouverez ici des mises à jour sur nos projets marquants, les événements à venir, nos réussites et les opportunités de vous impliquer. Rejoignez-nous pour célébrer les jalons et explorer de nouvelles initiatives qui génèrent des changements positifs dans nos communautés. Restez informé, restez inspiré !",
+          "newsHeader":newsHeader,
+          "newsBody":newsBody,
+          "blogC":"Bienvenue sur le blog de la Fondation Kindlegate ! Découvrez des histoires inspirantes, des avis d'experts et des mises à jour sur notre mission d'autonomisation des communautés. Explorez des articles, des vidéos et des images attrayants qui mettent en valeur notre mission, nos projets et leur impact. Restez informé de nos domaines d'intervention et des objectifs des ODD, et rejoignez la conversation alors que nous conduisons un changement positif et travaillons pour un avenir meilleur et durable.",
+          "blogTitle":"bloguer",
         }
       }
     },

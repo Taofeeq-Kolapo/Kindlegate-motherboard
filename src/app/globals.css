@@ -9,7 +9,7 @@
 .tab{
     font-family: "Calibri", sans-serif;
 }
-
+/* 
 .backgound2{
     background: url(../../public/img/mandate.svg);
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
     background: url(../../public/img/involve.svg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .clip-slant {
     clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);

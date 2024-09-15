@@ -1,5 +1,7 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
+import axios from 'axios'
 
 const UpcomingEvent = () => {
     const event = [
@@ -25,6 +27,9 @@ const UpcomingEvent = () => {
             join: 'Join Now',
         }
     ]
+
+    
+
     return (
         <div className='flex flex-col py-[6%] gap-9 lg:px-[15%] px-[10%] bg-white'>
             <div className="w-full justify-center flex">
