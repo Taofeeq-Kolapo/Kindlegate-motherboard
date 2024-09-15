@@ -33,6 +33,10 @@ const newsC = typeof window !== 'undefined' ? localStorage.getItem("newsC") : nu
 const newsTitle = typeof window !== 'undefined' ? localStorage.getItem("newsTitle") : null;
 const blogC = typeof window !== 'undefined' ? localStorage.getItem("blogC") : null;
 const blogTitle = typeof window !== 'undefined' ? localStorage.getItem("blogTitle") : null;
+const involvC = typeof window !== 'undefined' ? localStorage.getItem("involvC") : null;
+const involveTitle = typeof window !== 'undefined' ? localStorage.getItem("involveTitle") : null;
+const heroinvolvC = typeof window !== 'undefined' ? localStorage.getItem("heroinvolvC") : null;
+const heroinvolveTitle = typeof window !== 'undefined' ? localStorage.getItem("heroinvolveTitle") : null;
 const newsBody = typeof window !== 'undefined' ? localStorage.getItem("newsBody") : null;
 const newsHeader = typeof window !== 'undefined' ? localStorage.getItem("newsHeader") : null;
 
@@ -83,6 +87,10 @@ i18n
           "newsBody":newsBody,
           "blogC":blogC,
           "blogTitle":blogTitle,
+          "involvC":involvC,
+          "involveTitle":involveTitle,
+          "heroinvolvC":heroinvolvC,
+          "heroinvolveTitle":heroinvolveTitle,
         }
       },
       fr: {
@@ -124,6 +132,10 @@ i18n
           "newsBody":newsBody,
           "blogC":"Bienvenue sur le blog de la Fondation Kindlegate ! Découvrez des histoires inspirantes, des avis d'experts et des mises à jour sur notre mission d'autonomisation des communautés. Explorez des articles, des vidéos et des images attrayants qui mettent en valeur notre mission, nos projets et leur impact. Restez informé de nos domaines d'intervention et des objectifs des ODD, et rejoignez la conversation alors que nous conduisons un changement positif et travaillons pour un avenir meilleur et durable.",
           "blogTitle":"bloguer",
+          "involvC":"À la Fondation Kindlegate, nous croyons au pouvoir de la collaboration. En tant que partenaire, sponsor, mentor ou bénévole, vous jouez un rôle essentiel dans la création d'un impact transformateur. Ensemble, nous pouvons responsabiliser les communautés, favoriser l’innovation et défendre le développement durable dans toute l’Afrique. Votre contribution, que ce soit sous forme de ressources, de connaissances ou de votre temps, peut véritablement avoir un impact positif. Rejoignez notre réseau d’acteurs et de moteurs de changement dès aujourd’hui. Faites partie d’une mission qui inspire le progrès, la résilience et un changement positif durable.",
+          "involveTitle":"BÉNÉVOLE, MENTOR, PARTENAIRE OU COMMANDITAIRE",
+          "heroinvolvC":"Be a catalyst for lasting change. Get involved with Kindlegate Foundation and help us transform lives through ethical leadership, innovation, and community empowerment. Whether you’re a volunteer, partner, or donor, your contribution creates real impact. Join us today and shape a brighter future for Africa and beyond.",
+          "heroinvolveTitle":"IMPLIQUEZ-VOUS",
         }
       }
     },

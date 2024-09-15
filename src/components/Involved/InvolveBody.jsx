@@ -1,6 +1,8 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { url } from 'inspector'
+import { useTranslation } from 'react-i18next'
+import axios from 'axios'
 
 const InvolveBody = () => {
     const data = [
@@ -30,12 +32,37 @@ const InvolveBody = () => {
         },
 
     ]
+
+    const [index, setIndex] = useState("")
+    const [title, setTitle] = useState("")
+
+    const FetchIndex = async () => {
+        const base_url = "/api/mothership/involve"
+        const response = await axios.get(base_url)
+        const result = response.data
+        console.log(result.data[0].attributes.field_roles_header_caption.value)
+        setIndex(result.data[0].attributes.field_roles_header_caption.value)
+        setTitle(result.data[0].attributes.field_roles_main_header)
+    }
+
+    if (typeof window !== 'undefined') {
+        const parser = new DOMParser();
+        const parsedHtml = parser.parseFromString(index, 'text/html');
+        const plainText = parsedHtml.body.textContent || "";
+        localStorage.setItem('involvC', plainText);
+        localStorage.setItem('involveTitle', title);
+    }
+
+    useEffect(() => {
+        FetchIndex();
+    }, [])
+    const { t } = useTranslation();
     return (
         <div className='px-[10%] flex flex-col items-center justify-center lg:my-[5%] my-[3%] '>
             <div className='flex flex-col lg:gap-7 gap-5 lg:w-[60%] w-full items-center'>
-                <p className='lg:text-[36px] md:text-[23px] text-[18px] font-bold lg:w-[70%] text-center'>VOLUNTEER, PARTNER, MENTOR OR SPONSOR</p>
-                <p className='flex lg:text-center text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”</p>
-                <p className='flex lg:text-center text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”</p>
+                <p className='lg:text-[36px] md:text-[23px] text-[18px] font-bold lg:w-[70%] text-center'>{t("involveTitle")}</p>
+                <p className='flex lg:text-center text-justify'>{t("involvC")}</p>
+                {/* <p className='flex lg:text-center text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor”</p> */}
             </div>
             <div className='h-[8px] bg-[#E3B522]'></div>
             <div className='flex flex-col gap-6 py-[4%]'>
