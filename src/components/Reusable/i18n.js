@@ -34,7 +34,9 @@ const newsTitle = typeof window !== 'undefined' ? localStorage.getItem("newsTitl
 const blogC = typeof window !== 'undefined' ? localStorage.getItem("blogC") : null;
 const blogTitle = typeof window !== 'undefined' ? localStorage.getItem("blogTitle") : null;
 const sponsorC = typeof window !== 'undefined' ? localStorage.getItem("sponsorC") : null;
+const mentorC = typeof window !== 'undefined' ? localStorage.getItem("mentorC") : null;
 const sponsorTitle = typeof window !== 'undefined' ? localStorage.getItem("sponsorTitle") : null;
+const mentorTitle = typeof window !== 'undefined' ? localStorage.getItem("mentorTitle") : null;
 const sponsoreventC = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventC") : null;
 const sponsoreventTitle = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventTitle") : null;
 const sponsoreventpackage = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventpackage") : null;
@@ -44,6 +46,9 @@ const heroinvolvC = typeof window !== 'undefined' ? localStorage.getItem("heroin
 const heroinvolveTitle = typeof window !== 'undefined' ? localStorage.getItem("heroinvolveTitle") : null;
 const newsBody = typeof window !== 'undefined' ? localStorage.getItem("newsBody") : null;
 const newsHeader = typeof window !== 'undefined' ? localStorage.getItem("newsHeader") : null;
+const becomementorcontent = typeof window !== 'undefined' ? localStorage.getItem("becomementorcontent") : null;
+const becomementorheader = typeof window !== 'undefined' ? localStorage.getItem("becomementorheader") : null;
+const mentorpackage = typeof window !== 'undefined' ? localStorage.getItem("mentorpackage") : null;
 
 // console.log(prog1T, prog2Title, prog3Title)
 
@@ -98,9 +103,14 @@ i18n
           "heroinvolveTitle":heroinvolveTitle,
           "sponsorC":sponsorC,
           "sponsorTitle":sponsorTitle,
+          "mentorC":mentorC,
+          "mentorTitle":mentorTitle,
           "sponsoreventC":sponsoreventC,
           "sponsoreventTitle":sponsoreventTitle,
           "sponsoreventpackage":sponsoreventpackage,
+          "mentorpackage":mentorpackage,
+          "becomementorheader":becomementorheader,
+          "becomementorcontent":becomementorcontent
         }
       },
       fr: {
@@ -150,7 +160,12 @@ i18n
           "sponsorTitle":"NOS COMMANDITAIRES",
           "sponsoreventC":"Nous avons découvert que nos sponsors sont des individus et des organisations dont le soutien vital fait avancer notre mission. Leur engagement responsabilise les communautés et alimente des programmes percutants à travers l’Afrique. Découvrez comment leur partenariat crée un changement transformateur et explorez les façons dont vous pouvez nous rejoindre pour faire la différence.",
           "sponsoreventTitle":"NOS COMMANDITAIRES",
-          "sponsoreventpackage":sponsoreventpackage
+          "sponsoreventpackage":sponsoreventpackage,
+          "mentorC":"Les mentors de la Fondation Kindlegate sont des champions qui stimulent le changement grâce à leur expertise et leur passion. En guidant les leaders et entrepreneurs émergents, ils alimentent l’innovation et la croissance. Rejoignez-nous pour célébrer leur dévouement et découvrez comment vous pouvez contribuer à façonner l'avenir grâce au mentorat.",
+          "mentorTitle":"NOS MENTORS",
+          "mentorpackage":mentorpackage,
+          "becomementorheader":"DEVENEZ MENTOR",
+          "becomementorcontent":"Devenez mentor avec la Fondation Kindlegate et jouez un rôle en influençant la future génération de dirigeants, d’entrepreneurs et d’innovateurs africains. Grâce au mentorat, au partage des connaissances et aux encouragements, vous pouvez avoir un impact significatif en promouvant un leadership honnête, l'innovation commerciale et la croissance des communautés. Votre expertise et vos conseils ont le pouvoir de transformer des vies et de susciter un changement durable en Afrique. En faisant partie de notre réseau, vous jouerez un rôle crucial dans la construction d’un avenir meilleur. N'attendez pas, agissez maintenant et faites partie d'un mouvement qui favorise un leadership sans précédent, un entrepreneuriat novateur et un développement communautaire exceptionnel. Postulez dès aujourd'hui et rejoignez-nous pour créer un monde enrichi de possibilités illimitées."
         }
       }
     },
