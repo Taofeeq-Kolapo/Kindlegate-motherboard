@@ -12,8 +12,6 @@ const BlogHero = () => {
         const base_url = "/api/mothership/blog"
         const response = await axios.get(base_url)
         const result = response.data
-        // console.log(result)
-        // console.log(result.data)
         console.log(result.data[0].attributes.field_blog_hero_caption.value)
         setIndex(result.data[0].attributes.field_blog_hero_caption.value)
         setTitle(result.data[0].attributes.field_blog_hero_title)
@@ -22,12 +20,8 @@ const BlogHero = () => {
         const base_url = "/api/mothership/blog/blogimg"
         const response = await axios.get(base_url)
         const result = response.data
-        // console.log(result)
-        // console.log(result.data)
         console.log(result.data.attributes.uri.url)
         setImg(result.data.attributes.uri.url)
-        // setImg(result.data[0].attributes.field_blog_hero_caption.value)
-        // setTitle(result.data[0].attributes.field_blog_hero_title)
     }
 
     if (typeof window !== 'undefined') {

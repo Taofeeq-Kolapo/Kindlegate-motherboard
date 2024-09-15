@@ -33,6 +33,11 @@ const newsC = typeof window !== 'undefined' ? localStorage.getItem("newsC") : nu
 const newsTitle = typeof window !== 'undefined' ? localStorage.getItem("newsTitle") : null;
 const blogC = typeof window !== 'undefined' ? localStorage.getItem("blogC") : null;
 const blogTitle = typeof window !== 'undefined' ? localStorage.getItem("blogTitle") : null;
+const sponsorC = typeof window !== 'undefined' ? localStorage.getItem("sponsorC") : null;
+const sponsorTitle = typeof window !== 'undefined' ? localStorage.getItem("sponsorTitle") : null;
+const sponsoreventC = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventC") : null;
+const sponsoreventTitle = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventTitle") : null;
+const sponsoreventpackage = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventpackage") : null;
 const involvC = typeof window !== 'undefined' ? localStorage.getItem("involvC") : null;
 const involveTitle = typeof window !== 'undefined' ? localStorage.getItem("involveTitle") : null;
 const heroinvolvC = typeof window !== 'undefined' ? localStorage.getItem("heroinvolvC") : null;
@@ -91,6 +96,11 @@ i18n
           "involveTitle":involveTitle,
           "heroinvolvC":heroinvolvC,
           "heroinvolveTitle":heroinvolveTitle,
+          "sponsorC":sponsorC,
+          "sponsorTitle":sponsorTitle,
+          "sponsoreventC":sponsoreventC,
+          "sponsoreventTitle":sponsoreventTitle,
+          "sponsoreventpackage":sponsoreventpackage,
         }
       },
       fr: {
@@ -136,6 +146,11 @@ i18n
           "involveTitle":"BÉNÉVOLE, MENTOR, PARTENAIRE OU COMMANDITAIRE",
           "heroinvolvC":"Be a catalyst for lasting change. Get involved with Kindlegate Foundation and help us transform lives through ethical leadership, innovation, and community empowerment. Whether you’re a volunteer, partner, or donor, your contribution creates real impact. Join us today and shape a brighter future for Africa and beyond.",
           "heroinvolveTitle":"IMPLIQUEZ-VOUS",
+          "sponsorC":"Nous avons découvert que nos sponsors sont des individus et des organisations dont le soutien vital fait avancer notre mission. Leur engagement responsabilise les communautés et alimente des programmes percutants à travers l’Afrique. Découvrez comment leur partenariat crée un changement transformateur et explorez les façons dont vous pouvez nous rejoindre pour faire la différence.",
+          "sponsorTitle":"NOS COMMANDITAIRES",
+          "sponsoreventC":"Nous avons découvert que nos sponsors sont des individus et des organisations dont le soutien vital fait avancer notre mission. Leur engagement responsabilise les communautés et alimente des programmes percutants à travers l’Afrique. Découvrez comment leur partenariat crée un changement transformateur et explorez les façons dont vous pouvez nous rejoindre pour faire la différence.",
+          "sponsoreventTitle":"NOS COMMANDITAIRES",
+          "sponsoreventpackage":sponsoreventpackage
         }
       }
     },
