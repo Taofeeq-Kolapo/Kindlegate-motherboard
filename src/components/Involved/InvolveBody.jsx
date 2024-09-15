@@ -35,6 +35,9 @@ const InvolveBody = () => {
 
     const [index, setIndex] = useState("")
     const [title, setTitle] = useState("")
+    const [part, setpart] = useState("")
+    const [involveContent, setinvolveContent] = useState([])
+    const [involveContentbtn, setinvolveContentbtn] = useState([])
 
     const FetchIndex = async () => {
         const base_url = "/api/mothership/involve"
@@ -43,6 +46,7 @@ const InvolveBody = () => {
         console.log(result.data[0].attributes.field_roles_header_caption.value)
         setIndex(result.data[0].attributes.field_roles_header_caption.value)
         setTitle(result.data[0].attributes.field_roles_main_header)
+        setpart(result.data[0].attributes.field_roles_option_header)
     }
 
     if (typeof window !== 'undefined') {
@@ -53,8 +57,16 @@ const InvolveBody = () => {
         localStorage.setItem('involveTitle', title);
     }
 
+    const fetchContent = async ()=>{
+        const base_url =  "/api/mothership/involve/get_involved"
+        const response = await axios.get(base_url)
+        const result = response.data
+        setinvolveContent(result.data)
+    }
+
     useEffect(() => {
         FetchIndex();
+        fetchContent();
     }, [])
     const { t } = useTranslation();
     return (
@@ -66,18 +78,17 @@ const InvolveBody = () => {
             </div>
             <div className='h-[8px] bg-[#E3B522]'></div>
             <div className='flex flex-col gap-6 py-[4%]'>
-                <p className='lg:text-[40px] md:text-[24px] text-[16px] font-bold'>HERE ARE SOME WAYS TO BE A PART OF US</p>
+                <p className='lg:text-[40px] md:text-[24px] text-[16px] font-bold'>{part}</p>
                 <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[10%] gap-5'>
                     {
-                        data.map((d, i) => {
+                        involveContent.map((d, i) => {
                             return (
                                 <div key={i} className='flex flex-col items-center'>
                                     <div>
-                                        <p className='lg:text-[20px] text-[17px] text-justify'>{d.content1}</p>
-                                        <p className='lg:text-[20px] text-[17px] text-justify'>{d.content2}</p>
+                                        <p className='lg:text-[20px] text-[17px] text-justify' dangerouslySetInnerHTML={{__html:d.attributes.field_role_description.value}}></p>
                                     </div>
-                                    <Link href={d.url}>
-                                        <button className='lg:px-[56px] font-bold bg-[#E3B522] rounded-[56px] px-[30px] py-[8px] lg:py-[16px]'>{d.Link}</button>
+                                    <Link href={d.attributes.field_role_name.toLowerCase()}>
+                                        <button className='lg:px-[56px] font-bold bg-[#E3B522] rounded-[56px] px-[30px] py-[8px] lg:py-[16px]'>{d.attributes.field_role_name}</button>
                                     </Link>
                                 </div>
                             )
