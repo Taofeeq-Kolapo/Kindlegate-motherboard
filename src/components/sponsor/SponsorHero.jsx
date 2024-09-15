@@ -44,7 +44,7 @@ const SponsorrHero = () => {
     return (
         <div className="bg-[url(/img/sponsor.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full relative">
             <div className='absolute w-full h-screen top-0 bg-black inset-0 bg-opacity-50'></div>
-            <div className="pt-[5%] px-[7%] flex w-full z-[500]">
+            <div className="pt-[5%] px-[7%] flex w-full z-[300]">
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold text-[40px] text-white leading-none">{t("sponsorTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
