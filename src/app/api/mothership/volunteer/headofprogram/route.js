@@ -1,9 +1,10 @@
+
 import axios from "axios"
 import { error } from "console"
 import { NextResponse } from "next/server"
 
 export async function GET(req){
-    const base_url = `http://test.kindlegatefoundation.org/jsonapi/node/volunteers/98ec1c75-0695-4d8a-8c7a-894ec7928228/field_volunteer_hero_section?resourceVersion=id%3A55`
+    const base_url = `http://test.kindlegatefoundation.org/jsonapi/paragraph/head_of_program_section/76dfe928-6fad-4ffc-b72b-0d32c47aff81/field_head_of_program_item?resourceVersion=id%3A107`
     try {
         const resp = await axios.get(base_url)
         const result = resp.data

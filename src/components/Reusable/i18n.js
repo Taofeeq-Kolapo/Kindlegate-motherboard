@@ -42,6 +42,8 @@ const sponsoreventTitle = typeof window !== 'undefined' ? localStorage.getItem("
 const sponsoreventpackage = typeof window !== 'undefined' ? localStorage.getItem("sponsoreventpackage") : null;
 const involvC = typeof window !== 'undefined' ? localStorage.getItem("involvC") : null;
 const involveTitle = typeof window !== 'undefined' ? localStorage.getItem("involveTitle") : null;
+const VolunteerC = typeof window !== 'undefined' ? localStorage.getItem("VolunteerC") : null;
+const VolunteerTitle = typeof window !== 'undefined' ? localStorage.getItem("VolunteerTitle") : null;
 const heroinvolvC = typeof window !== 'undefined' ? localStorage.getItem("heroinvolvC") : null;
 const heroinvolveTitle = typeof window !== 'undefined' ? localStorage.getItem("heroinvolveTitle") : null;
 const newsBody = typeof window !== 'undefined' ? localStorage.getItem("newsBody") : null;
@@ -110,7 +112,9 @@ i18n
           "sponsoreventpackage":sponsoreventpackage,
           "mentorpackage":mentorpackage,
           "becomementorheader":becomementorheader,
-          "becomementorcontent":becomementorcontent
+          "becomementorcontent":becomementorcontent,
+          "VolunteerC":VolunteerC,
+          "VolunteerTitle":VolunteerTitle,
         }
       },
       fr: {
@@ -165,7 +169,9 @@ i18n
           "mentorTitle":"NOS MENTORS",
           "mentorpackage":mentorpackage,
           "becomementorheader":"DEVENEZ MENTOR",
-          "becomementorcontent":"Devenez mentor avec la Fondation Kindlegate et jouez un rôle en influençant la future génération de dirigeants, d’entrepreneurs et d’innovateurs africains. Grâce au mentorat, au partage des connaissances et aux encouragements, vous pouvez avoir un impact significatif en promouvant un leadership honnête, l'innovation commerciale et la croissance des communautés. Votre expertise et vos conseils ont le pouvoir de transformer des vies et de susciter un changement durable en Afrique. En faisant partie de notre réseau, vous jouerez un rôle crucial dans la construction d’un avenir meilleur. N'attendez pas, agissez maintenant et faites partie d'un mouvement qui favorise un leadership sans précédent, un entrepreneuriat novateur et un développement communautaire exceptionnel. Postulez dès aujourd'hui et rejoignez-nous pour créer un monde enrichi de possibilités illimitées."
+          "becomementorcontent":"Devenez mentor avec la Fondation Kindlegate et jouez un rôle en influençant la future génération de dirigeants, d’entrepreneurs et d’innovateurs africains. Grâce au mentorat, au partage des connaissances et aux encouragements, vous pouvez avoir un impact significatif en promouvant un leadership honnête, l'innovation commerciale et la croissance des communautés. Votre expertise et vos conseils ont le pouvoir de transformer des vies et de susciter un changement durable en Afrique. En faisant partie de notre réseau, vous jouerez un rôle crucial dans la construction d’un avenir meilleur. N'attendez pas, agissez maintenant et faites partie d'un mouvement qui favorise un leadership sans précédent, un entrepreneuriat novateur et un développement communautaire exceptionnel. Postulez dès aujourd'hui et rejoignez-nous pour créer un monde enrichi de possibilités illimitées.",
+          "VolunteerC":VolunteerC,
+          "VolunteerTitle":VolunteerTitle,
         }
       }
     },

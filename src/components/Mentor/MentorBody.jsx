@@ -83,7 +83,8 @@ const MentorBody = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-6 py-[4%]'>
-                <p className='lg:text-[40px] md:text-[24px] text-[16px] font-bold'>{mentorpackage}</p>
+                <p className='lg:text-[40px] md:text-[24px] text-[16px] font-bold'>{mentorpackage
+                    }</p>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-[10%] gap-5'>
                     {
                         data.map((d, i) => {
