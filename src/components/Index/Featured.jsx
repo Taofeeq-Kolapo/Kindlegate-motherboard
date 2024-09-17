@@ -54,7 +54,7 @@ const Featured = () => {
         const response = await axios.get(base_url)
         const result = response.data
         console.log(result.data[0].attributes.field_fotter_caption.value)
-        setFooter(result.data[0].attributes.field_fotter_caption.value)  
+        setFooter(result.data[0].attributes.field_fotter_caption.value)
     }
     const fetchcta = async () => {
         const base_url = "/api/mothership/homepage/cta"
@@ -62,7 +62,7 @@ const Featured = () => {
         const result = response.data
         console.log(result.data[0].attributes.field_call_to_action_section_cap.value)
         setCtacontent(result.data[0].attributes.field_call_to_action_section_cap.value)
-        setCtaTitle(result.data[0].attributes.field_call_to_action_section_hea)  
+        setCtaTitle(result.data[0].attributes.field_call_to_action_section_hea)
     }
 
     useEffect(() => {
@@ -100,6 +100,10 @@ const Featured = () => {
         localStorage.setItem('ctaTitle', plainText6);
     }
 
+    // State for managing "Read more" expansion for each program
+    const [isProg1Expanded, setIsProg1Expanded] = useState(false)
+    const [isProg2Expanded, setIsProg2Expanded] = useState(false)
+    const [isProg3Expanded, setIsProg3Expanded] = useState(false)
 
     const { t } = useTranslation()
 
@@ -119,9 +123,13 @@ const Featured = () => {
                         <div className='flex w-full lg:justify-center'>
                             <p className='text-[#0A2640] text-[24px] font-bold'>{t("prog1t")}</p>
                         </div>
-                        {/* <p>{d.content}</p> */}
-                        <p className="text-justify">{t("prog1Content").slice(0,300)}...</p>
-                        <Link href={"#"} className='text-[#00A859]'>Read more</Link>
+                        <p className="text-justify">
+                            {
+                                isProg2Expanded ? `${t("prog1Content")}` : `${t("prog1Content").slice(0, 300)}`
+                            }
+
+                        </p>
+                        <button onClick={() => setIsProg2Expanded(!isProg2Expanded)} className='text-[#00A859]'>{isProg2Expanded ? "Show less" : "Read more"}</button>
                     </div>
                 </div>
                 <div className='flex lg:flex-col flex-row gap-3 items-center'>
@@ -131,8 +139,13 @@ const Featured = () => {
                             <p className='text-[#0A2640] text-[24px] font-bold'>{t("prog2t")}</p>
                         </div>
                         {/* <p>{d.content}</p> */}
-                        <p className="text-justify">{t("prog2Content").slice(0,300)}...</p>
-                        <Link href={"#"} className='text-[#00A859]'>Read more</Link>
+                        <p className="text-justify">
+                            {
+                                isProg1Expanded ? `${t("prog2Content")}` : `${t("prog2Content").slice(0, 300)}`
+                            }
+
+                        </p>
+                        <button onClick={() => setIsProg1Expanded(!isProg1Expanded)} className='text-[#00A859]'>{isProg1Expanded ? "Show less" : "Read more"}</button>
                     </div>
                 </div>
                 <div className='flex lg:flex-col flex-row gap-3 items-center'>
@@ -142,8 +155,13 @@ const Featured = () => {
                             <p className='text-[#0A2640] text-[24px] font-bold'>{t("prog3t")}</p>
                         </div>
                         {/* <p>{d.content}</p> */}
-                        <p className="text-justify">{t("prog3Content").slice(0, 300)}...</p>
-                        <Link href={"#"} className='text-[#00A859]'>Read more</Link>
+                        <p className="text-justify">
+                            {
+                                isProg3Expanded ? `${t("prog3Content")}` : `${t("prog3Content").slice(0, 300)}`
+                            }
+
+                        </p>
+                        <button onClick={() => setIsProg3Expanded(!isProg3Expanded)} className='text-[#00A859]'>{isProg3Expanded ? "Show less" : "Read more"}</button>
                     </div>
                 </div>
 
