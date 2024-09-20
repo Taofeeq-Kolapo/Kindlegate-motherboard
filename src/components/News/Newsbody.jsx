@@ -50,6 +50,8 @@ const Newsbody = () => {
   const [title, setTitle] = useState("")
   const [news, setNews] = useState("")
   const [date, setDate] = useState("")
+  const [newsImg, setNewsimg] = useState("")
+  const [newData, setNewData] = useState([])
 
   const FetchIndex = async () => {
     const base_url = "/api/mothership/news/newsbody"
@@ -81,6 +83,22 @@ const Newsbody = () => {
     setNews(result.data[0].attributes.field_news_body.value)
     setDate(result.data[0].attributes.field_news_dater)
   }
+  const FetchNews2 = async () => {
+    const base_url = "/api/mothership/news/othernews/othernews2"
+    const response = await axios.get(base_url)
+    const result = response.data
+    console.log(result.data)
+    setNewData(result.data)
+  }
+
+  const fetchnewsImg =async ()=>{
+    const base_url = "/api/mothership/news/newImg"
+    const response = await axios.get(base_url)
+    const result = response.data
+    console.log(result.data.attributes.uri.url)
+    setNewsimg(result.data.attributes.uri.url)
+    // return result.data[0].relationships.field_news_image.data.attributes.url
+  }
 
   if (typeof window !== 'undefined') {
     const parser = new DOMParser();
@@ -92,6 +110,8 @@ const Newsbody = () => {
 
   useEffect(() => {
     FetchNews();
+    FetchNews2();
+    fetchnewsImg();
   }, [])
 
   // const { t } = useTranslation()
@@ -151,16 +171,16 @@ const Newsbody = () => {
           {/* ))} */}
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7">
-          {displayedNews.map((n, i) => (
+          {newData.map((n, i) => (
             <div key={i} className="flex flex-col lg:h-[387px] justify-between rounded-[20px] relative bg-white">
               <div className='relative'>
-                <Image src={n.img} alt="" className="w-full rounded-t-[20px] relative" width={200} height={200} />
+                <Image src={`http://test.kindlegatefoundation.org/${newsImg}`} alt="" className="w-full rounded-t-[20px] relative" width={200} height={200} />
               </div>
               <div className="p-3 text-[#14242C]">
-                <p className='absolute p-2 bg-[#E3B522] top-[38%] right-0 font-bold'>{n.date}</p>
-                <p>{n.content}</p>
+                <p className='absolute p-2 bg-[#E3B522] top-[38%] right-0 font-bold'>{n.attributes.field_news_date}</p>
+                <p dangerouslySetInnerHTML={{__html: n.attributes.field_news_body.value.slice(0, 155)}}></p>
                 <button className="flex flex-row gap-2 items-center border border-black p-2 rounded-lg mt-5">
-                  <Link href="/morenews">{n.more}</Link>
+                  <Link href="/morenews">Read More</Link>
                   <span className="w-[20px] h-[20px] flex rounded-full items-center justify-center bg-[#333333] text-white">
                     <TbArrowRight />
                   </span>

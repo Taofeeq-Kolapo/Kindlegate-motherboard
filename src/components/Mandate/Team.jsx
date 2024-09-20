@@ -56,7 +56,15 @@ const Team = () => {
     const [teamName, setTeamName] = useState("")
     const [teamRole, setTeamRole] = useState("")
     const [teams, setTeams] = useState([])
+    const [img, setImg] = useState("")
 
+    const fetchTeamImg = async () =>{
+        const base_url = "/api/mothership/mandate_page/mandate_img"
+        const response = await axios.get(base_url)
+        const result = response.data
+        console.log(result.data.attributes.uri.url)
+        setImg(result.data.attributes.uri.url)
+    }
 
     const FetchIndex = async () => {
         const base_url = "/api/mothership/mandate_page/Teams"
@@ -81,6 +89,7 @@ const Team = () => {
 
 
     useEffect(() => {
+        fetchTeamImg();
         FetchIndex()
     }, [])
 
@@ -107,8 +116,8 @@ const Team = () => {
                     teams.map((d, i) => {
                         return (
                             <Link href={"/#"} key={i} className='flex flex-col w-full'>
-                                <div className='bg-[#E3B522] pt-4 flex justify-center items-end'>
-                                    <Image src={d.img} alt='' width={150} height={200} />
+                                <div className='bg-[rgb(227,181,34)] pt-4 flex justify-center items-end'>
+                                    <Image src={`http://test.kindlegatefoundation.org/${img}`} alt='' width={150} height={200} />
                                 </div>
                                 <div className='flex justify-center py-2 bg-[#14BDE3]'>
                                     <p className='font-bold'>{d.attributes.field_member_role}</p>
