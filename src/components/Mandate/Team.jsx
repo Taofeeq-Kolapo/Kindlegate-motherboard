@@ -113,19 +113,21 @@ const Team = () => {
 
             <div className='w-full grid lg:grid-cols-3 mt-7 md:grid-cols-2 grid-cols-1 gap-6 lg:w-[70%] lg:gap-[10%]'>
                 {
-                    teams.map((d, i) => {
+                    trustee.map((d, i) => {
                         return (
-                            <Link href={"/#"} key={i} className='flex flex-col w-full'>
+                            <Link href={d.link} key={i} className='flex flex-col w-full'>
                                 <div className='bg-[rgb(227,181,34)] pt-4 flex justify-center items-end'>
-                                    <Image src={`http://test.kindlegatefoundation.org/${img}`} alt='' width={150} height={200} />
+                                    {/* <Image src={`http://test.kindlegatefoundation.org/${img}`} alt='' width={150} height={200} /> */}
+                                    <Image src={d.img} alt='' width={150} height={200} />
                                 </div>
                                 <div className='flex justify-center py-2 bg-[#14BDE3]'>
-                                    <p className='font-bold'>{d.attributes.field_member_role}</p>
+                                    <p className='font-bold'>{d.post}</p>
                                 </div>
                                 <div className='bg-white border-1 border-black'>
-                                    <p className='font-semibold'>{d.attributes.field_member_name}</p>
+                                    <p className='font-semibold'>{d.name}</p>
+                                    <p>{d.desc}</p>
                                     {/* <p>{d.attributes.field_member_caption_body.value}</p> */}
-                                    <p className='text-justify' dangerouslySetInnerHTML={{ __html: d.attributes.field_member_caption_body.value.slice(0, 140) }} />
+                                    {/* <p className='text-justify' dangerouslySetInnerHTML={{ __html: d.attributes.field_member_caption_body.value.slice(0, 140) }} /> */}
                                 </div>
                             </Link>
                         )
