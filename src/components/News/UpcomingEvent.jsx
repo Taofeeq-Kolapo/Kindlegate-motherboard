@@ -69,7 +69,6 @@ const UpcomingEvent = () => {
                                 </div>
                                 <div className='flex flex-col lg:gap-4 gap-2 items-start lg:w-1/2'>
                                     <p className='lg:text-[32px] text-[16px] text-black font-bold'>About this event</p>
-                                    {/* <p className='lg:text-[32px] text-[16px] text-black font-bold'>About this event</p> */}
                                     <p className='text-justify lg:text-[20px] text-[10px]' dangerouslySetInnerHTML={{__html: e.attributes.field_news_body.value}}></p>
                                     <div>
                                         <button className='text-[#2B2B2B] bg-[#E3B522] rounded-2xl lg:font-bold font-semibold lg:text-[20px] md:text-[16px] sm:text-[12px] lg:px-6 px-3 py-1'>{e.join}</button>
