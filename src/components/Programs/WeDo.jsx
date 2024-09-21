@@ -57,49 +57,43 @@ const WeDo = () => {
                     img={"/img/one.svg"}
                     role={prog1T}
                     text1={prog1}
-                    // text1={t("prog1Content")}
-                // text2={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."}
-                // text3={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."}
                 />
                 <Whatwedo
                     img={"/img/two.svg"}
                     role={prog2T}
                     text1={prog2}
-                    // text1={t("prog2Content")}
-                // text2={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."}
-                // text3={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."}
                 />
                 <Whatwedo
                     img={"/img/three.svg"}
                     role={prog3T}
                     text1={prog3}
-                    // text1={t("prog3Content")}
+                // text1={t("prog3Content")}
                 // text2={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."}
                 // text3={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."}
                 />
                 <Whatwedo
-                    img={"/img/two.svg"}
+                    img={"/img/food.svg"}
                     role={prog4T}
                     text1={prog4}
                 />
                 <Whatwedo
-                    img={"/img/food.svg"}
+                    img={"/img/It.svg"}
                     role={prog5T}
                     // role={"FOOD & SHELTERPROGRAM"}
                     text1={prog5}
                 />
                 <Whatwedo
-                    img={"/img/It.svg"}
+                    img={"/img/vocation.svg"}
                     role={prog6T}
                     // role={"IT TRAINING"}
                     text1={prog6}
                 />
                 <Whatwedo
-                    img={"/img/vocation.svg"}
+                    img={"/img/sdg.png"}
                     role={prog7T}
                     // role={"VOCATIONAL TRAINING & WORKSHOP"}
                     text1={prog7}
-               
+
                 />
             </div>
         </div>

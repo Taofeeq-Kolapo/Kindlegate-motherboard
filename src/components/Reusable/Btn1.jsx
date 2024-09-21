@@ -68,7 +68,7 @@ export const TeamProps = ({ img, role, text1, text2, text3, btntext, teamLink })
             </div>
             <div className="flex flex-col w-full items-center  gap-3">
                 <div className="flex flex-col gap-4 lg:w-full">
-                <p dangerouslySetInnerHTML={{ __html: text1 }} />
+                <p className="text-justify" dangerouslySetInnerHTML={{ __html: text1 }} />
                     {/* <p>{text2}</p>
                     <p>{text3}</p> */}
                 </div>

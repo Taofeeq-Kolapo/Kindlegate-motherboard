@@ -35,7 +35,7 @@ const ProgHero = () => {
         <div className="bg-[url(/img/bg-3.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
             <div className="pt-[5%] px-[7%] flex w-full justify-end">
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
-                    <p className="font-bold lg:text-[40px] md:text-[48px] text-[40px] text-white leading-none">{title}</p>
+                    <p className="font-bold md:text-[40px] text-[40px] text-white leading-none">{title}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
                         <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-center">{t("progPageTitle")}</p>
                     </div>

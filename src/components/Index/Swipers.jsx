@@ -68,7 +68,7 @@ const Swipers = () => {
         const plainText = parsedHtml.body.textContent || "";
         const plainText2 = parsedHtml2.body.textContent || "";
         const plainText3 = parsedHtml3.body.textContent || "";
-        const plainText4 = parsedHtml3.body.textContent || "";
+        const plainText4 = parsedHtml4.body.textContent || "";
         localStorage.setItem('swiper1', plainText);
         localStorage.setItem('swiper2', plainText2);
         localStorage.setItem('swiper3', plainText3);
@@ -102,10 +102,10 @@ const Swipers = () => {
                                 </SwiperSlide>
                                 <SwiperSlide className='w-full px-[11%] flex flex-row items-center'>
                                     <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
-                                        <p>Social Economic Empowerment</p>
+                                        <p>Economic Development</p>
                                         <p className='lg:mt-10 lg:text-[20px] md:text-[12px] text-[10px]'>{t("slide2Content")}</p>
                                     </div>
-                                    <Image src={"/img/socialeconomic.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
+                                    <Image src={"/img/onee.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
                                 </SwiperSlide>
                                 <SwiperSlide className='w-full px-[11%] flex flex-row items-center'>
                                     <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
@@ -113,6 +113,13 @@ const Swipers = () => {
                                         <p className='lg:mt-6 lg:text-[20px] md:text-[12px] text-[10px]'>{t("slide3Content")}</p>
                                     </div>
                                     <Image src={"/img/safetyjustice.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
+                                </SwiperSlide>
+                                <SwiperSlide className='w-full px-[11%] flex flex-row items-center'>
+                                    <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
+                                        <p>Social Economic Empowerment</p>
+                                        <p className='lg:mt-6 lg:text-[20px] md:text-[12px] text-[10px]'>{t("slide4Content")}</p>
+                                    </div>
+                                    <Image src={"/img/socialeconomic.svg"} className='absolute lg:top-2 right-20 lg:w-[552px] lg:h-[492px] md:w-[300px] md:h-[120px] md:top-[50%]' width={250} height={250} alt=''/>
                                 </SwiperSlide>
                                 {/* <SwiperSlide key={i} className='w-full px-[11%] flex flex-row items-center'>
                                     <div className='flex flex-col gap-2 p-8 text-[22px] lg:absolute lg:top-24 text-white bg-[#4B4B4B] z-[500] rounded-lg lg:w-[702px] lg:h-[384px] md:w-[455px] lg:ml-[3%] md:ml-[5%] md:h-[284px] sm:w-[267px] sm:h-[336px]' >
