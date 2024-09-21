@@ -42,9 +42,9 @@ const BlogHero = () => {
     <div className="bg-[url(/img/blogs.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full"
     // style={{backgroundImage:`url(http://test.kindlegatefoundation.org/${img})`}}
     >
-            <div className="pt-[5%] px-[7%] flex w-full lg:justify-end">
+            <div className="pt-[5%] px-[7%] flex w-full ">
                 <div className="lg:w-[50%] flex flex-col w-full items-center gap-4">
-                    <p className="font-bold lg:text-[50px] md:text-[48px] text-[30px] text-white leading-none">{t("blogTitle")}</p>
+                    <p className="font-bold md:text-[40px] text-[30px] text-white leading-none">{t("blogTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
                         <p className="lg:text-[18px] md:text-[16px] text-[12px] lg:w-full sm:w-[313px] text-white text-center">{t("blogC")}</p>
                     </div>
