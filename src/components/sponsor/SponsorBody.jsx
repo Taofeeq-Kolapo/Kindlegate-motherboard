@@ -80,7 +80,7 @@ const SponsorBody = () => {
         <div className='px-[10%] flex flex-col items-center justify-center lg:my-[5%] my-[3%] '>
             <div className='flex flex-col lg:gap-7 gap-5 lg:w-[60%] w-full items-center'>
                 <p className='lg:text-[36px] md:text-[23px] text-[18px] font-bold lg:w-[70%] text-center'>{t("sponsoreventTitle")}</p>
-                <p className='flex lg:text-center text-justify'>{t("sponsoreventC")}</p>
+                <p className='flex text-justify'>{t("sponsoreventC")}</p>
 
                 <div className='w-full flex justify-center'>
                     <Link href={"/apply"}>

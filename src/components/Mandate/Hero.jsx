@@ -42,7 +42,7 @@ const {t} = useTranslation();
         <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
           <p className="font-semibold lg:text-[50px] md:text-[48px] text-[40px] text-white leading-none">{t("mandateTitle")}</p>
           <div className="flex flex-col items-center lg:w-[80%]">
-            <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white lg:text-start text-justify">{t("mandateContent")}</p>
+            <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white  text-justify">{t("mandateContent")}</p>
           </div>
         </div>
       </div>
