@@ -46,7 +46,7 @@ const BlogHero = () => {
                 <div className="lg:w-[50%] flex flex-col w-full items-center gap-4">
                     <p className="font-bold md:text-[40px] text-[30px] text-white leading-none">{t("blogTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="lg:text-[18px] md:text-[16px] text-[12px] lg:w-full sm:w-[313px] text-white text-center">{t("blogC")}</p>
+                        <p className="lg:text-[18px] md:text-[16px] text-[12px] lg:w-full sm:w-[313px] text-white text-justify">{t("blogC")}</p>
                     </div>
                 </div>
             </div>

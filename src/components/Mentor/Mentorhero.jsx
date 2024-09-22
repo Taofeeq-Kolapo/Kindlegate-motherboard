@@ -48,7 +48,7 @@ const MentorHero = () => {
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold lg:text-[50px] md:text-[48px] text-[40px] text-white leading-none">{t("mentorTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-center">{t("mentorC")}
+                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-justify">{t("mentorC")}
                         </p>
                     </div>
                 </div>

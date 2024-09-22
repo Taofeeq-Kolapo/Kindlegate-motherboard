@@ -7,7 +7,7 @@ const PartnerHero = () => {
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold text-[64px] text-white leading-none">OUR PARTNER</p>
                     <div className="flex flex-col items-center ">
-                        <p className="text-[20px] text-white text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
+                        <p className="text-[20px] text-white text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
                         </p>
                     </div>
                 </div>

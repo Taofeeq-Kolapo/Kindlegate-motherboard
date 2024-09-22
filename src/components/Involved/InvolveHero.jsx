@@ -36,7 +36,7 @@ const InvolveHero = () => {
                 <div className="lg:w-[50%] flex flex-col z-[200] items-center gap-4">
                     <p className="font-bold lg:text-[50px] text-[40px] text-white text-center leading-none">{t("heroinvolveTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="text-[18px] text-white text-center">{t("heroinvolvC")}</p>
+                        <p className="text-[18px] text-white text-justify">{t("heroinvolvC")}</p>
                     </div>
                 </div>
             </div>

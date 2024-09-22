@@ -49,7 +49,7 @@ const VolHero = () => {
                 <div className="lg:w-[60%] flex flex-col items-center z-[300] gap-4">
                     <p className="font-bold lg:text-[50px] md:text-[48px] text-[40px] text-white leading-none">{t("VolunteerTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px]  text-white text-center">{t("VolunteerC")}
+                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px]  text-white text-justify">{t("VolunteerC")}
                         </p>
                     </div>
                     <button className='flex bg-[#14BDE3] lg:px-[4%] rounded-2xl lg:py-2 p-2'>

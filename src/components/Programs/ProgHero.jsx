@@ -37,7 +37,7 @@ const ProgHero = () => {
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold md:text-[40px] text-[40px] text-white leading-none">{title}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-center">{t("progPageTitle")}</p>
+                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-justify">{t("progPageTitle")}</p>
                     </div>
                 </div>
             </div>

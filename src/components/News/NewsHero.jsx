@@ -37,7 +37,7 @@ const NewsHero = () => {
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold md:text-[40px] text-[30px] text-white leading-none">{t("newsTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="lg:text-[18px] md:text-[16px] text-[12px] text-white text-center">{t("newsC")}
+                        <p className="lg:text-[18px] md:text-[16px] text-[12px] text-white text-justify">{t("newsC")}
                         </p>
                     </div>
                 </div>

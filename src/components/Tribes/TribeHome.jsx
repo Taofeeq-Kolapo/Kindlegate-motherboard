@@ -36,7 +36,7 @@ const TribeHome = () => {
                 <div className="lg:w-[50%] flex flex-col items-center gap-4">
                     <p className="font-bold lg:text-[40px] md:text-[48px] text-[40px] text-white leading-none">{t("tribeTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%] md:w-[356px] ">
-                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-center">{t("tribeC")}</p>
+                        <p className="lg:text-[18px] md:text-[16px] sm:text-[12px] text-white text-justify">{t("tribeC")}</p>
                     </div>
                 </div>
             </div>
