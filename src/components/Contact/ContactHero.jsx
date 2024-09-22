@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactHero = () => {
     return (
-        <div className="bg-[url(/img/bg-3.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
+        <div className="bg-[url(/img/contactus.svg)] bg-no-repeat bg-cover bg-center h-screen justify-center flex items-center w-full ">
             <div className="lg:pt-[5%] lg:px-[7%] flex w-full justify-end ">
                 <div className="lg:w-[50%] flex flex-col w-full items-center gap-4">
                     <p className="font-bold md:text-[40px] text-[30px] text-white leading-none">REACH US</p>
