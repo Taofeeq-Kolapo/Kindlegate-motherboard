@@ -48,7 +48,7 @@ const SponsorrHero = () => {
                 <div className="lg:w-[50%] w-full flex flex-col items-center gap-4">
                     <p className="font-bold text-[40px] text-white leading-none">{t("sponsorTitle")}</p>
                     <div className="flex flex-col items-center lg:w-[80%]">
-                        <p className="text-[18px] text-white text-center">{t("sponsorC")}
+                        <p className="text-[18px] text-white text-justify">{t("sponsorC")}
                         </p>
                     </div>
                 </div>
