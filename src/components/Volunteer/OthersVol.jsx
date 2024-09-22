@@ -62,7 +62,7 @@ const VolHero = () => {
                   <p className='text-[20px] text-[#1E1E1E] font-bold '>{d.attributes.field_volunteer_image_item}</p>
                   <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
                 </div>
-                <p dangerouslySetInnerHTML={{ __html: d.attributes.field_head_of_program_descriptio.value.slice(0, 200)}} className='w-[70%]'></p>
+                <p dangerouslySetInnerHTML={{ __html: d.attributes.field_head_of_program_descriptio.value.slice(0, 200)}} className='w-[70%] text-justify'></p>
               </div>
             )
           })
