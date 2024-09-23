@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // images: {
-    //   domains: ["test.kindlegatefoundation.org"],
-    // },
-
-    remotePatterns: [
+       remotePatterns: [
       {
         protocol: 'http',
         hostname: 'test.kindlegatefoundation.org',

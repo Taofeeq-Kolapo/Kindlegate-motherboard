@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 
 const VolHero = () => {
   const [data, setData] = useState([])
+  const [img, setImg] = useState("")
   const Data = [
     {
       img: "/img/Avatard.svg",
@@ -39,9 +40,21 @@ const VolHero = () => {
       console.error('Error fetching volunteers:', error);
     }
   };
+  const fetchVolunteersimg = async () => {
+    const base_url = "/api/mothership/volunteer/headofprogram/progImage"
+    try {
+      const response = await axios.get(base_url);
+      const result = response.data;
+      console.log(result.data.attributes.uri.url);
+      setImg(result.data.attributes.uri.url);
+    } catch (error) {
+      console.error('Error fetching volunteers:', error);
+    }
+  };
 
   useEffect(()=>{
     fetchVolunteers();
+    fetchVolunteersimg();
   },[])
 
   return (
@@ -57,7 +70,7 @@ const VolHero = () => {
           data.map((d, i) => {
             return (
               <div key={i} className='flex flex-col items-center '>
-                <Image src={d.img} width={300} height={300} alt='' />
+                <Image src={`http://test.kindlegatefoundation.org/${img}`} width={300} height={300} alt='' />
                 <div className='flex flex-col items-center'>
                   <p className='text-[20px] text-[#1E1E1E] font-bold '>{d.attributes.field_volunteer_image_item}</p>
                   <p className='h-1 w-[135.2px] rounded-full bg-[#E3B522]'></p>
